@@ -1,0 +1,68 @@
+\documentclass[10pt,a4paper]{memoir}
+
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage{a4}
+%\usepackage{geometry}
+\usepackage[francais]{babel}
+\usepackage{hyperref}
+\usepackage{listings}
+%\usepackage{latexsym}
+%\usepackage{graphicx}
+%\usepackage{appendix}
+\usepackage{fancybox}
+\usepackage{url}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{harvard}
+\urlstyle{sf}
+\makeatletter\def\input@path{{contenu/}{src/}{eps/}}\makeatother
+
+
+\newcommand{\crypt}[2]{\begin{center}\texttt{#1}\ \ $\Longrightarrow$\ \ \texttt{#2}\end{center}}
+\newenvironment{fminipage}%
+  {\begin{center}\begin{Sbox}\begin{minipage}{1\textwidth}}%
+  {\end{minipage}\end{Sbox}\fbox{\TheSbox}\end{center}}
+\newcommand{\definition}[1]{\begin{center}#1\end{center}}
+\renewcommand{\footref}[1]{\footnote{voir chapitre \ref{#1}, page \pageref{#1}}}
+
+%\setlength{\voffset}{-0.9in}
+%\setlength{\hoffset}{-0.5in}
+%\setlength{\textwidth}{6.5in}
+%\setlength{\textheight}{10.5in}
+
+\title{Travail de fin d'études \\
+  \textbf{La cryptographie} \\ 
+  Peut on réellement cacher des informations ?}
+\author{Quentin Stiévenart\\
+Athéné Royal de Waterloo}
+\date{Année scolaire 2008 - 2009}
+
+
+%\pagestyle{headings}
+
+\begin{document}
+% Titre, table des matières
+\frontmatter
+\maketitle \clearpage
+\tableofcontents \clearpage
+
+% Introduction
+\input{intro.tex}
+
+% Partie principale
+\mainmatter
+
+\input{presentation.tex}
+\input{substitutions.tex}
+
+%\part{ Annexes}
+\appendix
+
+% Fin du travail : La bibliographie, le glossaire, à propos
+\backmatter
+\nocite{*}
+\bibliographystyle{agsm}
+\bibliography{bibliographie/bibliographie}
+
+\end{document}

@@ -8,7 +8,7 @@ Mais qu'est ce que la cryptographie ? Comment est ce que ça fonctionne ? Son ut
 Ce sont à ces questions que nous allons essayer de répondre durant ce travail, et plus principalement à cette question : 
 
 \begin{quote}
-\emph{``Peut-on réellement cacher des informations''}
+\emph{« Peut-on réellement cacher des informations »}
 \end{quote}
 
 Nous essayerons donc de savoir si l'on peut envoyer sans risque une information, un message, des données, ... à quelqu'un, sans qu'une personne extérieure puisse le lire.
@@ -20,13 +20,36 @@ Pour répondre à ces questions, nous allons tout d'abord voir ce qu'est concrè
 %Ce travail aura pour but de savoir si la cryptographie est un moyen fiable pour cacher des données, via l'analyse de certains algorithmes utilisés de nos jours ou dans le passé, et plus précisément leur cryptanalyse (ce terme sera définit à la prochaine section du document) \\
 %Nous analyserons donc, d'abord les méthodes de cryptographie utilisée dans l'histoire, suivant un ordre chronologique, ensuite nous passerons aux méthodes actuelles, où nous expliquerons entre autres l'utilité de la cryptographie de nos jours. \\
 
-En annexe, on pourra voir quelques implémentations d'algorithmes de chiffrement dans certains langages de programmation (Haskell, C, Common Lisp, Python)\footnote{Pour plus d'infos sur ces langages, visitez respectivement \url{http://www.haskell.org}, \url{http://fr.wikipedia.org/wiki/Langage_C}, \url{http://cliki.net} et \url{http://www.python.org}.} \\
+%En annexe, on pourra voir quelques implémentations d'algorithmes de chiffrement dans certains langages de programmation (Haskell, C, Common Lisp, Python)\footnote{Pour plus d'infos sur ces langages, visitez respectivement \url{http://www.haskell.org}, \url{http://fr.wikipedia.org/wiki/Langage_C}, \url{http://cliki.net} et \url{http://www.python.org}.} \\
 
 \section{Mes motivations pour ce travail}
-J'ai choisis de faire un travail de fin d'études sur la cryptographie car j'ai toujours été interessés par les mathématiques et surtout par l'informatique (plus au fonctionnement de l'ordinateur, à sa programmation qu'à l'aspect ``jeux et divertissements'' de l'informatique), et la cryptographie fait partie intégrante des systèmes informatiques d'aujourd'hui, et est basée sur des principes mathématiques. D'ailleurs, je compte faire des études polytechniques l'année prochaine. \\
-L'idée de ce travail m'est venue petit à petit. Après la lecture d'un article sur la cryptographie sur internet, j'ai commencé à m'y intéresser un peu, sans trop approfondir, et ce travail me permet donc d'appronfondir le sujet.
+J'ai choisis de faire un travail de fin d'études sur la cryptographie
+car j'ai toujours été interessés par les mathématiques et surtout par
+l'informatique (plus au fonctionnement de l'ordinateur, à sa
+programmation qu'à l'aspect « jeux et divertissements » de
+l'informatique), et la cryptographie fait partie intégrante des
+systèmes informatiques d'aujourd'hui, et est basée sur des principes
+mathématiques. D'ailleurs, je compte faire des études polytechniques
+l'année prochaine. \\ L'idée de ce travail m'est venue petit à
+petit. Après la lecture d'un article sur la cryptographie sur
+internet, j'ai commencé à m'y intéresser un peu, sans trop
+approfondir, et ce travail me permet donc
+d'appronfondir le sujet.
 
-\section{À propos de ce document}
-Pour des raisons personnelles, et dans un esprit de liberté de l'information, ce document est placé sous licence GFDL, ce qui signifie que vous pouvez le modifier et le redistribuer librement à condition de préciser le nom de l'auteur, et de garder cette même licence. Toujours pour les mêmes raisons, ce document a été préparé à l'aide de l'éditeur de texte \texttt{GNU Emacs} et du logiciel de composition typographique \LaTeX, et des logiciels \texttt{xfig} et \texttt{dia} pour les dessins, sur un système d'exploitation basé sur \texttt{Linux}. Tous ces logiciels sont  entièrement libres. De plus, les langages utilisés en annexe possèdent aussi chacun au moins une implémentation libre. Pour plus d'informations sur les logiciels libres et la culture libre, référez vous à \url{http://www.gnu.org/philosophy/philosophy.fr.html}. \\
-Ce document et les sources (les fichiers \TeX~, les graphiques,  et les codes sources des annexes) sont disponibles sur internet via l'addresse \url{http://www.acieroid.tuxfamily.org/tfe/}. \\
-Les images utilisées sont issues du projet Nuvola, et sont disponibles sous les termes de la licence LGPL.
+\section{À propos de ce document} Pour des raisons personnelles, et
+dans un esprit de liberté de l'information, ce document est placé sous
+licence GFDL, ce qui signifie que vous pouvez le modifier et le
+redistribuer librement à condition de préciser le nom de l'auteur, et
+de garder cette même licence. Toujours pour les mêmes raisons, ce
+document a été préparé à l'aide de l'éditeur de texte \texttt{GNU
+  Emacs} et du logiciel de composition typographique \LaTeX, et des
+logiciels \texttt{xfig}, \texttt{dia} et \texttt{inkscape} pour les
+dessins, sur un système d'exploitation basé sur \texttt{Linux}. Tous
+ces logiciels sont entièrement libres. De plus, les langages utilisés
+en annexe possèdent aussi chacun au moins une implémentation
+libre. Pour plus d'informations sur les logiciels libres et la culture
+libre, référez vous à \url{http://www.gnu.org/philosophy/philosophy.fr.html}. \\
+Ce document et les sources (les fichiers \TeX~, les graphiques, et les
+codes sources des annexes), ainsi des informations supplémentaires
+sont disponibles sur internet via l'addresse
+\url{http://www.acieroid.tuxfamily.org/tfe/}. \\

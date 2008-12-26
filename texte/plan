@@ -1,3 +1,34 @@
+Introduction
+La cryptologie à travers l'histoire
+    -> Enigma bien expliqué
+
+Les différentes techniques de cryptographie
+    -> Substitutions
+       *-> monoalphabétiques
+       *-> polyalphabétiques
+       -> polygrammiques
+       -> homophoniques
+    -> Transpositions
+    -> Chiffrement symétrique
+        -> Chiffrement par bloc
+	-> Chiffrement par flot
+    -> Chiffrement asymétrique
+    (-> Cryptographie quantique)
+
+L'importance des clés
+    -> Principe de Kerckhoffs
+
+La cryptanalyse
+    -> fréquence des lettres
+
+La cryptogrologie de nos jours
+    -> Authentification
+    -> Intégrité des données
+    -> Signature numérique
+    -> La cryptologie et la loi
+
+
+; vieu plan:
 Introduction à la cryptographie: 
     - Définitions
     - Principes de bases (Kerckhoffs)

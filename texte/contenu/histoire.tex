@@ -60,7 +60,7 @@ lettres de l'alphabet d'un certain rang dans l'alphabet (de 3 rangs la
 plupart du temps, ainsi A devient D, B devient E, \dots). Cette simple
 méthode est une des méthodes de chiffrement les plus connues et à été
 utilisées de nombreuses fois par la suite dans des formes dérivées (chiffre de
-Vigenère\footref{syst:vigenere}, rot13\footref{syst:rot13}), ou même
+Vigenère\footref{syst:chiffrevigenere}, rot13\footref{syst:rot13}), ou même
 de la même façon (pendant la guerre de sécession par exemple)
 
 \begin{figure}[h]
@@ -72,11 +72,54 @@ de la même façon (pendant la guerre de sécession par exemple)
 \end{figure}
 
 Au Moyen-âge, comme la plupart des sciences, la cryptologie n'évolue
-presque pas, à part quelques exceptions au Moyen-Orient et en Asie
-(dans le Kama-sutra, il est dit que les femmes doivent apprendre le
-\emph{mlecchita-vikalpa} (l'art de l'écriture secrète) pour cacher
-leurs liaisons.). Il faut donc attendre le XV\ieme siècle pour que la
-cryptographie commence réellement à évoluer.
+presque pas (une personne pratiquant la cryptologie peut être
+considéré comme faisant de la magie noire), à part quelques exceptions
+au Moyen-Orient et en Asie (dans le Kama-sutra, il est dit que les
+femmes doivent apprendre le \emph{mlecchita-vikalpa} (l'art de
+l'écriture secrète) pour cacher leurs liaisons.). Il faut donc
+attendre le XV\ieme siècle pour que la cryptographie commence
+réellement à évoluer. \\
+
+\section{L'évolution de la cryptographie}
+Au début du XV\ieme siècle donc, un égyptien écrit une encyclopédie en
+24 volumes comprenant une partie sur la cryptologie qui décrit des
+chiffres de substitution et de transposition. Le premier chiffre de
+substitution polyalphabétique\footref{substitutionpolyalphabetique}
+est inventé par Leone Battista Alberti en 1467, un humaniste italien
+de la reinaissance, aussi connu pour ses travaux en architecture,
+surnommé \emph{Le père de la cryptographie occidentale} par
+l'historien David Kahn\cite{Codebreakers}. Cette technique est appelée
+le \emph{cadran chiffran}\label{syst:cadranchiffran}, ce sont deux
+disques de 24 cases attachés, contenant les lettres de l'alphabet (le
+premier en contient 20, H, K et Y n'étant pas « indispensables », J, U
+et W n'étant pas dans l'alphabet latin, les 4 autres cases sont
+occupées par des chiffres. L'autre disque contient les 23 lettres
+latines dans un ordre aléatoire et le signe \&). Le plus petit disque
+peut tourner, les lettres claires et chiffrées se trouvent alors face
+à face, et il suffit de recopier la lettre du petit disque pour
+chiffrer la lettre du grand disque. Après avoir chiffré quelques
+lettres, on décale le disque et on continue ainsi de suite, en
+indiquant sur le message chiffré le changement. Dans son ouvrage, il
+parle aussi de cryptanalyse, et il introduit le concept d'analyse des 
+fréquences. \\
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[scale=0.2]{eps/AlbertiCipherDisk}
+    \hspace{3cm}
+    \includegraphics[scale=0.15]{eps/ConfederateCipherDisk}
+  \end{center}
+  \caption{Le cadran chiffrant d'Alberti, dans sa forme originelle à
+    gauche, et réutilisé par les confédérés pendant la guerre de
+    sécession}
+  \label{fig:AlbertiCadranChiffrant}
+\end{figure}
+
+En 1518, Jean Trithème publie Polygraphi\ae , le premier livre imprimé
+sur la cryptologie, où il invente un chiffre stéganographique, et ce
+qui deviendra par la suite le chiffre de
+Vigenère\footref{syst:chiffrevigenere}. \\
+
 
 % Premières techniques de cryptographie
 % Plus vieux document chiffré : un potier qui écrit sa recettes en

@@ -5,11 +5,23 @@ polygramme, ou bien par un nombre ou un signe.
 
 On peut distinguer plusieurs sortes de substitutions : 
 \begin{itemize}
-  \item Les substitutions monoalphabétiques ou simples~; 
-  \item Les substitutions polyalphabétiques~; 
-  \item Les substitutions polygrammiques~;
-  \item Les substitutions tomogrammiques~.
+  \renewcommand{\makelabel}[1]{\sffamily\textbf{#1}}
+  \item[Les substitutions monoalphabétiques ou simples] : 
+    chaque lettre est remplacée par une autre lettre tout au long du message~; 
+  \item[Les substitutions polyalphabétiques] :
+    c'est en fait une combinaison de substitutions simples~;
+  \item[Les substitutions polygrammiques]: 
+    à la place de substituer des lettres comme le fait la substitution
+    monoalphabétique, on substitue des groupes de lettres~;
+  \item[Les substitutions homophoniques] : 
+    chaque lettre peut être remplacée par plusieurs valeurs, choisies
+    aléatoirement.
 \end{itemize}
+
+\note{Dans ce chapitre, nous ferons abstraction des caractères
+  spéciaux, comme les lettres avec accents, des signes de
+  ponctuations, ou autre caractères. Nous remplacerons ceux-ci par une
+  espace si besoin est.}
 
 \section{Les substitutions monoalphabétiques}
 Ce type de substitution consiste simplement à remplacer chaque lettre
@@ -17,38 +29,38 @@ de l'alphabet par une autre lettre.
 
 \subsection{Par simple décalage}
 On peut par exemple, comme le fait le chiffre de
-César\footref{m:ChiffreCesar}, décaler les lettres de l'alphabet d'une
-clé $k$.
+César\footref{syst:chiffrecesar}, décaler les lettres de l'alphabet d'une
+clé $k$. \\
 
  Si nous considérons l'alphabet comme un ensemble cyclique où 
 chaque lettre correspondrait à un chiffre (une fois arrivé à $Z$ ($= 25$), on 
 repart de $A$ ($= 0$) $\rightarrow 25 + 1 = 0$), on peut facilement définir 
-ce système de chiffrement : 
-\\
+ce système de chiffrement :  \\
+
 \definition{$e_k(c) = (c + k)~ mod~ 26$\\
   où $c$ est le caractère à chiffrer.}
 
 Nous utilisons l'opérateur \emph{modulo}, qui nous donne le reste de
 la division entière de deux entiers ($5~ mod~ 2 = 1$), ce qui nous
 permet de rester dans un ensemble cyclique. \\
-\\
 
-Une application du chiffre de César est, par exemple, le \emph{ROT13}
-(de ``rotate alphabet 13 places'' \cite{ROT13HomePage}).
-C'est donc simplement un chiffre de César pour lequel la clé $k$ a une
-valeur de $13$.
+\subsubsection{Exemple: le rot13\label{syst:rot13}}
+Une application du chiffre de César est, par exemple, le \emph{ROT13},
+qui est simplement un chiffre de César pour lequel la clé $k$ a une
+valeur de $13$.\\
 
 L'interêt du ROT13 réside dans le fait qu'il suffit d'appliquer deux
 fois la méthode de chiffrement pour retrouver le texte en clair
 ($e_{13}(e_{13}(M)) = M$), ainsi, il n'y a qu'une et une seule fonction utilisée
-pour le chiffrement et le déchiffrement (donc $e_{13}(x) = d_{13}(x)$).
+pour le chiffrement et le déchiffrement (donc $e_{13}(x) =
+d_{13}(x)$). \\
 
 De ce fait, ROT13 n'est pas du tout pratique pour cacher des
 informations, mais est parfois utilisé sur internet, dans les forums,
 afin d'empêcher la lecture involontaire d'un texte (qui pourrait
 dévoiler une information sur un film par exemple, et gâcherait le
-plaisir au gens n'ayant pas vu le film, c'est ce qu'on appelle un
-\emph{spoiler})
+plaisir au gens n'ayant pas vu le film, c'est ce qu'on appelle un 
+\emph{spoiler}) 
 
 \subsection{Par remplacement}
 Outre le fait de décaler les lettres, on peut aussi remplacer chaque
@@ -57,17 +69,26 @@ s'aider d'une table de substitution, comme sur la figure
 \ref{fig:substitutionsimple}.
 
  \begin{figure}[h]
-    \begin{center}
-    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+   \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
       \hline
-      A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T
-      & U & V & W & X & Y & Z \\
+      A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P &
+      Q & R & S & T \\
       \hline
-      A & Z & E & R & T & Y & U & I & O & P & Q & S & D & F & G & H & J & K & L & M
-      & W & X & C & V & B & N \\
+      A & Z & E & R & T & Y & U & I & O & P & Q & S & D & F & G & H &
+      J & K & L & M \\
       \hline
     \end{tabular}
   \end{center}
+  \begin{flushright}
+    \begin{tabular}{c|c|c|c|c|c|}
+      \hline
+      U & V & W & X & Y & Z \\
+      \hline
+      W & X & C & V & B & N \\
+      \hline
+    \end{tabular}
+  \end{flushright}
   \caption{Exemple simple de table de substitution}
   \label{fig:substitutionsimple}
 \end{figure}
@@ -79,23 +100,290 @@ après, voir la figure \ref{fig:substitutioncle}).
 
 \begin{figure}[h]
   \begin{center}
-    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
       \hline
-      A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T
-      & U & V & W & X & Y & Z \\
+      A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P &
+      Q & R & S & T \\
       \hline
-      C & R & Y & P & T & O & A & B & D & E & F & G & H & I & J & K & L & M & N  & Q 
-      & S & U & V & W & X & Z \\
+      C & R & Y & P & T & O & A & B & D & E & F & G & H & I & J & K &
+      L & M & N  & Q  \\
       \hline
     \end{tabular}
   \end{center}
+  \begin{flushright}
+    \begin{tabular}{c|c|c|c|c|c|}
+      \hline
+      U & V & W & X & Y & Z  \\
+      \hline
+      S & U & V & W & X & Z \\
+      \hline
+    \end{tabular}
+  \end{flushright}
   \caption{Exemple de table de substitution avec comme clé ``crypto''}
   \label{fig:substitutioncle}
 \end{figure}
 
+Il existe de nombreuses méthodes dans le même genre pour remplacer
+simplement une lettre par une autre, voyons en une de plus près :
+\emph{le carré de Polybe.}\\
 
+\subsection{Exemple: le carré de Polybe\label{syst:carrepolybe}}
+Polybe est un historien grec (210 av. J.-C., 126 av. J.-C.), qui
+explique vers 150 av. J.-C. une méthode de chiffrement par
+substitution assez simple et intéressante.\\
 
+Cette méthode consiste à placer les lettres de l'alphabet dans un
+carré de 25 cases (il faut donc retirer une lettre, le W pour le
+français, qui sera remplacé par V dans le message). La lettre chiffrée
+sera remplacée par un nombre formé par le numéro de la colonne et de
+la ligne de la lettre.\\
 
+Nous pouvons représenter ce carré par une matrice de taille $5\times5$
+(voir la figure \ref{fig:polybe}). Nous pouvons, analogiquement à la
+figure \ref{fig:substitutioncle}, utiliser une clé pour le carré de
+Polybe. \\
+
+Le carré de Polybe est assez intéressant car il convertit les lettres
+en chiffres et réduit le nombre de symbole utilisés dans le message
+chiffrés (9 chiffres plutôt que 26 lettres). \\
+
+\begin{figure}[h]
+  $
+  \left(
+    \begin{array}{ccccc}
+      A & B & C & D & E \\
+      F & G & H & I & J \\
+      K & L & M & N & O \\
+      P & Q & R & S & T \\
+      U & V & X & Y & Z
+    \end{array}
+  \right)
+  $
+  \hfill
+  $
+  \left(
+    \begin{array}{ccccc}
+      C & R & Y & P & T \\
+      O & A & B & D & E \\
+      F & G & H & I & J \\
+      K & L & M & N & Q \\
+      S & U & V & X & Z
+    \end{array}
+  \right)
+  $
+  \hfill
+  $
+  \left(
+    \begin{array}{ccccc}
+      a_{11} & a_{12} & a_{13} & a_{14} & a_{15}  \\
+      a_{21} & a_{22} & a_{23} & a_{24} & a_{25}  \\
+      a_{31} & a_{32} & a_{33} & a_{34} & a_{35}  \\
+      a_{41} & a_{42} & a_{43} & a_{44} & a_{45}  \\
+      a_{51} & a_{52} & a_{53} & a_{54} & a_{55}
+    \end{array}
+  \right)
+  $
+  \caption{Le carré de Polybe sous forme de matrice, la seconde
+    matrice ayant comme clé « crypto », et la troisième représentant
+    les nombres par lesquels seront remplacés les caractères dans le
+    message chiffré.}
+  \label{fig:polybe}
+\end{figure}
+
+Polybe imaginait un moyen de communiquer les messages via des torches
+: le nombre de torches placée à gauche correspondrait au numéro de la
+ligne, et le nombre de torches à droit au numéro de la colonne. \\
+
+Le carré de Polybe était utilisé par les nihilistes russes entre le
+XIX\ieme~ et le XX\ieme~ siècle (des « terroristes » dont le but était de
+% TODO: eme
+tuer le tsar pour reconstruire une société sur de nouvelles
+bases). Lorsqu'ils étaient attrapés et enfermés en prison, ils
+communiquaient via le carré de Polybe, en donnant des coups sur les
+murs. \\ %TODO: mieux expliquer
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[scale=1.5]{eps/nihilistes}
+  \end{center}
+  \caption{Version du carré de Polybe utilisée par les nihilistes
+    russes}
+  \label{fig:nihilistes}
+\end{figure}
+
+\section{Les substitutions polyalphabétiques\label{substitutionpolyalphabetique}}
+Les substitutions polyalphabétiques sont une combinaison de plusieurs
+tables de substitutions simples, où l'on change de table à chaque
+lettre, ce qui rend le message chiffré beacoup plus dur à casser sans
+le code (nous verrons ceci en détail dans le chapitre
+\ref{cryptanalyse}, page \pageref{cryptanalyse} sur la cryptanalyse)
+
+Une des substitutions polyalphabétiques les plus connues est le
+\emph{Chiffre de Vigenère}.
+
+\subsection{Exemple : Le chiffre de Vigenère\label{syst:chiffrevigenere}}
+Au XIX\ieme~ siècle, Vigenère « invente » une nouvelle méthode de
+chiffrement en s'inspirant fortement des travaux de l'abbé allemand
+Jean Trithème du XVI\ieme~ siècle. Blaise de Vigenère a néanmoins
+modifié légèrement la méthode de Trithème en rendant l'utilisation de
+clé de chiffrement possible. \\
+
+La technique de Jean Trithème est d'utiliser ce qu'il décrit comme une
+\emph{tabula recta}
+(voir figure \ref{fig:tabularecta}) qui est composée de 24 rangées de 24
+lettres chacune. On retire donc deux lettres, le j et le v, qui seront
+respectivement remplacées par le i et le w. \\
+Chaque rangée correspond à un chiffre de César\footref{syst:chiffrecesar},
+avec à chaque fois un décalage augmenté d'une unité. \\
+
+Par exemple, pour chiffrer le mot « cryptographie » : 
+\begin{itemize}
+  \item la lettre C est chiffrée sur la première colonne, et reste
+    donc C~;
+  \item la lettre R est chiffrée sur la 17\ieme~ colonne, et devient
+    S. Pour cela, trouvez la colonne de R dans la première rangée, et
+    descendez d'une colonne~;
+  \item La lettre Y, dans l'avant dernière colonne devient A (même
+    colonne, deux rangées plus bas)~;
+  \item Et ainsi de suite ~\dots~;
+  \item « cryptographie » sera donc chiffré en « csasztnwiwsur ».
+\end{itemize}
+
+\begin{figure}[h]
+  \begin{center}
+%     \begin{tabular}{c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c}
+%       A & B & C & D & E & F & G & H & I & K & L & M & N & O & P &
+%       Q & R & S & T & U & W & X & Y & Z  \\
+
+%       B & C & D & E & F & G & H & I & K & L & M & N & O & P &
+%       Q & R & S & T & U & W & X & Y & Z & A \\
+
+%       C & D & E & F & G & H & I & K & L & M & N & O & P &
+%       Q & R & S & T & U & W & X & Y & Z & A & B \\
+
+%       D & E & F & G & H & I & K & L & M & N & O & P &
+%       Q & R & S & T & U & W & X & Y & Z & A & B & C \\
+      
+%       \dots & \\
+      
+%       Z & A & B & C & D & E & F & G & H & I & K & L & M & N & O & P &
+%       Q & R & S & T & U & W & X & Y \\
+
+%     \end{tabular}
+%    \hfill
+    \includegraphics[scale=0.3]{eps/tabularecta}
+  \end{center}
+  \caption{La \emph{tabula recta} de Jean Trithème}
+  \label{fig:tabularecta}
+\end{figure}
+
+Vigenère reprends donc cette méthode pour légèrement la modifier (y
+ajouter l'utilisation d'une clé en fait), et la publie dans son livre
+\emph{Traicté des chiffres, ou secretes
+  manieres d'escrire} en 1586. \\
+
+Comme pour la méthode de Trithème, on utilise une table composée des
+26 chiffres de César possibles, comme sur la figure
+\ref{fig:vigeneretableau} (Trithème en décrivait 24 dans son livre,
+mais on pourrait très bien en utiliser 26). \\
+
+Expliquons cette méthode au travers d'un exemple : chiffrons « chiffre
+de vigenere » avec comme mot cle « crypto ».
+\begin{itemize}
+  \item Tout d'abord, chaque lettre du message est associée à une
+    lettre de la clé, de la façon suivante : \\
+    \begin{tabular}{c@{}c@{}c@{}c@{}c@{}c@{}cc@{}cc@{}c@{}c@{}c@{}c@{}c@{}c@{}c}
+      c & h & i & f & f & r & e &
+      d & e &
+      v & i & g & e & n & e & r & e \\
+
+      c & r & y & p & t & o & c & 
+      r & y & 
+      p & t & o & c & r & y & p & t \\
+    \end{tabular}\\
+    La clé est donc répétée successivement~;
+  \item Ensuite, chaque lettre du message clair est décalée du nombre
+    de rang correspondant à la lettre de la clé qui lui est
+    associée. Ainsi, pour la première lettre, C, on la décale de 2
+    rangs (la lettre C lui étant associée, et la place de cette lettre
+    dans l'alphabet en partant de 0 est 2). Pour s'aider, on peut
+    utiliser la table du chiffre de Vigenère (voir la figure
+    \ref{fig:vigeneretableau}). \\
+    Ainsi, C est chiffré en E.
+  \item Et on continue ainsi de suite, H est chiffré en Y, \dots
+  \item « chiffre de vigenere » sera donc chiffré en « eyguyfg uc
+    kbugecgx »
+\end{itemize}
+
+\begin{figure}[h]
+  \begin{center}
+    \begin{tabular}{c|c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c}
+        & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z \\
+      \hline
+      A & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z \\
+      B & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A \\
+      C & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B \\
+      D & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C \\
+      E & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D \\
+      G & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F \\
+      H & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G \\
+      I & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H \\
+      J & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I \\
+      K & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J \\
+      L & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K \\
+      M & M & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L \\
+      N & N & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M \\
+      O & O & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N \\
+      P & P & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O \\
+      Q & Q & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P \\
+      R & R & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q \\
+      S & S & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R \\
+      T & T & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S \\
+      U & U & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T \\
+      V & V & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U \\
+      W & W & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V \\
+      X & X & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W \\
+      Y & Y & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X \\
+      Z & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y \\
+    \end{tabular}
+  \end{center}
+  \caption{Le tableau utilisé pour le chiffre de Vigenère}
+  \label{fig:vigeneretableau}
+\end{figure}
+
+Le chiffre de Vigenère consiste donc à « additionner » la lettre du
+message clair à la lettre de la clé : \\
+\begin{center}
+$e_k(C) = C + K$
+\end{center}
+
+Il existe alors de nombreuses variantes au chiffre de Vigenère qui
+consistent à effectuer d'autres opérations simples avec le caractère
+clair et le caractère de la clé (facilement faisable à la main) ,
+comme on peut en voir quelques unes dans la table \ref{tab:variantesvigenere}. \\
+\begin{table}[h]
+  \caption{Quelques variantes du chiffre de Vigenère}
+  \label{tab:variantesvigenere}
+  \begin{center}
+    \begin{tabular}{|l|c|}
+      \hline
+      \textbf{Nom du chiffre} & \textbf{Opérations} \\
+      \hline
+      Chiffre de Vigenère & $e_k(C) = C + K$ \\ 
+      \hline
+      Chiffre de Beaufort & $e_k(C) = K - C$ \\
+      \hline
+      Chiffre de Beaufort, variante allemande & $e_k(C) = C - K$ \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+%TODO: expliquer les méthodes à la main ? http://www.apprendre-en-ligne.net/crypto/menu/index.html
+
+\section{Substitution homophonique}
+% Chaque lettre peut être remplacée par plusieurs lettres/chiffres
+\section{Substitution polygrammique}
+% Substitution sur plusieurs caractère.
 % \subsection{Les substitutions alphabétiques}
 % Les substitution alphabétiques consistent simplement à remplacer une lettre par une autre, on retrouve deux types de substitutions alphabétiques : 
 % \subsubsection{Les substitution mono-alphabétique}

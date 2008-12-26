@@ -24,7 +24,12 @@
   {\begin{center}\begin{Sbox}\begin{minipage}{1\textwidth}}%
   {\end{minipage}\end{Sbox}\fbox{\TheSbox}\end{center}}
 \newcommand{\definition}[1]{\begin{center}#1\end{center}}
-\renewcommand{\footref}[1]{\footnote{voir chapitre \ref{#1}, page \pageref{#1}}}
+\renewcommand{\footref}[1]{\footnote{voir chapitre \ref{#1}, page
+    \pageref{#1}}}
+\newcommand{\note}[1]{\begin{center}\begin{minipage}{0.7\textwidth}\textsc{Note
+          : }#1\end{minipage}\end{center}}
+\newcommand{\bc}[1]{#1\ieme~ siècle avant J.-C.}
+
 
 %\setlength{\voffset}{-0.9in}
 %\setlength{\hoffset}{-0.5in}
@@ -54,6 +59,7 @@ Athéné Royal de Waterloo}
 \mainmatter
 
 \input{presentation.tex}
+\input{histoire.tex}
 \input{substitutions.tex}
 
 %\part{ Annexes}
@@ -62,7 +68,7 @@ Athéné Royal de Waterloo}
 % Fin du travail : La bibliographie, le glossaire, à propos
 \backmatter
 \nocite{*}
-\bibliographystyle{agsm}
+\bibliographystyle{plain}
 \bibliography{bibliographie/bibliographie}
 
 \end{document}

@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="cardanResult.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.53216334"
+     inkscape:cx="541.33969"
+     inkscape:cy="465.88998"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1278"
+     inkscape:window-height="1006"
+     inkscape:window-x="1"
+     inkscape:window-y="17" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2383"
+       width="75"
+       height="75"
+       x="33.734253"
+       y="75.862183"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="150.86218"
+       x="33.734253"
+       height="75"
+       width="75"
+       id="rect3165"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3167"
+       width="75"
+       height="75"
+       x="33.734253"
+       y="225.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="300.86218"
+       x="33.734253"
+       height="75"
+       width="75"
+       id="rect3169"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3171"
+       width="75"
+       height="75"
+       x="33.734253"
+       y="375.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="75.862183"
+       x="108.73425"
+       height="75"
+       width="75"
+       id="rect3173"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3175"
+       width="75"
+       height="75"
+       x="108.73425"
+       y="150.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="225.86218"
+       x="108.73425"
+       height="75"
+       width="75"
+       id="rect3177"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3179"
+       width="75"
+       height="75"
+       x="108.73425"
+       y="300.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="375.86218"
+       x="108.73425"
+       height="75"
+       width="75"
+       id="rect3181"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3183"
+       width="75"
+       height="75"
+       x="183.73425"
+       y="75.862183"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="150.86218"
+       x="183.73425"
+       height="75"
+       width="75"
+       id="rect3185"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3187"
+       width="75"
+       height="75"
+       x="183.73425"
+       y="225.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="300.86218"
+       x="183.73425"
+       height="75"
+       width="75"
+       id="rect3189"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3191"
+       width="75"
+       height="75"
+       x="183.73425"
+       y="375.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="75.862183"
+       x="258.73425"
+       height="75"
+       width="75"
+       id="rect3193"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3195"
+       width="75"
+       height="75"
+       x="258.73425"
+       y="150.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="225.86218"
+       x="258.73425"
+       height="75"
+       width="75"
+       id="rect3197"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3199"
+       width="75"
+       height="75"
+       x="258.73425"
+       y="300.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="375.86218"
+       x="258.73425"
+       height="75"
+       width="75"
+       id="rect3201"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="53.165764"
+       y="132.53181"
+       id="text3203"><tspan
+         sodipodi:role="line"
+         id="tspan3205"
+         x="53.165764"
+         y="132.53181"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">M</tspan></text>
+    <text
+       id="text3215"
+       y="132.53181"
+       x="127.3911"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="132.53181"
+         x="127.3911"
+         id="tspan3217"
+         sodipodi:role="line">W</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="199.7373"
+       y="132.53181"
+       id="text3219"><tspan
+         sodipodi:role="line"
+         id="tspan3221"
+         x="199.7373"
+         y="132.53181"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">A</tspan></text>
+    <text
+       id="text3223"
+       y="132.53181"
+       x="275.84177"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="132.53181"
+         x="275.84177"
+         id="tspan3225"
+         sodipodi:role="line">O</tspan></text>
+    <text
+       id="text3235"
+       y="207.6967"
+       x="53.165764"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="207.6967"
+         x="53.165764"
+         id="tspan3237"
+         sodipodi:role="line">Q</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="127.3911"
+       y="207.6967"
+       id="text3239"><tspan
+         sodipodi:role="line"
+         id="tspan3241"
+         x="127.3911"
+         y="207.6967"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">P</tspan></text>
+    <text
+       id="text3243"
+       y="207.6967"
+       x="199.7373"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="207.6967"
+         x="199.7373"
+         id="tspan3245"
+         sodipodi:role="line">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="275.84177"
+       y="207.6967"
+       id="text3247"><tspan
+         sodipodi:role="line"
+         id="tspan3249"
+         x="275.84177"
+         y="207.6967"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="53.165764"
+       y="287.55939"
+       id="text3251"><tspan
+         sodipodi:role="line"
+         id="tspan3253"
+         x="53.165764"
+         y="287.55939"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">B</tspan></text>
+    <text
+       id="text3255"
+       y="287.55939"
+       x="127.3911"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="287.55939"
+         x="127.3911"
+         id="tspan3257"
+         sodipodi:role="line">E</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="199.7373"
+       y="287.55939"
+       id="text3259"><tspan
+         sodipodi:role="line"
+         id="tspan3261"
+         x="199.7373"
+         y="287.55939"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">A</tspan></text>
+    <text
+       id="text3263"
+       y="287.55939"
+       x="275.84177"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="287.55939"
+         x="275.84177"
+         id="tspan3265"
+         sodipodi:role="line">Y</tspan></text>
+    <text
+       id="text3267"
+       y="357.08691"
+       x="53.165764"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="357.08691"
+         x="53.165764"
+         id="tspan3269"
+         sodipodi:role="line">L</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="127.3911"
+       y="357.08691"
+       id="text3271"><tspan
+         sodipodi:role="line"
+         id="tspan3273"
+         x="127.3911"
+         y="357.08691"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">G</tspan></text>
+    <text
+       id="text3275"
+       y="357.08691"
+       x="199.7373"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="357.08691"
+         x="199.7373"
+         id="tspan3277"
+         sodipodi:role="line">F</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="275.84177"
+       y="357.08691"
+       id="text3279"><tspan
+         sodipodi:role="line"
+         id="tspan3281"
+         x="275.84177"
+         y="357.08691"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">R</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="53.165764"
+       y="435.0705"
+       id="text3283"><tspan
+         sodipodi:role="line"
+         id="tspan3285"
+         x="53.165764"
+         y="435.0705"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">S</tspan></text>
+    <text
+       id="text3287"
+       y="435.0705"
+       x="127.3911"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="435.0705"
+         x="127.3911"
+         id="tspan3289"
+         sodipodi:role="line">O</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="199.7373"
+       y="435.0705"
+       id="text3291"><tspan
+         sodipodi:role="line"
+         id="tspan3293"
+         x="199.7373"
+         y="435.0705"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">E</tspan></text>
+    <text
+       id="text3295"
+       y="435.0705"
+       x="275.84177"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="435.0705"
+         x="275.84177"
+         id="tspan3297"
+         sodipodi:role="line">T</tspan></text>
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="75.862183"
+       x="33.734253"
+       height="75"
+       width="75"
+       id="rect3319"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3321"
+       width="75"
+       height="75"
+       x="33.734253"
+       y="150.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="225.86218"
+       x="33.734253"
+       height="75"
+       width="75"
+       id="rect3323"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3325"
+       width="75"
+       height="75"
+       x="33.734253"
+       y="300.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="375.86218"
+       x="33.734253"
+       height="75"
+       width="75"
+       id="rect3327"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3329"
+       width="75"
+       height="75"
+       x="108.73425"
+       y="75.862183"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="150.86218"
+       x="108.73425"
+       height="75"
+       width="75"
+       id="rect3331"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3333"
+       width="75"
+       height="75"
+       x="108.73425"
+       y="225.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="300.86218"
+       x="108.73425"
+       height="75"
+       width="75"
+       id="rect3335"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3337"
+       width="75"
+       height="75"
+       x="108.73425"
+       y="375.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="75.862183"
+       x="183.73425"
+       height="75"
+       width="75"
+       id="rect3339"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3341"
+       width="75"
+       height="75"
+       x="183.73425"
+       y="150.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="225.86218"
+       x="183.73425"
+       height="75"
+       width="75"
+       id="rect3343"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3345"
+       width="75"
+       height="75"
+       x="183.73425"
+       y="300.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="375.86218"
+       x="183.73425"
+       height="75"
+       width="75"
+       id="rect3347"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3349"
+       width="75"
+       height="75"
+       x="258.73425"
+       y="75.862183"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="150.86218"
+       x="258.73425"
+       height="75"
+       width="75"
+       id="rect3351"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3353"
+       width="75"
+       height="75"
+       x="258.73425"
+       y="225.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="300.86218"
+       x="258.73425"
+       height="75"
+       width="75"
+       id="rect3355"
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3357"
+       width="75"
+       height="75"
+       x="258.73425"
+       y="375.86218"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <text
+       id="text3359"
+       y="132.53181"
+       x="53.165764"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="132.53181"
+         x="53.165764"
+         id="tspan3361"
+         sodipodi:role="line">M</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="127.3911"
+       y="132.53181"
+       id="text3363"><tspan
+         sodipodi:role="line"
+         id="tspan3365"
+         x="127.3911"
+         y="132.53181"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">W</tspan></text>
+    <text
+       id="text3367"
+       y="132.53181"
+       x="199.7373"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="132.53181"
+         x="199.7373"
+         id="tspan3369"
+         sodipodi:role="line">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="275.84177"
+       y="132.53181"
+       id="text3371"><tspan
+         sodipodi:role="line"
+         id="tspan3373"
+         x="275.84177"
+         y="132.53181"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">O</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="53.165764"
+       y="207.6967"
+       id="text3375"><tspan
+         sodipodi:role="line"
+         id="tspan3377"
+         x="53.165764"
+         y="207.6967"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">Q</tspan></text>
+    <text
+       id="text3379"
+       y="207.6967"
+       x="127.3911"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="207.6967"
+         x="127.3911"
+         id="tspan3381"
+         sodipodi:role="line">P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="199.7373"
+       y="207.6967"
+       id="text3383"><tspan
+         sodipodi:role="line"
+         id="tspan3385"
+         x="199.7373"
+         y="207.6967"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">S</tspan></text>
+    <text
+       id="text3387"
+       y="207.6967"
+       x="275.84177"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="207.6967"
+         x="275.84177"
+         id="tspan3389"
+         sodipodi:role="line">2</tspan></text>
+    <text
+       id="text3391"
+       y="287.55939"
+       x="53.165764"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="287.55939"
+         x="53.165764"
+         id="tspan3393"
+         sodipodi:role="line">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="127.3911"
+       y="287.55939"
+       id="text3395"><tspan
+         sodipodi:role="line"
+         id="tspan3397"
+         x="127.3911"
+         y="287.55939"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">E</tspan></text>
+    <text
+       id="text3399"
+       y="287.55939"
+       x="199.7373"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="287.55939"
+         x="199.7373"
+         id="tspan3401"
+         sodipodi:role="line">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="275.84177"
+       y="287.55939"
+       id="text3403"><tspan
+         sodipodi:role="line"
+         id="tspan3405"
+         x="275.84177"
+         y="287.55939"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">Y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="53.165764"
+       y="357.08691"
+       id="text3407"><tspan
+         sodipodi:role="line"
+         id="tspan3409"
+         x="53.165764"
+         y="357.08691"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">L</tspan></text>
+    <text
+       id="text3411"
+       y="357.08691"
+       x="127.3911"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="357.08691"
+         x="127.3911"
+         id="tspan3413"
+         sodipodi:role="line">G</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="199.7373"
+       y="357.08691"
+       id="text3415"><tspan
+         sodipodi:role="line"
+         id="tspan3417"
+         x="199.7373"
+         y="357.08691"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">F</tspan></text>
+    <text
+       id="text3419"
+       y="357.08691"
+       x="275.84177"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="357.08691"
+         x="275.84177"
+         id="tspan3421"
+         sodipodi:role="line">R</tspan></text>
+    <text
+       id="text3423"
+       y="435.0705"
+       x="53.165764"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="435.0705"
+         x="53.165764"
+         id="tspan3425"
+         sodipodi:role="line">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="127.3911"
+       y="435.0705"
+       id="text3427"><tspan
+         sodipodi:role="line"
+         id="tspan3429"
+         x="127.3911"
+         y="435.0705"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">O</tspan></text>
+    <text
+       id="text3431"
+       y="435.0705"
+       x="199.7373"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="435.0705"
+         x="199.7373"
+         id="tspan3433"
+         sodipodi:role="line">E</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="275.84177"
+       y="435.0705"
+       id="text3435"><tspan
+         sodipodi:role="line"
+         id="tspan3437"
+         x="275.84177"
+         y="435.0705"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">T</tspan></text>
+    <rect
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       id="rect5333"
+       width="75"
+       height="75"
+       x="385.10138"
+       y="76.523666"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="151.52365"
+       x="385.10138"
+       height="75"
+       width="75"
+       id="rect5335"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono" />
+    <rect
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       id="rect5337"
+       width="75"
+       height="75"
+       x="385.10138"
+       y="226.52365"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="301.52368"
+       x="385.10138"
+       height="75"
+       width="75"
+       id="rect5339"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono" />
+    <rect
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       id="rect5341"
+       width="75"
+       height="75"
+       x="385.10138"
+       y="376.52368"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="76.523666"
+       x="460.10135"
+       height="75"
+       width="75"
+       id="rect5343"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono" />
+    <rect
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       id="rect5345"
+       width="75"
+       height="75"
+       x="460.10135"
+       y="151.52365"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="226.52365"
+       x="460.10135"
+       height="75"
+       width="75"
+       id="rect5347"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono" />
+    <rect
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       id="rect5349"
+       width="75"
+       height="75"
+       x="460.10135"
+       y="301.52368"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="376.52368"
+       x="460.10135"
+       height="75"
+       width="75"
+       id="rect5351"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="301.52368"
+       x="535.10132"
+       height="75"
+       width="75"
+       id="rect5353"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono" />
+    <rect
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       id="rect5355"
+       width="75"
+       height="75"
+       x="535.10132"
+       y="376.52368"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="76.523666"
+       x="610.10132"
+       height="75"
+       width="75"
+       id="rect5357"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono" />
+    <rect
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       id="rect5359"
+       width="75"
+       height="75"
+       x="610.10132"
+       y="151.52365"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="226.52365"
+       x="610.10132"
+       height="75"
+       width="75"
+       id="rect5361"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono" />
+    <rect
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       id="rect5363"
+       width="75"
+       height="75"
+       x="610.10132"
+       y="301.52368"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="376.52368"
+       x="610.10132"
+       height="75"
+       width="75"
+       id="rect5365"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono" />
+    <text
+       id="text5367"
+       y="133.1933"
+       x="478.75821"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         y="133.1933"
+         x="478.75821"
+         id="tspan5369"
+         sodipodi:role="line">W</tspan></text>
+    <text
+       id="text5371"
+       y="133.1933"
+       x="627.2088"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         y="133.1933"
+         x="627.2088"
+         id="tspan5373"
+         sodipodi:role="line">O</tspan></text>
+    <text
+       id="text5375"
+       y="208.35817"
+       x="404.5329"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         y="208.35817"
+         x="404.5329"
+         id="tspan5377"
+         sodipodi:role="line">Q</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       x="478.75821"
+       y="208.35817"
+       id="text5379"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5381"
+         x="478.75821"
+         y="208.35817"
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       x="627.2088"
+       y="208.35817"
+       id="text5383"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5385"
+         x="627.2088"
+         y="208.35817"
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">2</tspan></text>
+    <text
+       id="text5387"
+       y="288.22089"
+       x="478.75821"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         y="288.22089"
+         x="478.75821"
+         id="tspan5389"
+         sodipodi:role="line">E</tspan></text>
+    <text
+       id="text5391"
+       y="288.22089"
+       x="627.2088"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         y="288.22089"
+         x="627.2088"
+         id="tspan5393"
+         sodipodi:role="line">Y</tspan></text>
+    <text
+       id="text5395"
+       y="357.74841"
+       x="404.5329"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         y="357.74841"
+         x="404.5329"
+         id="tspan5397"
+         sodipodi:role="line">L</tspan></text>
+    <text
+       id="text5399"
+       y="357.74841"
+       x="551.10437"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         y="357.74841"
+         x="551.10437"
+         id="tspan5401"
+         sodipodi:role="line">F</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       x="627.2088"
+       y="357.74841"
+       id="text5403"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5405"
+         x="627.2088"
+         y="357.74841"
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">R</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       x="404.5329"
+       y="435.73199"
+       id="text5407"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5409"
+         x="404.5329"
+         y="435.73199"
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">S</tspan></text>
+    <text
+       id="text5411"
+       y="435.73199"
+       x="478.75821"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         y="435.73199"
+         x="478.75821"
+         id="tspan5413"
+         sodipodi:role="line">O</tspan></text>
+    <text
+       id="text5415"
+       y="435.73199"
+       x="627.2088"
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"><tspan
+         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+         y="435.73199"
+         x="627.2088"
+         id="tspan5417"
+         sodipodi:role="line">T</tspan></text>
+    <rect
+       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3.0192461;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       id="rect4771"
+       width="299.26645"
+       height="375.69504"
+       x="383.68243"
+       y="74.747574"
+       rx="9.8758653e-39"
+       ry="1.0886735e-38" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="415.89566"
+       y="231.20078"
+       id="text5420"><tspan
+         sodipodi:role="line"
+         id="tspan5422"
+         x="415.89566"
+         y="231.20078" /></text>
+    <rect
+       style="opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5847"
+       width="75"
+       height="75"
+       x="210.08858"
+       y="602.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="677.09406"
+       x="210.08858"
+       height="75"
+       width="75"
+       id="rect5849"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5851"
+       width="75"
+       height="75"
+       x="210.08858"
+       y="752.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="827.09406"
+       x="210.08858"
+       height="75"
+       width="75"
+       id="rect5853"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5855"
+       width="75"
+       height="75"
+       x="210.08858"
+       y="902.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="602.09406"
+       x="285.08856"
+       height="75"
+       width="75"
+       id="rect5857"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5859"
+       width="75"
+       height="75"
+       x="285.08856"
+       y="677.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="752.09406"
+       x="285.08856"
+       height="75"
+       width="75"
+       id="rect5861"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5863"
+       width="75"
+       height="75"
+       x="285.08856"
+       y="827.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="902.09406"
+       x="285.08856"
+       height="75"
+       width="75"
+       id="rect5865"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5867"
+       width="75"
+       height="75"
+       x="360.08856"
+       y="602.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="677.09406"
+       x="360.08856"
+       height="75"
+       width="75"
+       id="rect5869"
+       style="opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5871"
+       width="75"
+       height="75"
+       x="360.08856"
+       y="752.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="827.09406"
+       x="360.08856"
+       height="75"
+       width="75"
+       id="rect5873"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5875"
+       width="75"
+       height="75"
+       x="360.08856"
+       y="902.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="602.09406"
+       x="435.08856"
+       height="75"
+       width="75"
+       id="rect5877"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5879"
+       width="75"
+       height="75"
+       x="435.08856"
+       y="677.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="752.09406"
+       x="435.08856"
+       height="75"
+       width="75"
+       id="rect5881"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5883"
+       width="75"
+       height="75"
+       x="435.08856"
+       y="827.09406"
+       rx="9.8057864e-39"
+       ry="1.0825199e-38" />
+    <rect
+       ry="1.0825199e-38"
+       rx="9.8057864e-39"
+       y="902.09406"
+       x="435.08856"
+       height="75"
+       width="75"
+       id="rect5885"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="229.52008"
+       y="658.76367"
+       id="text5887"><tspan
+         sodipodi:role="line"
+         id="tspan5889"
+         x="229.52008"
+         y="658.76367"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">M</tspan></text>
+    <text
+       id="text5891"
+       y="658.76367"
+       x="303.74542"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="658.76367"
+         x="303.74542"
+         id="tspan5893"
+         sodipodi:role="line">W</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="376.09161"
+       y="658.76367"
+       id="text5895"><tspan
+         sodipodi:role="line"
+         id="tspan5897"
+         x="376.09161"
+         y="658.76367"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">E</tspan></text>
+    <text
+       id="text5899"
+       y="658.76367"
+       x="452.19608"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="658.76367"
+         x="452.19608"
+         id="tspan5901"
+         sodipodi:role="line">O</tspan></text>
+    <text
+       id="text5903"
+       y="733.92853"
+       x="229.52008"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="733.92853"
+         x="229.52008"
+         id="tspan5905"
+         sodipodi:role="line">Q</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="303.74542"
+       y="733.92853"
+       id="text5907"><tspan
+         sodipodi:role="line"
+         id="tspan5909"
+         x="303.74542"
+         y="733.92853"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">P</tspan></text>
+    <text
+       id="text5911"
+       y="733.92853"
+       x="376.09161"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="733.92853"
+         x="376.09161"
+         id="tspan5913"
+         sodipodi:role="line">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="452.19608"
+       y="733.92853"
+       id="text5915"><tspan
+         sodipodi:role="line"
+         id="tspan5917"
+         x="452.19608"
+         y="733.92853"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="229.52008"
+       y="813.79126"
+       id="text5919"><tspan
+         sodipodi:role="line"
+         id="tspan5921"
+         x="229.52008"
+         y="813.79126"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">S</tspan></text>
+    <text
+       id="text5923"
+       y="813.79126"
+       x="303.74542"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="813.79126"
+         x="303.74542"
+         id="tspan5925"
+         sodipodi:role="line">E</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="376.09161"
+       y="813.79126"
+       id="text5927"><tspan
+         sodipodi:role="line"
+         id="tspan5929"
+         x="376.09161"
+         y="813.79126"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">A</tspan></text>
+    <text
+       id="text5931"
+       y="813.79126"
+       x="452.19608"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="813.79126"
+         x="452.19608"
+         id="tspan5933"
+         sodipodi:role="line">Y</tspan></text>
+    <text
+       id="text5935"
+       y="883.31879"
+       x="229.52008"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="883.31879"
+         x="229.52008"
+         id="tspan5937"
+         sodipodi:role="line">L</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="303.74542"
+       y="883.31879"
+       id="text5939"><tspan
+         sodipodi:role="line"
+         id="tspan5941"
+         x="303.74542"
+         y="883.31879"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">G</tspan></text>
+    <text
+       id="text5943"
+       y="883.31879"
+       x="376.09161"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="883.31879"
+         x="376.09161"
+         id="tspan5945"
+         sodipodi:role="line">F</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="452.19608"
+       y="883.31879"
+       id="text5947"><tspan
+         sodipodi:role="line"
+         id="tspan5949"
+         x="452.19608"
+         y="883.31879"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">R</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="229.52008"
+       y="961.30237"
+       id="text5951"><tspan
+         sodipodi:role="line"
+         id="tspan5953"
+         x="229.52008"
+         y="961.30237"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">S</tspan></text>
+    <text
+       id="text5955"
+       y="961.30237"
+       x="303.74542"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="961.30237"
+         x="303.74542"
+         id="tspan5957"
+         sodipodi:role="line">O</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="376.09161"
+       y="961.30237"
+       id="text5959"><tspan
+         sodipodi:role="line"
+         id="tspan5961"
+         x="376.09161"
+         y="961.30237"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">E</tspan></text>
+    <text
+       id="text5963"
+       y="961.30237"
+       x="452.19608"
+       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+         y="961.30237"
+         x="452.19608"
+         id="tspan5965"
+         sodipodi:role="line">T</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 183.36614,450.4429 C 232.52953,552.7559 291.24296,500.14314 332.18503,530.16731 C 372.04723,559.39959 358.75983,596.60432 358.75983,596.60432"
+       id="path5999"
+       sodipodi:nodetypes="csc" />
+    <path
+       sodipodi:nodetypes="csc"
+       id="path6003"
+       d="M 537.60825,450.4429 C 488.44486,552.7559 429.73143,500.14314 388.78936,530.16731 C 348.92716,559.39959 362.21456,596.60432 362.21456,596.60432"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.68205369px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 347.97094,581.84226 L 360.32794,602.74886 L 372.75684,581.7206 L 347.97094,581.84226 z"
+       id="path6221" />
+  </g>
+</svg>

@@ -77,11 +77,11 @@ considéré comme faisant de la magie noire), à part quelques exceptions
 au Moyen-Orient et en Asie (dans le Kama-sutra, il est dit que les
 femmes doivent apprendre le \emph{mlecchita-vikalpa} (l'art de
 l'écriture secrète) pour cacher leurs liaisons.). Il faut donc
-attendre le XV\ieme siècle pour que la cryptographie commence
+attendre le XV\ieme~ siècle pour que la cryptographie commence
 réellement à évoluer. \\
 
 \section{L'évolution de la cryptographie}
-Au début du XV\ieme siècle donc, un égyptien écrit une encyclopédie en
+Au début du XV\ieme~ siècle donc, un égyptien écrit une encyclopédie en
 24 volumes comprenant une partie sur la cryptologie qui décrit des
 chiffres de substitution et de transposition. Le premier chiffre de
 substitution polyalphabétique\footref{substitutionpolyalphabetique}
@@ -120,6 +120,21 @@ sur la cryptologie, où il invente un chiffre stéganographique, et ce
 qui deviendra par la suite le chiffre de
 Vigenère\footref{syst:chiffrevigenere}. \\
 
+Au milieu du XVI\ieme~ siècle, Jérôme cardan invente le premier
+\emph{procédé autoclave} (qui utilise le message clair comme clef),
+mais ce système comporte des lacunes. Il invente aussi la \emph{grille
+  de Cardan}, un système stéganographique qui cache un message dans
+une grille de lettres. Pour lire le message, il faut utiliser un cache
+troué d'une certaines façons, les lettres apparaissent alors dans les
+trous, et on peut lire le message. \\
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[scale=0.2]{eps/GrilleCardan}
+  \end{center}
+  \caption{Un exemple de grille de Cardan}
+  \label{fig:GrilleCardan}
+\end{figure}
 
 % Premières techniques de cryptographie
 % Plus vieux document chiffré : un potier qui écrit sa recettes en
@@ -185,3 +200,91 @@ Vigenère\footref{syst:chiffrevigenere}. \\
 % et une méthode stéganographique connue sous le nom de grille de
 % cardan, où il cache le message dans une "grille de lettres", on
 % retrouvera le message facilement 
+
+
+En 1553, \emph{Giovan Batista Belaso} utilise le terme \emph{clé
+  litérale} ou \emph{mot de passe} pour des clés de petite taille
+faciles à mémoriser. %TODO: plus d'infos
+10 ans plus tard, \emph{Giambattista della Porta} écrit une sorte
+de recueil des connaissances cryptographique de cette époque. Il
+invente aussi la première substitution bigrammique (voir les
+substitution polygrammiques, chapitre
+\ref{substitutionpolygrammiques}, page
+\pageref{substitutionpolygrammiques}). Il invente aussi le premier
+système de chiffrement polyalphabétique où l'on changeait d'alphabet à
+chaque lettre. \\
+
+En 1585, \emph{Blaise de Vigenère} publie \emph{Traicté des chiffres
+  ou secretes manieres d'escrire}, où il présente une méthode
+cryptographique fortement inspirée de celle de Jean Trithème. Cette
+méthode sera appelée plus tard \emph{carré de Vigenère} (à tort,
+elle aurait plutôt dû s'appeler \emph{carré de Trithème}, Vigenère ne
+l'ayant qu'un peu modifiée pour rendre l'utilisation de clé possible).
+Cette méthode sera longtemps considérée comme indéchiffrable, et ne
+sera que cassée au milieu du XIX\ieme~ siècle, plus ou moins
+simultanément par un mathématicien anglais, \emph{Charles Babbage} et
+par un cryptologue russe, \emph{Friedrich Wilhelm Kasiski}. \\
+
+À la fin du XVII\ieme~ siècle, \emph{Antoine Rossignol} ainsi que ses
+fils par la suite travaillèrent pour Louis XIV. Avec son fils,
+Bonaventure, il élabore le \emph{Grand Chiffre}, un système de
+chiffrement par substitution à répertoire, qui était considéré comme
+incassable, et est rendu indéchiffrable après le décès de ses auteurs,
+qui emportèrent sont secret. Ce chiffre sera néanmoins cassé 1893 par
+\emph{Étienne Bazeries}. Il s'avère qu'il introduisait entre autre
+dans le message chiffré, des éléments inutiles ayant pour but de
+rendre plus difficile le travail du cryptanalyste.\\
+
+En 1793, \emph{Thomas Jefferson}, futur président des États-Unis,
+invente une méthode de substitution polyalphabétique (nommée le
+\emph{cylindre de Jefferson}) qui consiste en
+un cylindre formé de 26 roues, où est écrit l'alphabet dans un ordre
+aléatoire et différement sur chacune des roues. On peut placer les
+roues dans l'ordre qu'on veut (l'ordre correspondant à la clé).
+Une fois les roues placées suivant la clé, on les déplace de façon à
+former le message sur une ligne. Il ne reste plus qu'à recopier une
+autre ligne pour avoir le message chiffré. Le récepteur du message
+chiffré le formera alors sur son cylindre, dont les roues aurant au
+préalables été placées selon la clé, et il lui restera à trouver la
+ligne contenant le message (la seule ligne intelligible). Ce procédé
+fut réinventé par le colonel français \emph{Brazeries}, et réutilisé
+dans l'armée américaine entre 1923 et 1942 (sous le nom de M-94, la
+machine est un peu modifié).
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[scale=0.4]{eps/jeffersonDisk}
+    \hfill
+    \includegraphics[scale=0.25]{eps/m94}
+  \end{center}
+  \caption{À gauche, un disque de Jefferson du XVIII\ieme~ au musée
+    national de cryptologie de la NSA, 
+    à droite, un exemplaire du M-94}
+  \label{fig:JeffersonDisk}
+\end{figure}
+
+Fin XIX\ieme, \emph{Charles Wheatstone} invente un chiffre
+polygrammique que nous verrons en détails plus tard, ce chiffre
+portera le nom de la personne l'ayant popularisé : le \emph{chiffre
+  de Playfair}. \\
+
+Ensuite, viennent plusieurs avancées cryptanalytiques avec, comme nous
+l'avons vu plus haut, \emph{Charles Babbage} qui casse le chiffre de
+Vigenère, mais ne publie pas sa découverte. \emph{Friedrich Kasiski}
+le casse aussi (sans avoir connaissance des travaux de
+Babbage) en 1861, et publie ses travaux. En 1891, \emph{Étienne
+  Bazeries} casse quant à lui le Grand chiffre de Louis XIV. 
+
+En 1883, \emph{Auguste Kerckhoffs} publie deux articles sur la
+cryptographie militaire, où il explique des règles qui peuvent être
+considérées comme les règles de base d'un système cryptographique
+sûr. Nous verrons ces règles en détail dans le chapitre
+\ref{PrincipeKerckhoffs}. \\
+
+En 1917, \emph{Gilbert Vernam} invente le \emph{masque jetable}, le
+seul procédé cryptographique connu comme étant impossible à casser. Ce
+procédé n'est pas directement utilisé car il pose des difficultées de
+mise en place (problèmes de génération et de transmission des clés,
+qui doivent être uniques) %TODO: voir en détail ?
+
+\section{La cryptographie pendant les deux guerres mondiales}

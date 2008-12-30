@@ -11,12 +11,13 @@ Les différentes techniques de cryptographie
     -> Transpositions
     -> Chiffrement symétrique
         -> Chiffrement par bloc
-	-> Chiffrement par flot
+      	-> Chiffrement par flot
     -> Chiffrement asymétrique
     (-> Cryptographie quantique)
 
-L'importance des clés
+L'importance des clés -> dans chiffrement symétrique
     -> Principe de Kerckhoffs
+    -> Masque jetable
 
 La cryptanalyse
     -> fréquence des lettres

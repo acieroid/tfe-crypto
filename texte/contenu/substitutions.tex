@@ -226,25 +226,26 @@ Au XIX\ieme~ siècle, Vigenère « invente » une nouvelle méthode de
 chiffrement en s'inspirant fortement des travaux de l'abbé allemand
 Jean Trithème du XVI\ieme~ siècle. Blaise de Vigenère a néanmoins
 modifié légèrement la méthode de Trithème en rendant l'utilisation de
-clé de chiffrement possible. \\
+clé de chiffrement possible.\\
 
 La technique de Jean Trithème est d'utiliser ce qu'il décrit comme une
 \emph{tabula recta}
 (voir figure \ref{fig:tabularecta}) qui est composée de 24 rangées de 24
-lettres chacune. On retire donc deux lettres, le j et le v, qui seront
-respectivement remplacées par le i et le w. \\
+lettres chacune. On retire donc deux lettres, le J et le V, qui seront
+respectivement remplacées par le I et le W. Le W est placé après le
+Z.\\
 Chaque rangée correspond à un chiffre de César\footref{syst:chiffrecesar},
 avec à chaque fois un décalage augmenté d'une unité. \\
 
-Par exemple, pour chiffrer le mot « cryptographie » : 
+Par exemple, pour chiffrer le mot « cryptographie » avec la table se
+trouvant à la figure \ref{fig:TabulaRecta}~: 
 \begin{itemize}
-  \item la lettre C est chiffrée sur la première colonne, et reste
+  \item la lettre C est chiffrée sur la première ligne, et reste
     donc C~;
-  \item la lettre R est chiffrée sur la 17\ieme~ colonne, et devient
+  \item la lettre R est chiffrée sur la 2\ieme~ ligne, et devient
     S. Pour cela, trouvez la colonne de R dans la première rangée, et
-    descendez d'une colonne~;
-  \item La lettre Y, dans l'avant dernière colonne devient A (même
-    colonne, deux rangées plus bas)~;
+    descendez d'une ligne~;
+  \item La lettre Y devient W (même colonne, deux rangées plus bas)~;
   \item Et ainsi de suite ~\dots~;
   \item « cryptographie » sera donc chiffré en « csasztnwiwsur ».
 \end{itemize}
@@ -274,7 +275,7 @@ Par exemple, pour chiffrer le mot « cryptographie » :
     \includegraphics[scale=0.3]{eps/tabularecta}
   \end{center}
   \caption{La \emph{tabula recta} de Jean Trithème}
-  \label{fig:tabularecta}
+  \label{fig:TabulaRecta}
 \end{figure}
 
 Vigenère reprends donc cette méthode pour légèrement la modifier (y
@@ -282,10 +283,10 @@ ajouter l'utilisation d'une clé en fait), et la publie dans son livre
 \emph{Traicté des chiffres, ou secretes
   manieres d'escrire} en 1586. \\
 
-Comme pour la méthode de Trithème, on utilise une table composée des
-26 chiffres de César possibles, comme sur la figure
+Comme pour la méthode de Trithème, on utilise une table, composée
+cette fois ci des 26 chiffres de César possibles, comme sur la figure
 \ref{fig:vigeneretableau} (Trithème en décrivait 24 dans son livre,
-mais on pourrait très bien en utiliser 26). \\
+mais on pourrait très bien aussi en utiliser 26). \\
 
 Expliquons cette méthode au travers d'un exemple : chiffrons « chiffre
 de vigenere » avec comme mot cle « crypto ».
@@ -352,15 +353,13 @@ de vigenere » avec comme mot cle « crypto ».
 \end{figure}
 
 Le chiffre de Vigenère consiste donc à « additionner » la lettre du
-message clair à la lettre de la clé : \\
-\begin{center}
-$e_k(C) = C + K$
-\end{center}
+message clair à la lettre de la clé : 
+\definition{$e_k(C) = C + K$}
 
 Il existe alors de nombreuses variantes au chiffre de Vigenère qui
 consistent à effectuer d'autres opérations simples avec le caractère
 clair et le caractère de la clé (facilement faisable à la main) ,
-comme on peut en voir quelques unes dans la table \ref{tab:variantesvigenere}. \\
+comme on peut en voir quelques unes dans la table \ref{tab:variantesvigenere}. 
 \begin{table}[h]
   \caption{Quelques variantes du chiffre de Vigenère}
   \label{tab:variantesvigenere}

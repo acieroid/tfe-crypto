@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="cadranchiffrant.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/quentin/dessin.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <pattern
+       inkscape:stockid="Stripes 1:1.5"
+       id="Strips1_1.5"
+       patternTransform="matrix(10.816987,7.4014004,-7.4014004,10.816987,352.79702,-284.71346)"
+       height="1"
+       width="2.5"
+       patternUnits="userSpaceOnUse"
+       inkscape:collect="always">
+      <rect
+         id="rect3887"
+         height="2"
+         width="1"
+         y="-0.5"
+         x="0"
+         style="fill:black;stroke:none" />
+    </pattern>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="302.32143"
+     inkscape:cy="504.42386"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1278"
+     inkscape:window-height="778"
+     inkscape:window-x="1"
+     inkscape:window-y="245">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4685" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.9219296px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 328.0625,313.33597 C 217.91924,313.33597 128.52346,402.73626 128.52346,512.875 C 128.52346,623.01375 217.91924,712.41404 328.0625,712.41404 C 438.20576,712.41404 527.60152,623.01375 527.60154,512.875 C 527.60154,402.73626 438.20576,313.33597 328.0625,313.33597 z"
+       id="path2383"
+       inkscape:export-filename="/home/quentin/tfe/texte/images/cadranchiffrant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       id="path2387"
+       d="M 328.0625,362.36218 C 244.98115,362.36218 177.54968,429.79706 177.54968,512.875 C 177.54968,595.95295 244.98115,663.38783 328.0625,663.38783 C 411.14385,663.38783 478.57531,595.95295 478.57532,512.875 C 478.57532,429.79706 411.14385,362.36218 328.0625,362.36218 z"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.69541389px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/quentin/tfe/texte/images/cadranchiffrant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.49718317px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 435.66171,514.28904 C 436.44223,454.8955 388.86763,406.05629 329.47655,405.2758 C 270.08545,404.49531 221.24382,452.06745 220.46328,511.46097 C 219.68276,570.85451 267.25739,619.6937 326.64848,620.47421 C 386.03957,621.2547 434.88117,573.68256 435.66171,514.28904 z"
+       id="path2389"
+       inkscape:export-filename="/home/quentin/tfe/texte/images/cadranchiffrant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.82315141000000003px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 328.0625,330.21932 C 227.23819,330.21932 145.40682,412.05482 145.40682,512.875 C 145.40683,613.69519 227.23819,695.53068 328.0625,695.53068 C 428.88681,695.53069 510.71816,613.69519 510.71818,512.875 C 510.71819,412.05482 428.88681,330.21932 328.0625,330.21932 z M 328.0625,331.05045 C 428.43117,331.05045 509.88706,412.51045 509.88705,512.875 C 509.88703,613.23956 428.43117,694.69956 328.0625,694.69955 C 227.69383,694.69955 146.23796,613.23956 146.23795,512.875 C 146.23795,412.51045 227.69383,331.05045 328.0625,331.05045 z"
+       id="path4687"
+       inkscape:export-filename="/home/quentin/tfe/texte/images/cadranchiffrant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.54327994999999996px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 328.26132,378.59367 C 253.8459,378.59369 193.45718,438.98545 193.45718,513.39781 C 193.45717,587.81018 253.8459,648.20195 328.26132,648.20195 C 402.67675,648.20195 463.06544,587.81018 463.06546,513.39781 C 463.06544,438.98545 402.67675,378.59367 328.26132,378.59367 z M 328.26132,379.20139 C 402.34045,379.20139 462.45774,439.32173 462.45775,513.39781 C 462.45774,587.47389 402.34045,647.59423 328.26132,647.59423 C 254.1822,647.59423 194.0649,587.47389 194.0649,513.39781 C 194.0649,439.32173 254.1822,379.2014 328.26132,379.20139 z"
+       id="path4693"
+       inkscape:export-filename="/home/quentin/tfe/texte/images/cadranchiffrant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       id="text4699"
+       sodipodi:linespacing="100%"
+       transform="matrix(1.0351587,0,0,1.0351587,-11.525123,-18.026503)"
+       inkscape:export-filename="/home/quentin/tfe/texte/images/cadranchiffrant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><textPath
+         xlink:href="#path4687"
+         id="textPath4725"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">A B C D E F G I L M N O P Q R S T V X Z 1 2 3 4</textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="97.14286"
+       y="320.93362"
+       id="text4721"><tspan
+         sodipodi:role="line"
+         id="tspan4723"
+         x="97.14286"
+         y="320.93362" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:29.34744263px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+       id="text4885"
+       sodipodi:linespacing="125%"
+       transform="matrix(1.0309604,-1.2823465e-2,1.2823465e-2,1.0309604,-16.664799,-11.425738)"
+       inkscape:export-filename="/home/quentin/tfe/texte/images/cadranchiffrant.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><textPath
+         xlink:href="#path4693"
+         id="textPath4892">c &amp; b m d g p f z n x y v t <tspan
+   style="font-size:29.34744263px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
+   id="tspan4895">o s k e r l h a i k</tspan></textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="352.14285"
+       y="643.79077"
+       id="text4900"><tspan
+         sodipodi:role="line"
+         id="tspan4902"
+         x="352.14285"
+         y="643.79077" /></text>
+  </g>
+</svg>

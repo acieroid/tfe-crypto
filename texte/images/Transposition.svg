@@ -32,9 +32,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="308.84277"
-     inkscape:cy="979.60049"
+     inkscape:zoom="1.4"
+     inkscape:cx="309.29731"
+     inkscape:cy="978.73489"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -411,17 +411,13 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#800000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 80.307127,80.595433 C 94.449263,46.755323 106.57109,43.724866 126.77414,39.684255 C 146.9772,35.643645 371.73614,25.54212 380.82751,30.592882 C 389.91888,35.643645 397.49503,46.250247 397.49503,46.250247"
-       id="path3353"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/Transposition.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       d="M 81.428572,81.29075 C 116.42857,49.147893 200.6095,30.33633 226.42857,26.647892 C 296.42857,16.647893 349.4912,17.496912 367.32142,20.576464 C 387.96156,24.141334 396.96429,44.326463 396.96429,44.326463"
+       id="path3894"
+       sodipodi:nodetypes="cssc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 395.9798,163.93302 C 388.90873,183.63099 385.3732,192.72237 372.74629,192.21729 C 360.11938,191.71221 159.6041,171.50916 147.48227,164.43809 C 135.36044,157.36703 111.62186,127.56753 111.62186,127.56753"
-       id="path3367"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/Transposition.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       d="M 115.66247,127.06245 C 139.90613,146.00281 182.78748,170.31967 236.82385,181.42994 C 290.867,192.54162 347.92266,200.24598 380.70125,181.23188 C 396.7749,171.90792 396.23234,163.68048 396.23234,163.68048"
+       id="path4407"
+       sodipodi:nodetypes="cssc" />
   </g>
 </svg>

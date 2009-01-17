@@ -35,16 +35,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.53216334"
+     inkscape:zoom="0.75259261"
      inkscape:cx="541.33969"
-     inkscape:cy="465.88998"
+     inkscape:cy="653.80221"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="1024"
+     inkscape:window-width="1278"
+     inkscape:window-height="1008"
      inkscape:window-x="0"
-     inkscape:window-y="0" />
+     inkscape:window-y="14" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -583,240 +583,12 @@
     <rect
        ry="1.0825199e-38"
        rx="9.8057864e-39"
-       y="75.862183"
-       x="33.734253"
-       height="75"
-       width="75"
-       id="rect3319"
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3321"
-       width="75"
-       height="75"
-       x="33.734253"
-       y="150.86218"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
-       y="225.86218"
-       x="33.734253"
-       height="75"
-       width="75"
-       id="rect3323"
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3325"
-       width="75"
-       height="75"
-       x="33.734253"
-       y="300.86218"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
-       y="375.86218"
-       x="33.734253"
-       height="75"
-       width="75"
-       id="rect3327"
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3329"
-       width="75"
-       height="75"
-       x="108.73425"
-       y="75.862183"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
-       y="150.86218"
-       x="108.73425"
-       height="75"
-       width="75"
-       id="rect3331"
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3333"
-       width="75"
-       height="75"
-       x="108.73425"
-       y="225.86218"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
-       y="300.86218"
-       x="108.73425"
-       height="75"
-       width="75"
-       id="rect3335"
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3337"
-       width="75"
-       height="75"
-       x="108.73425"
-       y="375.86218"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
-       y="75.862183"
-       x="183.73425"
-       height="75"
-       width="75"
-       id="rect3339"
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3341"
-       width="75"
-       height="75"
-       x="183.73425"
-       y="150.86218"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
        y="225.86218"
        x="183.73425"
        height="75"
        width="75"
        id="rect3343"
        style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3345"
-       width="75"
-       height="75"
-       x="183.73425"
-       y="300.86218"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
-       y="375.86218"
-       x="183.73425"
-       height="75"
-       width="75"
-       id="rect3347"
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3349"
-       width="75"
-       height="75"
-       x="258.73425"
-       y="75.862183"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
-       y="150.86218"
-       x="258.73425"
-       height="75"
-       width="75"
-       id="rect3351"
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3353"
-       width="75"
-       height="75"
-       x="258.73425"
-       y="225.86218"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
-       y="300.86218"
-       x="258.73425"
-       height="75"
-       width="75"
-       id="rect3355"
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="opacity:1;fill:#fffff0;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3357"
-       width="75"
-       height="75"
-       x="258.73425"
-       y="375.86218"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
        inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -1125,18 +897,6 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       id="rect5337"
-       width="75"
-       height="75"
-       x="385.10138"
-       y="226.52365"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
        ry="1.0825199e-38"
        rx="9.8057864e-39"
        y="301.52368"
@@ -1197,18 +957,6 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       id="rect5349"
-       width="75"
-       height="75"
-       x="460.10135"
-       y="301.52368"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
        ry="1.0825199e-38"
        rx="9.8057864e-39"
        y="376.52368"
@@ -1229,18 +977,6 @@
        width="75"
        id="rect5353"
        style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       id="rect5355"
-       width="75"
-       height="75"
-       x="535.10132"
-       y="376.52368"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
        inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -1304,201 +1040,6 @@
        inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
-    <text
-       id="text5367"
-       y="133.1933"
-       x="478.75821"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         y="133.1933"
-         x="478.75821"
-         id="tspan5369"
-         sodipodi:role="line">W</tspan></text>
-    <text
-       id="text5371"
-       y="133.1933"
-       x="627.2088"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         y="133.1933"
-         x="627.2088"
-         id="tspan5373"
-         sodipodi:role="line">O</tspan></text>
-    <text
-       id="text5375"
-       y="208.35817"
-       x="404.5329"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         y="208.35817"
-         x="404.5329"
-         id="tspan5377"
-         sodipodi:role="line">Q</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       x="478.75821"
-       y="208.35817"
-       id="text5379"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan5381"
-         x="478.75821"
-         y="208.35817"
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">P</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       x="627.2088"
-       y="208.35817"
-       id="text5383"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan5385"
-         x="627.2088"
-         y="208.35817"
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">2</tspan></text>
-    <text
-       id="text5387"
-       y="288.22089"
-       x="478.75821"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         y="288.22089"
-         x="478.75821"
-         id="tspan5389"
-         sodipodi:role="line">E</tspan></text>
-    <text
-       id="text5391"
-       y="288.22089"
-       x="627.2088"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         y="288.22089"
-         x="627.2088"
-         id="tspan5393"
-         sodipodi:role="line">Y</tspan></text>
-    <text
-       id="text5395"
-       y="357.74841"
-       x="404.5329"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         y="357.74841"
-         x="404.5329"
-         id="tspan5397"
-         sodipodi:role="line">L</tspan></text>
-    <text
-       id="text5399"
-       y="357.74841"
-       x="551.10437"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         y="357.74841"
-         x="551.10437"
-         id="tspan5401"
-         sodipodi:role="line">F</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       x="627.2088"
-       y="357.74841"
-       id="text5403"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan5405"
-         x="627.2088"
-         y="357.74841"
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">R</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       x="404.5329"
-       y="435.73199"
-       id="text5407"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan5409"
-         x="404.5329"
-         y="435.73199"
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">S</tspan></text>
-    <text
-       id="text5411"
-       y="435.73199"
-       x="478.75821"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         y="435.73199"
-         x="478.75821"
-         id="tspan5413"
-         sodipodi:role="line">O</tspan></text>
-    <text
-       id="text5415"
-       y="435.73199"
-       x="627.2088"
-       style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         y="435.73199"
-         x="627.2088"
-         id="tspan5417"
-         sodipodi:role="line">T</tspan></text>
     <rect
        style="font-size:58.04360199px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3.0192461;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
        id="rect4771"
@@ -1621,18 +1162,6 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
-       style="opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5863"
-       width="75"
-       height="75"
-       x="285.08856"
-       y="827.09406"
-       rx="9.8057864e-39"
-       ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
        ry="1.0825199e-38"
        rx="9.8057864e-39"
        y="902.09406"
@@ -1653,18 +1182,6 @@
        y="602.09406"
        rx="9.8057864e-39"
        ry="1.0825199e-38"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       ry="1.0825199e-38"
-       rx="9.8057864e-39"
-       y="677.09406"
-       x="360.08856"
-       height="75"
-       width="75"
-       id="rect5869"
-       style="opacity:1;fill:#0000ff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -1779,20 +1296,6 @@
          y="658.76367"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">M</tspan></text>
     <text
-       id="text5891"
-       y="658.76367"
-       x="303.74542"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       xml:space="preserve"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-         y="658.76367"
-         x="303.74542"
-         id="tspan5893"
-         sodipodi:role="line">W</tspan></text>
-    <text
        xml:space="preserve"
        style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        x="376.09161"
@@ -1806,48 +1309,6 @@
          x="376.09161"
          y="658.76367"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">E</tspan></text>
-    <text
-       id="text5899"
-       y="658.76367"
-       x="452.19608"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       xml:space="preserve"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-         y="658.76367"
-         x="452.19608"
-         id="tspan5901"
-         sodipodi:role="line">O</tspan></text>
-    <text
-       id="text5903"
-       y="733.92853"
-       x="229.52008"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       xml:space="preserve"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-         y="733.92853"
-         x="229.52008"
-         id="tspan5905"
-         sodipodi:role="line">Q</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       x="303.74542"
-       y="733.92853"
-       id="text5907"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan5909"
-         x="303.74542"
-         y="733.92853"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">P</tspan></text>
     <text
        id="text5911"
        y="733.92853"
@@ -1865,20 +1326,6 @@
     <text
        xml:space="preserve"
        style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       x="452.19608"
-       y="733.92853"
-       id="text5915"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan5917"
-         x="452.19608"
-         y="733.92853"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">2</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        x="229.52008"
        y="813.79126"
        id="text5919"
@@ -1890,20 +1337,6 @@
          x="229.52008"
          y="813.79126"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">S</tspan></text>
-    <text
-       id="text5923"
-       y="813.79126"
-       x="303.74542"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       xml:space="preserve"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-         y="813.79126"
-         x="303.74542"
-         id="tspan5925"
-         sodipodi:role="line">E</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
@@ -1919,34 +1352,6 @@
          y="813.79126"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">A</tspan></text>
     <text
-       id="text5931"
-       y="813.79126"
-       x="452.19608"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       xml:space="preserve"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-         y="813.79126"
-         x="452.19608"
-         id="tspan5933"
-         sodipodi:role="line">Y</tspan></text>
-    <text
-       id="text5935"
-       y="883.31879"
-       x="229.52008"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       xml:space="preserve"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-         y="883.31879"
-         x="229.52008"
-         id="tspan5937"
-         sodipodi:role="line">L</tspan></text>
-    <text
        xml:space="preserve"
        style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        x="303.74542"
@@ -1961,62 +1366,6 @@
          y="883.31879"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">G</tspan></text>
     <text
-       id="text5943"
-       y="883.31879"
-       x="376.09161"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       xml:space="preserve"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-         y="883.31879"
-         x="376.09161"
-         id="tspan5945"
-         sodipodi:role="line">F</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       x="452.19608"
-       y="883.31879"
-       id="text5947"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan5949"
-         x="452.19608"
-         y="883.31879"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">R</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       x="229.52008"
-       y="961.30237"
-       id="text5951"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan5953"
-         x="229.52008"
-         y="961.30237"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">S</tspan></text>
-    <text
-       id="text5955"
-       y="961.30237"
-       x="303.74542"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       xml:space="preserve"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-         y="961.30237"
-         x="303.74542"
-         id="tspan5957"
-         sodipodi:role="line">O</tspan></text>
-    <text
        xml:space="preserve"
        style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        x="376.09161"
@@ -2030,20 +1379,6 @@
          x="376.09161"
          y="961.30237"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono">E</tspan></text>
-    <text
-       id="text5963"
-       y="961.30237"
-       x="452.19608"
-       style="font-size:58.04360199px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       xml:space="preserve"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/GrilleCardan.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Bitstream Vera Sans Mono;-inkscape-font-specification:Bitstream Vera Sans Mono"
-         y="961.30237"
-         x="452.19608"
-         id="tspan5965"
-         sodipodi:role="line">T</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="M 183.36614,450.4429 C 232.52953,552.7559 291.24296,500.14314 332.18503,530.16731 C 372.04723,559.39959 358.75983,596.60432 358.75983,596.60432"

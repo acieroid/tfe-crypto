@@ -34,7 +34,7 @@ et ainsi de suite. \\
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=0.15]{eps/scytale}
+    \includegraphics[scale=1]{eps/Scytale}
   \end{center}
   \caption{La scytale des spartiates (\bc{V})}
   \label{fig:Scytale}
@@ -65,7 +65,7 @@ de la même façon (pendant la guerre de sécession par exemple)
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=0.4]{eps/chiffrecesar}
+    \includegraphics[scale=0.4]{eps/ChiffreCesar}
   \end{center}
   \caption{Le chiffre de César}
   \label{fig:chiffrecesar}
@@ -107,7 +107,7 @@ fréquences. \\
   \begin{center}
     \includegraphics[scale=0.2]{eps/AlbertiCipherDisk}
     \hspace{3cm}
-    \includegraphics[scale=0.15]{eps/ConfederateCipherDisk}
+    \includegraphics[scale=1]{eps/ConfederateCipherDisk}
   \end{center}
   \caption{Le cadran chiffrant d'Alberti, dans sa forme originelle à
     gauche, et réutilisé par les confédérés pendant la guerre de
@@ -253,9 +253,9 @@ machine est un peu modifié).
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=0.4]{eps/jeffersonDisk}
+    \includegraphics[scale=0.4]{eps/JeffersonDisk}
     \hfill
-    \includegraphics[scale=0.25]{eps/m94}
+    \includegraphics[scale=0.25]{eps/M94}
   \end{center}
   \caption{À gauche, un disque de Jefferson du XVIII\ieme~ au musée
     national de cryptologie de la NSA, 
@@ -414,8 +414,84 @@ ne sont pas d'accord avec cela, affirmant que lorsque Painvin proposa
 sa solution au code, l'attaque des allemands avait déjà échoué. 
 %TODO: image explicative ?/matrice
 \section{La cryptographie pendant la Seconde Guerre mondiale}
-% Enigma : lire feuilles daddy
-% Fish & Lorenz
+À partir des années 1920, de nombreux dispositifs mécaniques sont mis
+en place afin de faciliter le chiffrement. La plupart de ces
+dispositifs se basaient sur des rotors (des disques où sont imprimées
+les lettres de l'alphabet). C'est le cas de la machine \emph{Enigma},
+destinée initialiement aux civils (inventée en 1919 par Arthur
+Scherbius et commercialisée en 1923), mais très vite utilisée par
+l'armée allemande à partir des années 30. La plupart des
+communications allemandes seront chiffrées via la machine Enigma, d'où
+l'interêt pour les alliés de pouvoir déchiffrer leurs messages.
+
+La machine Enigma effectue une substitution qui change à chaque
+lettre, son fonctionnement est basé sur un assemblage d'un tableau de
+connection (qui ne fait que permuter quelques lettres, afin de rendre
+la cryptanalyse plus difficile), de plusieurs rotors qui effectuent
+les permutation des lettres, et d'un réflecteur qui renvoie le courant
+sur le panneau lumineux, où la lettre chiffrée s'allume. À chaque
+lettre tapée, le premier rotor avance d'une position ; lorsque le
+premier rotor a fait un tour complet, c'est le second qui tourne, et
+ainsi de suite. Grâce à la combinaison de ces dispositifs, on peut
+obtenir plus de $10^{17}$ clés possibles pour une machine à 5 rotors.
+
+La Pologne pouvait déjà déchiffrer des messages chiffrés via Enigma en
+1933, mais lorsque 5 ans plus tard, les allemands ajoutent deux rotors
+sur les machines, les polonais communiquent leurs travaux aux
+britanniques, qui réunissent au manoir Bletchley Park des milliers de
+personnes, aussi bien des mathématiciens que des linguistes, des
+amateurs de mots croisés, des joueurs d'échecs professionels, ...
+Cette équipe comportait notemment Alan Turing, grand mathématicien
+britannique à qui on doit le concept d'ordinateur, qui s'inspire du
+travail des polonais pour créer les \emph{bombes de Turing}, qui
+permettaient de retrouver le réglage de la machine à utiliser pour
+déchiffrer le message, via la « force brute » (nous verrons ceci plus
+en détail dans le chapitre \ref{chap:Cryptanalyse} sur la
+cryptanalyse) \\
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[scale=0.5]{eps/Enigma}
+    \hspace{3cm}
+    \includegraphics[scale=0.3]{eps/MachineLorenz}
+  \end{center}
+  \caption{Une machine Enigma à 4 rotors à gauche, et les rotors de la
+    Lorenz SZ42 à droite}
+  \label{fig:EnigmaLorenz}
+\end{figure}
+
+
+Un autre code utilisé par les allemands (pour les communications entre
+les dirigeants) était le Chiffre de Lorenz, via la machine
+\emph{Lorenz SZ 40/42}, surnommée \emph{Tunny} par les alliés. Le
+Chiffre de Lorenz est en fait une application du masque jetable de
+Vernam, qui nécéssite une clé unique par message, et cette clé doit
+être une suite de bits aléatoires (on codait les lettres en binaire
+via le code Baudot, qui est une table donnant une valeur de 5 bits
+pour chaque lettre de l'alphabet et certains caractères
+supplémentaires). La machine de Lorenz servait donc à créer des
+groupes de 5 bits aléatoires, mais une machine ne peut réellement
+produire un résultat aléatoire, on parle alors de nombres
+\emph{pseudo-aléatoires}.
+
+Ce chiffre put être cassé grâce à une erreur de la part d'un opérateur
+allemand, qui envoya un message de près de 4000 caractères à un autre
+opérateur. Le message fut mal reçu par le second opérateur, qui
+demanda de le renvoyer à nouveau. Les deux opérateurs ont alors
+repositionnés leurs machine de Lorenz dans la même position que pour
+le message d'avant, alors que le principe du masque jetable est de
+n'utiliser chaque clé qu'une seule et unique fois. De plus,
+l'opérateur remplaça certains mots par leur abréviation. 
+
+Ces deux erreurs permirent à William T. Tutte, mathématicien anglais
+de Bletchley Park de trouver
+facilement la clé utilisée pour ce message, et de comprendre le
+fonctionnement de la machine de Lorenz et de découvrir que les clés
+produites n'étaient pas réellement aléatoires. 
+Afin de faciliter le déchiffrement de ces messages, le
+premier « ordinateur » électronique, le \emph{Colossus}, fut
+construit, et permettait de déchiffrer un message en quelques heures.
+
 % Purple
 
 \section{La cryptographie moderne}

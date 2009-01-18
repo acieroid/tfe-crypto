@@ -1,7 +1,0 @@
-*Le makefile
-Utiliser un index/glossaire
-*Changer le style de la biblio
-*Définir une commande pour pouvoir montrer des cryptages 
-  dans le genre : 
-     plutôt que " « crypto » sera crypté en « azerty » "
-     crypto --> azerty

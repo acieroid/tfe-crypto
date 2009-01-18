@@ -1,11 +1,11 @@
 \chapter{La cryptographie à travers l'histoire}
-Avant de commencer à décrire la cryptographie en soit, voyons un peu
+Avant de commencer à décrire la cryptographie en soi, voyons un peu
 son histoire, son apparition, et son évolution au fil du temps.
 
 \section{L'apparition de la cryptographie}
 La cryptographie serait apparue pour la première fois il y a 4000 ans,
 au bord du Nil, où un scribe aurait tracé d'une façon spéciale des
-hiérogliphes sur la tombe de son maître, bien que ce n'était pas
+hiéroglyphes sur la tombe de son maître, bien que ce n'était pas
 vraiment dans le but de rendre le texte illisible, mais de le rendre
 plus solennel. \\
 
@@ -16,14 +16,15 @@ les consonnes et en changeant l'orthographe de certains mots. \\
 À cette époque là, les seuls moyens utilisés pour cacher les messages
 ressemblaient plus à de la stéganographie qu'à de la cryptographie,
 les messages ne sont pas rendus illisibles, mais sont cachés. Par
-exemple, aux de -600, Nabuchodonosor rasait le crâne d'un esclave,
-écrivait un message dessus, et une fois que les cheveux avaient
-repoussés, l'esclave allait chez le destinataire du message, qui lui
-rasait les cheveux pour le lire. Un autre exemple est celui d'Harpage,
-qui était chargé de tuer Cyrus, le petit fils du roi de Mèdes, mais
-qui ne le fait pas. Par la suite, quand Cyrus aura grandit, pour
-communiquer avec lui, Harpage cache les lettres dans le ventre de
-lièvres, qu'il recouds par la suite. De cette façon, le message passe
+exemple, aux alentours de -600, Nabuchodonosor rasait le crâne d'un
+esclave, écrivait un message dessus, et une fois que les cheveux
+avaient repoussé, l'esclave allait chez le destinataire du message,
+qui lui rasait les cheveux pour le lire. Un autre exemple est celui
+d'Harpage, qui était chargé de tuer Cyrus, le petit fils du roi de
+Mèdes, mais qui ne le fait pas. Par la suite, quand Cyrus aura
+grandi, pour communiquer avec lui, Harpage cache les lettres dans le
+ventre de lièvres, qu'il recoud par la suite. De cette façon, le
+message passe
 inaperçu. \\
 
 Les premières « vraies » techniques de cryptographie apparaissent
@@ -59,7 +60,7 @@ chiffrement par substitution simple, qui consistait à décaler les
 lettres de l'alphabet d'un certain rang dans l'alphabet (de 3 rangs la
 plupart du temps, ainsi A devient D, B devient E, \dots). Cette simple
 méthode est une des méthodes de chiffrement les plus connues et à été
-utilisées de nombreuses fois par la suite dans des formes dérivées (chiffre de
+utilisée de nombreuses fois par la suite dans des formes dérivées (chiffre de
 Vigenère\footref{syst:ChiffreVigenere}, rot13\footref{syst:rot13}), ou même
 de la même façon (pendant la guerre de sécession par exemple)
 
@@ -73,7 +74,7 @@ de la même façon (pendant la guerre de sécession par exemple)
 
 Au Moyen-âge, comme la plupart des sciences, la cryptologie n'évolue
 presque pas (une personne pratiquant la cryptologie peut être
-considéré comme faisant de la magie noire), à part quelques exceptions
+considérée comme faisant de la magie noire), à part quelques exceptions
 au Moyen-Orient et en Asie (dans le Kama-sutra, il est dit que les
 femmes doivent apprendre le \emph{mlecchita-vikalpa} (l'art de
 l'écriture secrète) pour cacher leurs liaisons.). Il faut donc
@@ -81,26 +82,27 @@ attendre le XV\ieme~ siècle pour que la cryptographie commence
 réellement à évoluer. \\
 
 \section{L'évolution de la cryptographie}
-Au début du XV\ieme~ siècle donc, un égyptien écrit une encyclopédie en
-24 volumes comprenant une partie sur la cryptologie qui décrit des
+Au début du XV\ieme~ siècle donc, un égyptien écrit une encyclopédie
+en 24 volumes comprenant une partie sur la cryptologie qui décrit des
 chiffres de substitution et de transposition. Le premier chiffre de
 substitution polyalphabétique\footref{SubstitutionPolyalphabetique}
 est inventé par Leone Battista Alberti en 1467, un humaniste italien
 de la reinaissance, aussi connu pour ses travaux en architecture,
 surnommé \emph{Le père de la cryptographie occidentale} par
 l'historien David Kahn\cite{Codebreakers}. Cette technique est appelée
-le \emph{cadran chiffran}\label{syst:cadranchiffran}, ce sont deux
-disques de 24 cases attachés, contenant les lettres de l'alphabet (le
-premier en contient 20, H, K et Y n'étant pas « indispensables », J, U
-et W n'étant pas dans l'alphabet latin, les 4 autres cases sont
-occupées par des chiffres. L'autre disque contient les 23 lettres
-latines dans un ordre aléatoire et le signe \&). Le plus petit disque
-peut tourner, les lettres claires et chiffrées se trouvent alors face
-à face, et il suffit de recopier la lettre du petit disque pour
-chiffrer la lettre du grand disque. Après avoir chiffré quelques
-lettres, on décale le disque et on continue ainsi de suite, en
-indiquant sur le message chiffré le changement. Dans son ouvrage, il
-parle aussi de cryptanalyse, et il introduit le concept d'analyse des 
+le \emph{cadran chiffrant}\label{syst:cadranchiffrant}, qui consiste
+en deux disques attachés ensemble de façon à pouvoir coulisser,
+contenant chacun les lettres de l'alphabet dans 24 cases (le premier
+en contient 20, H, K et Y n'étant pas « indispensables », J, U et W
+n'étant pas dans l'alphabet latin, les 4 autres cases sont occupées
+par des chiffres. L'autre disque contient les 23 lettres latines dans
+un ordre aléatoire et le signe \&). Le plus petit disque peut tourner,
+les lettres claires et chiffrées se trouvent alors face à face, et il
+suffit de recopier la lettre du petit disque pour chiffrer la lettre
+du grand disque. Après avoir chiffré quelques lettres, on décale le
+disque et on continue ainsi de suite, en indiquant sur le message
+chiffré le changement. Dans son ouvrage, il parle aussi de
+cryptanalyse, et il introduit le concept d'analyse des
 fréquences. \\
 
 \begin{figure}[h]
@@ -120,12 +122,12 @@ sur la cryptologie, où il invente un chiffre stéganographique, et ce
 qui deviendra par la suite le chiffre de
 Vigenère\footref{syst:Chiffrevigenere}. \\
 
-Au milieu du XVI\ieme~ siècle, Jérôme cardan invente le premier
+Au milieu du XVI\ieme~ siècle, Jérôme Cardan invente le premier
 \emph{procédé autoclave} (qui utilise le message clair comme clef),
 mais ce système comporte des lacunes. Il invente aussi la \emph{grille
   de Cardan}, un système stéganographique qui cache un message dans
 une grille de lettres. Pour lire le message, il faut utiliser un cache
-troué d'une certaines façons, les lettres apparaissent alors dans les
+troué d'une certaines façon, les lettres apparaissent alors dans les
 trous, et on peut lire le message. \\
 
 \begin{figure}[h]
@@ -203,10 +205,10 @@ trous, et on peut lire le message. \\
 
 
 En 1553, Giovan Batista Belaso utilise le terme \emph{clé
-  litérale} ou \emph{mot de passe} pour des clés de petite taille
+  littérale} ou \emph{mot de passe} pour des clés de petite taille
 faciles à mémoriser. %TODO: plus d'infos
 10 ans plus tard, Giambattista della Porta écrit une sorte
-de recueil des connaissances cryptographique de cette époque. Il
+de recueil des connaissances cryptographiques de cette époque. Il
 invente aussi la première substitution bigrammique (voir les
 substitution polygrammiques, chapitre
 \ref{SubstitutionPolygrammiques}, page
@@ -230,7 +232,7 @@ fils par la suite travaillèrent pour Louis XIV. Avec son fils,
 Bonaventure, il élabore le \emph{Grand Chiffre}, un système de
 chiffrement par substitution à répertoire, qui était considéré comme
 incassable, et est rendu indéchiffrable après le décès de ses auteurs,
-qui emportèrent sont secret. Ce chiffre sera néanmoins cassé 1893 par
+qui emportèrent son secret. Ce chiffre sera néanmoins cassé 1893 par
 Étienne Bazeries. Il s'avère qu'il introduisait entre autre
 dans le message chiffré, des éléments inutiles ayant pour but de
 rendre plus difficile le travail du cryptanalyste.\\
@@ -244,12 +246,12 @@ roues dans l'ordre qu'on veut (l'ordre correspondant à la clé).
 Une fois les roues placées suivant la clé, on les déplace de façon à
 former le message sur une ligne. Il ne reste plus qu'à recopier une
 autre ligne pour avoir le message chiffré. Le récepteur du message
-chiffré le formera alors sur son cylindre, dont les roues aurant au
+chiffré le formera alors sur son cylindre, dont les roues auront au
 préalables été placées selon la clé, et il lui restera à trouver la
 ligne contenant le message (la seule ligne intelligible). Ce procédé
 fut réinventé par le colonel français Brazeries, et réutilisé
 dans l'armée américaine entre 1923 et 1942 (sous le nom de M-94, la
-machine est un peu modifié).
+machine est un peu modifiée).
 
 \begin{figure}[h]
   \begin{center}
@@ -297,7 +299,7 @@ connue étant celle du télégramme de Zimmerman.
 Zimmerman était le ministre allemand des affaires étrangères durant la
 guerre. En janvier 1917, alors que les États-Unis sont neutres,
 Zimmerman envoie un message codé à l'ambassadeur du Mexique aux
-États-Unis, qui devrait être retransmit au président Mexicain après
+États-Unis, qui devrait être retransmis au président Mexicain après
 avoir été déchiffré, message qui est intercepté par les services
 secrets britanniques, qui charge immédiatement le Bureau 40 du
 déchiffrement du message. Un mois plus tard, c'est chose faite ; le
@@ -307,7 +309,7 @@ restent neutres. L'empire Allemand propose alors une alliance avec le
 Mexique, avec une aide financière pour reconquérir le Texas, le
 Nouveau-Mexique et l'Arizona. Il était aussi demandé d'essayer de
 convaincre les Japonais d'entrer en guerre contre les États-Unis.
-Le message est finalement transmit aux gouvernement américain après
+Le message est finalement transmis aux gouvernement américain après
 quelques démarches évitant aux anglais de devoir dire aux américains
 qu'ils écoutaient leurs communications diplomatiques, et le télégramme
 fut publié dans la presse américaine le $1^{er}$ mars. Le 6 avril, les
@@ -333,7 +335,7 @@ pendant la Seconde Guerre mondiale, sous le nom de \emph{Government
 
 En 1917, Gilbert Vernam invente le \emph{masque jetable}, le
 seul procédé cryptographique connu comme étant impossible à casser. Ce
-procédé n'est pas directement utilisé car il pose des difficultées de
+procédé n'est pas directement utilisé car il pose des difficultés de
 mise en place (problèmes de génération et de transmission des clés,
 qui doivent être uniques) %TODO: voir en détail ?
 
@@ -382,7 +384,7 @@ qui doivent être uniques) %TODO: voir en détail ?
 Durant la Première Guerre mondiale, de nombreux systèmes de
 chiffrements utilisés étaient pour la plupart d'anciens systèmes de
 chiffrements, soit réutilisés tels quels, comme le chiffre de Playfair
-réutilisés par les anglais, ou bien modifiées, comme ce fut le cas
+repris par les anglais, ou bien modifiés, comme ce fut le cas
 avec les russes qui utilisaient une version complexe du chiffre de
 Vigenère.
 
@@ -397,8 +399,8 @@ façon à limiter le risque d'erreur de l'opérateur qui les
 transmettrait en Morse (Nebel trouvait qu'elles étaient simples à
 retenir quand on apprenait le Morse).
 
-Ce système est déchiffré avec beaucoup de difficultées par le
-lieutenant français Georges Painvinen avril de la même année, mais à
+Ce système est déchiffré avec beaucoup de difficultés par le
+lieutenant français Georges Painvinen en avril de la même année, mais à
 partir du mois de juin, les allemands compliquent le système
 cryptographique en y introduisant la lettre V (ce système se nomme
 alors ADFGVX). Le tableau de $5\times 5$ cases devient alors un tableau
@@ -428,7 +430,7 @@ La machine Enigma effectue une substitution qui change à chaque
 lettre, son fonctionnement est basé sur un assemblage d'un tableau de
 connection (qui ne fait que permuter quelques lettres, afin de rendre
 la cryptanalyse plus difficile), de plusieurs rotors qui effectuent
-les permutation des lettres, et d'un réflecteur qui renvoie le courant
+les permutations des lettres, et d'un réflecteur qui renvoie le courant
 sur le panneau lumineux, où la lettre chiffrée s'allume. À chaque
 lettre tapée, le premier rotor avance d'une position ; lorsque le
 premier rotor a fait un tour complet, c'est le second qui tourne, et
@@ -451,8 +453,8 @@ cryptanalyse) \\
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=0.5]{eps/Enigma}
-    \hspace{3cm}
+    \includegraphics[scale=1]{eps/Enigma}
+    \hspace{2cm}
     \includegraphics[scale=0.3]{eps/MachineLorenz}
   \end{center}
   \caption{Une machine Enigma à 4 rotors à gauche, et les rotors de la
@@ -463,7 +465,7 @@ cryptanalyse) \\
 
 Un autre code utilisé par les allemands (pour les communications entre
 les dirigeants) était le Chiffre de Lorenz, via la machine
-\emph{Lorenz SZ 40/42}, surnommée \emph{Tunny} par les alliés. Le
+\emph{Lorenz SZ 40} ou \emph{SZ 42}, surnommée \emph{Tunny} par les alliés. Le
 Chiffre de Lorenz est en fait une application du masque jetable de
 Vernam, qui nécéssite une clé unique par message, et cette clé doit
 être une suite de bits aléatoires (on codait les lettres en binaire
@@ -478,7 +480,7 @@ Ce chiffre put être cassé grâce à une erreur de la part d'un opérateur
 allemand, qui envoya un message de près de 4000 caractères à un autre
 opérateur. Le message fut mal reçu par le second opérateur, qui
 demanda de le renvoyer à nouveau. Les deux opérateurs ont alors
-repositionnés leurs machine de Lorenz dans la même position que pour
+repositionné leurs machine de Lorenz dans la même position que pour
 le message d'avant, alors que le principe du masque jetable est de
 n'utiliser chaque clé qu'une seule et unique fois. De plus,
 l'opérateur remplaça certains mots par leur abréviation. 
@@ -495,16 +497,71 @@ construit, et permettait de déchiffrer un message en quelques heures.
 % Purple
 
 \section{La cryptographie moderne}
+%TODO: vérifier
+Après la guerre, il faudra attendre une trentaine d'années avant de
+nouvelles avancées dans le domaine de la cryptologie. 
 
-% Beaucoup dans les années 70
-% Diffie et Hellman -> clé publique
-% DES
-% RSA
+En 1971, un cryptographe d'IBM, Horst Feistel met au point un
+algorithme de chiffrement par bloc, nommé \emph{Lucifer} et qui
+possède de nombreuses variantes. Deux ans plus tard, la NSA modifie
+\emph{Lucifer} pour sortir le \emph{Data Encryption Standard},
+\emph{DES}, en 1977 qui fut encore amélioré par la suite et longuement
+utilisé et qui reste utilisé encore aujourd'hui (bien qu'il soit moins
+répandu), notemment avec le \emph{Triple DES}, qui consiste
+simplemenet à opérer 3 DES consécutifs avec 2 ou 3 clés. %TODO: source
 
-% 90's
-% IDEA (juste citer vite fait ?)
-% Premièrs abords de la crypto quantique
-% PGP
-% MD4, MD5, blowfish
+La même année, le chiffrement à clé publique (ou asymétrique) est présenté
+pour la première fois dans \cite{NewDirectionsInCryptography} et ce
+concept est mis en pratique avec le chiffrement RSA, inventé par Ron
+Rivest, Adi Shamir et Leonard Adleman en 1977 et présenté en 1978 dans
+\cite{RSAPaper}. Grâce aux algorithmes à clé publiques, le problème de
+distribution des clés est résolu via l'utilisation de deux clés : une
+pour chiffrer, rendue publique, et une pour déchiffrer, gardée secrète
+par la personne censée déchiffrer le message.
 
-% Claude Shannon ?
+Par la suite, outre de nouveaux systèmes de chiffrements basés sur des
+concepts déjà existants (comme l'\emph{International Data Encryption
+  Algorithm}, un chiffrement symétrique apparu en 1990 ou le
+\emph{Blowfish}, conçu par Bruce Schneier en 1993, et qui est encore
+largement utilisé notemment dans
+GnuPG\footnote{\url{http://www.gnupg.org}} et
+OpenSSH\footnote{\url{http://www.openssh.com/}}), on peut noter
+l'implémentation de la première fonction de hachage en 1989 par Ronald
+Rivest, le \emph{R} du RSA, qui conçoit le \emph{Message Digest 2},
+MD2 , par la suite amélioré en MD4 et MD5. L'algorithme MD5 est encore
+utilisé aujourd'hui, mais de moins en moins suite à des problèmes de
+fiabilités. Les fonctions de hachage conseillées aujourd'hui sont les
+versions récentes du \emph{Secure Hash Algorithm}, conçut par la NSA à
+partir de 1993. Les fonctions de hachage sont utilisées pour vérifier
+l'intégrité des données, nous verrons ceci en détail dans le chapitre
+les concernant (chapitre \ref{sec:Hash}\\
+
+En 1990, l'idée de cryptographie quantique fait son apparition suite
+aux résultats de Charles Bennet et Gilles Brassard. Elle permet, en se
+basant sur les lois de la physique quantique, de distribuer des clés
+en toute sécurité, afin de pouvoir utiliser un chiffre de
+Vernam. Ainsi, en mettant en place ce type de cryptographie, un
+message pourrait devenir complètement indéchiffrable sans la clé, qui
+serait impossible à trouver.
+
+En 1991, Paul Zimmerman sort la première version de \emph{Pretty Good
+ Privacy}, PGP, un logiciel de chiffrement et de signature destiné au
+grand public, qui combine cryptographie symétrique et asymétrique. Il
+explique très bien dans \cite{WhyIWrotePGP} les raisons pour
+lesquelles il faut utiliser PGP, en expliquant la volonté du
+gouvernement américain d'interdire toute forme de cryptographie sauf
+une, afin de pouvoir surveiller les communications du pays entier. Il
+en conclut qu'il faut utiliser au maximum la cryptographie tant que
+c'est légal, car il est difficile de criminaliser quelque chose de
+populaire, et que si la cryptographie est mise « hors-la-loi », seuls
+les hors-la-loi l'utiliseront, ce qui ne réglera pas les problèmes. Sa
+gratuité ayant fait son succès, ce logiciel est encore largement
+utilisé de nos jours, notemment via son implémentation libre, GnuPG. \\
+
+Le futur de la cryptographie se tournera donc sûrement vers la
+cryptographie quantique et vers l'allongement des clés utilisés par
+les algorithmes symétriques et asymétriques.
+
+La plupart des concepts et méthodes citées ou expliquées brièvement
+dans ce chapitre seront expliqués plus en détails dans les chapitres
+suivants.

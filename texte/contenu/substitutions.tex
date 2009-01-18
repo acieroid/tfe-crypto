@@ -359,7 +359,97 @@ comme on peut en voir quelques unes dans la table \ref{tab:VariantesVigenere}.
 \end{table}
 %TODO: expliquer les méthodes à la main ? http://www.apprendre-en-ligne.net/crypto/menu/index.html
 
-\subsection{Substitution homophonique}
+\subsection{Autres types de substitutions}
+Il existe encore d'autres types de substitutions, comme les
+substitutions homophoniques, qui, pour empêcher l'analyse des
+fréquences (voir le chapitre \ref{chap:cryptanalyse} sur la
+cryptanalyse), permettent de remplacer une lettre par plusieurs
+symboles différents, choisis arbitrairement. On peut par exemple citer
+une variante du chiffre de Vigenère, où l'on chiffre chaque lettre par
+une des lettres de la même ligne suivie d'une des lettre de la même
+colonne. On peut aussi utiliser des tables de substitutions, et même
+varier le nombre de représentation possibles d'un symbole en fonction
+de sa fréquence d'apparition (le \emph{E} pourra donc être représenté par
+de nombreux symboles, ce qui ne sera pas le cas du \emph{Z}).\\
+
+Il existe aussi des substitutions polygrammiques, où l'on ne chiffre
+pas lettre par lettre, mais par polygramme, c'est à dire par ensemble
+de lettre. Comme chiffre polygrammique, il existe par exemple le
+chiffre de Playfair, inventé par Charles Wheatstone en 1854 et qui fut
+réutilisé pendant la Première Guerre mondiale. Pour l'anecdote,
+quand Wheatstone proposa au \emph{Foreign Office} --- qui trouvait son chiffre
+trop compliqué pour être utiliser --- de montrer sa simplicité en
+l'apprenant aux trois-quarts des enfants de l'école primaire voisine
+en moins d'un quart d'heure, on lui répondit « C'est bien possible,
+mais vous ne pourrez jamais l'apprendre à des spécialistes ».
+
+Cette méthode chiffre les lettres par digrammes (par deux) en se
+basant sur quatre simples règles. On utilise un tableau de $5x$ cases,
+où le chiffrement se fera en fonction de la position des deux lettres
+dans le tableau.  
+
+Tout d'abord, dans le cas où les deux lettres sont
+identiques, on ajoute un \emph{X} à la suite de la première
+lettre. C'est aussi valable dans le cas où il ne reste qu'une lettre.
+Ensuite, nous avons trois possibilités en regardant la position des
+lettre dans le tableau : 
+\begin{itemize}
+  \item les lettres sont sur la même ligne : on les remplace par les
+    lettres situées à droite (en considérant les lignes comme
+    cycliques, c'est à dire que la lettre à droite de la dernière
+    lettre de la ligne est la lettre située la plus à gauche) ; 
+  \item les lettres sont dans la même colonne : on les remplace par la
+    lettre située en dessous (en considérant aussi les colonnes comme
+    cycliques)
+  \item les lettre ne sont ni sur la même colonne, ni sur la même
+    ligne : on remplace la lettre par celle se situant sur la même
+    ligne que la lettre à chiffrer, et sur la colonne de la seconde
+    lettre.
+\end{itemize}
+
+\begin{figure}[h]
+  $
+  \left(
+    \begin{array}{ccccc}
+      \textcolor{green}{\underline{C}} & \textcolor{red}{\underline{R}} & Y & \textcolor{green}{P} & \textcolor{red}{T} \\
+      O & A & B & D & E \\
+      F & G & H & I & J \\
+      K & L & M & N & Q \\
+      S & U & V & X & Z
+    \end{array}
+  \right)
+  $
+  \hfill
+  $
+  \left(
+    \begin{array}{ccccc}
+      C & \textcolor{red}{R} & Y & P & T \\
+      O & A & B & D & E \\
+      F & \textcolor{green}{\underline{G}} & H & I & J \\
+      K & \textcolor{red}{\underline{L}} & M & N & Q \\
+      S & \textcolor{green}{U} & V & X & Z
+    \end{array}
+  \right)
+  $
+  \hfill
+  $
+  \left(
+    \begin{array}{ccccc}
+      C & R & Y & P & T \\
+      O & \textcolor{red}{\underline{A}} & B & \textcolor{green}{\underline{D}} & E \\
+      F & G & H & I & J \\
+      K & L & M & N & Q \\
+      S & \textcolor{green}{U} & V & \textcolor{red}{X} & Z
+    \end{array}
+  \right)
+  $
+  \caption{Les trois règles du chiffre de Playfair, les lettre à
+    chiffrer sont en vert et les lettres chiffrées en rouge. La
+    première lettre du digramme est soulignée}
+  \label{fig:Playfair}
+\end{figure}
+
+%\subsection{Substitution homophonique}
 % Chaque lettre peut être remplacée par plusieurs lettres/chiffres
-\subsection{Substitution polygrammique}
+%\subsection{Substitution polygrammique}
 % Subsitituions de plusieurs caractères

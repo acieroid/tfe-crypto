@@ -1,4 +1,4 @@
-\chapter{Les différentes techniques de cryptographie}
+\chapter{Les différentes techniques de chiffrement}
 
 \input{substitutions.tex}
 
@@ -6,22 +6,6 @@
 
 \input{symetrique.tex}
 
-\section{Chiffrement asymétrique}
+\input{asymetrique.tex}
 
-\section{Les fonctions de hachages}
-Les fonctions de hachages sont principalement utilisé en cryptographie
-pour assurer l'intégrité des données. Une fonction de hachage produit
-ce qu'on appelle communément un \emph{hash} ou \emph{somme de
-  contrôle}  de taille fixe à partir de
-données de taille indéfinie. Ceci peut amener à des \emph{collisions},
-c'est à dire que deux données différentes peuvent donner la même somme
-de contrôle, elles seront alors considérées comme identiques et cela
-peut poser de sérieux problèmes de confidentialitée, de sécurité, ...
-
-Dans ce chapitre, nous allons plus nous focaliser sur les méthodes
-utilisées pour calculer la somme à partir des données, nous
-regarderons en détail les problèmes de sécurités posés dans le
-chapitre \ref{SecuriteHash}, page \pageref{SecuriteHash}.
-
-%TODO
-
+\input{hachage.tex}

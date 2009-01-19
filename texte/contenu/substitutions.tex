@@ -29,7 +29,7 @@ de l'alphabet par une autre lettre.
 
 \subsubsection{Par simple décalage}
 On peut par exemple, comme le fait le chiffre de
-César\footref{syst:chiffrecesar}, décaler les lettres de l'alphabet d'une
+César\footref{syst:ChiffreCesar}, décaler les lettres de l'alphabet d'une
 clé $k$. \\
 
  Si nous considérons l'alphabet comme un ensemble cyclique où 
@@ -204,7 +204,7 @@ murs. \\ %TODO: mieux expliquer
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=1.5]{eps/Nihilistes}
+    \includegraphics[scale=1.5]{images/Nihilistes.jpg}
   \end{center}
   \caption{Version du carré de Polybe utilisée par les nihilistes
     russes}
@@ -216,7 +216,7 @@ Les substitutions polyalphabétiques sont une combinaison de plusieurs
 tables de substitutions simples, où l'on change de table à chaque
 lettre, ce qui rend le message chiffré beacoup plus dur à casser sans
 le code (nous verrons ceci en détail dans le chapitre
-\ref{Cryptanalyse}, page \pageref{Cryptanalyse} sur la cryptanalyse)
+\ref{chap:Cryptanalyse}, page \pageref{chap:Cryptanalyse} sur la cryptanalyse)
 
 Une des substitutions polyalphabétiques les plus connues est le
 \emph{Chiffre de Vigenère}.
@@ -234,7 +234,7 @@ La technique de Jean Trithème est d'utiliser ce qu'il décrit comme une
 lettres chacune. On retire donc deux lettres, le J et le V, qui seront
 respectivement remplacées par le I et le W. Le W est placé après le
 Z.\\
-Chaque rangée correspond à un chiffre de César\footref{syst:chiffrecesar},
+Chaque rangée correspond à un chiffre de César\footref{syst:ChiffreCesar},
 avec à chaque fois un décalage augmenté d'une unité. \\
 
 Par exemple, pour chiffrer le mot « cryptographie » avec la table se
@@ -252,7 +252,7 @@ trouvant à la figure \ref{fig:TabulaRecta}~:
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=0.3]{eps/TabulaRecta}
+    \includegraphics[scale=0.5]{images/TabulaRecta.jpg}
   \end{center}
   \caption{La \emph{tabula recta} de Jean Trithème}
   \label{fig:TabulaRecta}
@@ -359,7 +359,7 @@ comme on peut en voir quelques unes dans la table \ref{tab:VariantesVigenere}.
 \end{table}
 %TODO: expliquer les méthodes à la main ? http://www.apprendre-en-ligne.net/crypto/menu/index.html
 
-\subsection{Autres types de substitutions}
+\subsection{Autres types de substitutions\label{sec:SubstitutionsPolygrammiques}}
 Il existe encore d'autres types de substitutions, comme les
 substitutions homophoniques, qui, pour empêcher l'analyse des
 fréquences (voir le chapitre \ref{chap:cryptanalyse} sur la

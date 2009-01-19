@@ -21,7 +21,8 @@ JPG2EPS=$(patsubst %,$(EPSDIR)/%,$(JPG:.jpg=.eps))
 DIA=$(notdir $(wildcard $(IMGDIR)/*.dia))
 DIA2EPS=$(patsubst %,$(EPSDIR)/%,$(DIA:.jpg=.eps))
 
-all: images pdf
+all: pdf 
+#images pdf
 images: $(PNG2EPS) $(JPG2EPS) $(DIA2EPS)
 
 $(EPSDIR)/%.eps: $(IMGDIR)/%.png
@@ -34,12 +35,12 @@ $(EPSDIR)/%.eps: $(FIGSDIR)/%.dia
 	$(DIA) --export=$@ $<
 
 pdf: 
-	latex main.tex
+	pdflatex main.tex
 	bibtex main
-	latex main.tex
-	latex main.tex
-	dvipdf main.dvi $(OUTPUT)
-	rm -f main.dvi
+	pdflatex main.tex
+	pdflatex main.tex
+#dvipdf main.dvi $(OUTPUT)
+#	rm -f main.dvi
 clean:
 	rm -f *.aux *.log *.bbl *.toc
 distclean: clean

@@ -1,13 +1,15 @@
 \chapter{La cryptographie à travers l'histoire}
 Avant de commencer à décrire la cryptographie en soi, voyons un peu
-son histoire, son apparition, et son évolution au fil du temps.
+son histoire, son apparition, et son évolution au fil du temps ; les
+aspects techniques brièvement présentés dans ce chapitre seront
+expliqué au cours des chapitres suivants.
 
 \section{L'apparition de la cryptographie}
 La cryptographie serait apparue pour la première fois il y a 4000 ans,
 au bord du Nil, où un scribe aurait tracé d'une façon spéciale des
 hiéroglyphes sur la tombe de son maître, bien que ce n'était pas
 vraiment dans le but de rendre le texte illisible, mais de le rendre
-plus solennel. \\
+plus solennel.
 
 La seconde trace de cryptographie date du \bc{XVI}, c'est une tablette
 d'argile sur laquelle un potier aurait écrit sa recette en enlevant
@@ -30,23 +32,39 @@ Les premières « vraies » techniques de cryptographie apparaissent
 quant à elles à partir du \bc{VI}, avec une méthode de substitution,
 nommée \emph{atbash}, qui consiste à remplacer les lettres par la
 lettre « opposée », c'est-à-dire que A sera remplacé par Z, B par Y,
-et ainsi de suite. \\
-
+et ainsi de suite.
 \begin{figure}[h]
-  \begin{center}
-    \includegraphics[scale=1]{images/Scytale.png}
-  \end{center}
-  \caption{La scytale des spartiates (\bc{V})}
-  \label{fig:Scytale}
+%\begin{wrapfigure}{l}{0.5\textwidth}
+  \centering
+%    \includegraphics[scale=1]{images/Scytale.png}
+%    \includegraphics[scale=0.4]{images/ChiffreCesar.png}
+    \subfloat[La scytale des spartiates]{
+      \label{fig:Scytale}\includegraphics[width=0.4\textwidth]{images/Scytale.png}}
+    \hspace{1.5cm}
+    \subfloat[Le fonctionnement du chiffre de César]{
+      \label{fig:Cesar}\includegraphics[width=0.4\textwidth]{images/ChiffreCesar.png}}
+%    \vspace{-5pt}
+    \caption{Deux anciennes techniques de chiffrement}
+    \vspace{-15pt}
+%  \label{fig:ScytaleChiffreCesar}
 \end{figure}
+%\end{wrapfigure}
+% \begin{figure}[h]
+%   \begin{center}
+%     \includegraphics[scale=0.4]{images/ChiffreCesar.png}
+%   \end{center}
+%   \caption{Le chiffre de César}
+%   \label{fig:ChiffreCesar}
+% \end{figure}
+
+
   
 Ensuite, au \bc{V}, les spartiates utilisaient pour communiquer le
 bâton de Plutarque, plus connu sous le nom de \emph{scytale}. Cette
 technique consistait à enrouler un long et étroit morceau de parchemin
 autour d'un bâton, on écrivait ensuite le message sur le parchemin, et
 on envoyait ce parchemin déroulé au destinataire, qui possédait un
-bâton
-de même diamètre pour déchiffrer le message. \\
+bâton de même diamètre pour déchiffrer le message.
 
 Le premier réel système cryptographique par substitution est inventé
 par un historien grec, Polybe aux alentours de 150 avant J.-C. (nous
@@ -62,14 +80,6 @@ méthode est une des méthodes de chiffrement les plus connues et à été
 utilisée de nombreuses fois par la suite dans des formes dérivées (chiffre de
 Vigenère\footref{syst:ChiffreVigenere}, rot13\footref{syst:rot13}), ou même
 de la même façon (pendant la guerre de sécession par exemple)
-
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[scale=0.4]{images/ChiffreCesar.png}
-  \end{center}
-  \caption{Le chiffre de César}
-  \label{fig:ChiffreCesar}
-\end{figure}
 
 Au Moyen-âge, comme la plupart des sciences, la cryptologie n'évolue
 presque pas (une personne pratiquant la cryptologie peut être
@@ -106,14 +116,17 @@ fréquences. \\
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=0.2]{images/AlbertiCipherDisk.jpg}
-    \hspace{3cm}
-    \includegraphics[scale=1]{images/ConfederateCipherDisk.jpg}
+    \subfloat[Le cadran chiffrant d'Alberti dans sa forme originelle]{
+      \label{fig:CadranChiffrant}\includegraphics[width=0.4\textwidth]{images/AlbertiCipherDisk.jpg}}
+    \hspace{1.5cm}
+    \subfloat[Le cadran chiffrant réutilisé par les confédérés pendant
+    la guerre de sécession]{
+      \label{fig:CadranConfederes}\includegraphics[width=0.4\textwidth]{images/ConfederateCipherDisk.jpg}}
+
   \end{center}
-  \caption{Le cadran chiffrant d'Alberti, dans sa forme originelle à
-    gauche, et réutilisé par les confédérés pendant la guerre de
-    sécession}
-  \label{fig:AlbertiCadranChiffrant}
+  \vspace{-10pt}
+  \caption{Cadrans chiffrants}
+  \vspace{-15pt}
 \end{figure}
 
 En 1518, Jean Trithème publie Polygraphi\ae , le premier livre imprimé
@@ -129,13 +142,16 @@ une grille de lettres. Pour lire le message, il faut utiliser un cache
 troué d'une certaine façon, les lettres apparaissent alors dans les
 trous, et on peut lire le message. \\
 
-\begin{figure}[h]
+%\begin{figure}[h]
+\begin{wrapfigure}{L}{0.5\textwidth}
   \begin{center}
     \includegraphics[scale=0.2]{images/GrilleCardan.png}
   \end{center}
   \caption{Un exemple de grille de Cardan}
   \label{fig:GrilleCardan}
-\end{figure}
+  \vspace{-10pt}
+%\end{figure}
+\end{wrapfigure}
 
 % Premières techniques de cryptographie
 % Plus vieux document chiffré : un potier qui écrit sa recettes en
@@ -253,13 +269,19 @@ machine est un peu modifiée).
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=0.4]{images/JeffersonDisk.jpg}
-    \hfill
-    \includegraphics[scale=0.20]{images/M94.jpg}
+    \subfloat[Un disque de Jefferson du XVIII\ieme~sicèle au musée
+    national de la cryptologie de la NSA]{
+      \label{fig:JeffersonDisk}
+      \includegraphics[width=0.4\textwidth]{images/JeffersonDisk.jpg}}
+    \hspace{1.5cm}
+    \subfloat[Un disque de Jefferson du XVIII\ieme~sicèle au musée
+    national de la cryptologie de la NSA]{
+      \label{fig:M94}
+      \includegraphics[width=0.4\textwidth]{images/M94.jpg}}
   \end{center}
-  \caption{À gauche, un disque de Jefferson du XVIII\ieme~siècle au
-    musée national de cryptologie de la NSA, à droite, un exemplaire
-    du M-94}
+  \vspace{-10pt}
+  \caption{Disques de chiffrement}
+  \vspace{-10pt}
   \label{fig:JeffersonDisk}
 \end{figure}
 
@@ -280,7 +302,7 @@ cryptographie militaire, où il explique des règles qui peuvent être
 considérées comme les règles de base d'un système cryptographique
 sûr. Nous verrons ces règles en détail dans le chapitre
 \ref{sec:PrincipeKerckhoffs}. \\
-
+\clearpage
 \section{La cryptographie pendant la Première Guerre mondiale}
 La cryptographie était très présente pendant les guerres, d'où
 l'importance des cryptanalystes. Pour cela, chaque état avait recours
@@ -292,11 +314,22 @@ L'organisme de déchiffrement sûrement le plus important lors de cette guerre
 est connu sous le nom de \emph{Room 40} (Bureau 40), le service de
 déchiffrement britannique de la \emph{Royal Navy}, qui aurait déchiffré
 plus ou moins 15.000 communications allemandes, la plus grosse affaire
-connue étant celle du télégramme de Zimmerman.
+connue étant celle du télégramme de Zimmermann.
+%\begin{figure}[h]
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \begin{center}
+    \includegraphics[width=0.48\textwidth]{images/ZimmermanTelegram.jpg}
+  \end{center}
+  \caption{Photo du télégramme original envoyé par Zimmermann}
+  \label{fig:Zimmerman}
+  \vspace{-10pt}
+%\end{figure}
+\end{wrapfigure}
 
-Zimmerman était le ministre allemand des affaires étrangères durant la
+
+Zimmermann était le ministre allemand des affaires étrangères durant la
 guerre. En janvier 1917, alors que les États-Unis sont neutres,
-Zimmerman envoie un message codé à l'ambassadeur du Mexique des
+Zimmermann envoie un message codé à l'ambassadeur du Mexique des
 États-Unis, qui devrait être retransmis au président Mexicain après
 avoir été déchiffré, message qui est intercepté par les services
 secrets britanniques, qui charge immédiatement le Bureau 40 du
@@ -322,14 +355,6 @@ services secrets britannique chargé du décryptage) pour former le
 \emph{Government Code and Cypher School}, qui sera encore utile
 pendant la Seconde Guerre mondiale, sous le nom de \emph{Government
   Communications Headquarters} \\
-
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[scale=0.4]{images/ZimmermanTelegram.jpg}
-  \end{center}
-  \caption{Photo du télégramme original envoyé par Zimmerman}
-  \label{fig:JeffersonDisk}
-\end{figure}
 
 En 1917, Gilbert Vernam invente le \emph{masque jetable}, le
 seul procédé cryptographique connu comme étant impossible à casser. Ce
@@ -384,7 +409,7 @@ chiffrements utilisés étaient pour la plupart d'anciens systèmes de
 chiffrements, soit réutilisés tels quels, comme le chiffre de Playfair
 repris par les anglais, ou bien modifiés, comme ce fut le cas
 avec les russes qui utilisaient une version complexe du chiffre de
-Vigenère.
+Vigenère.\\
 
 Il en est de même pour le système de chiffrement ADFGX, inventé en
 mars 1918 par le colonel allemand Fritz % TODO: lieutenant ? (kahn)
@@ -451,13 +476,15 @@ cryptanalyse) \\
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[scale=1]{images/Enigma.jpg}
-    \hspace{2cm}
-    \includegraphics[scale=0.3]{images/MachineLorenz.jpg}
+    \subfloat[Une machine Enigma à 4 rotors]{
+      \label{fig:Enigma}\includegraphics[width=0.4\textwidth]{images/Enigma.jpg}}
+    \hspace{1.5cm}
+    \subfloat[Les rotors de la Lorenz SZ42]{
+      \label{fig:Lorenz}\includegraphics[width=0.4\textwidth]{images/MachineLorenz.jpg}}
   \end{center}
-  \caption{Une machine Enigma à 4 rotors à gauche, et les rotors de la
-    Lorenz SZ42 à droite}
-  \label{fig:EnigmaLorenz}
+  \vspace{-10pt}
+  \caption{Machines à rotors}
+  \vspace{-10pt}
 \end{figure}
 
 
@@ -491,9 +518,22 @@ produites n'étaient pas réellement aléatoires, ce qu'il explique dans
 sa publication \emph{Fish And I}\cite{FISHAndI}
 Afin de faciliter le déchiffrement de ces messages, le
 premier « ordinateur » électronique, le \emph{Colossus}, fut
-construit, et permettait de déchiffrer un message en quelques heures.
+construit, et permettait de déchiffrer un message en quelques
+heures. \\ 
 
-% Purple
+Pendant que les europpéens tentaient de casser Enigma et le code de
+Lorenz, les américains quant à eux travaillaient sur la machine des
+japonais, nommée \emph{97-shiki obun inji-ki} et surnommée \emph{Purple}
+par les américains, qui utilisait un système proche des
+rotors. William Friedman et son équipe purent reconstruire une machine
+Purple à partir des messages chiffrés, en 1940, et arrivèrent casser
+les message chiffrés des japonais. Bien qu'ils décodèrent tous les
+messages importants pendant la nuit du 6 décembre 1941, ils ne purent
+pas éviter l'attaque de Pearl Harbor, aucun message ne disant
+clairement d'attaquer à Pearl Harbor. Une alerte fut néanmoins envoyé
+à certaines bases américaines avant l'attaque, notemment à celle de
+Pearl Harbor, mais ces alertes arrivèrent plusieurs heures après
+l'attaque.
 
 \section{La cryptographie moderne}
 %TODO: vérifier
@@ -534,7 +574,8 @@ fiabilités. Les fonctions de hachage conseillées aujourd'hui sont les
 versions récentes du \emph{Secure Hash Algorithm}, conçut par la NSA à
 partir de 1993. Les fonctions de hachage sont utilisées pour vérifier
 l'intégrité des données, nous verrons ceci en détail dans le chapitre
-les concernant (chapitre \ref{sec:Hash})\\
+les concernant. %(chapitre \ref{sec:Hash})\\
+\\
 
 En 1990, l'idée de cryptographie quantique fait son apparition suite
 aux résultats de Charles Bennet et Gilles Brassard. Elle permet, en se
@@ -544,7 +585,7 @@ Vernam. Ainsi, en mettant en place ce type de cryptographie, un
 message pourrait devenir complètement indéchiffrable sans la clé, qui
 serait impossible à trouver.
 
-En 1991, Paul Zimmerman sort la première version de \emph{Pretty Good
+En 1991, Philip Zimmermann sort la première version de \emph{Pretty Good
   Privacy}, PGP, un logiciel de chiffrement et de signature destiné au
 grand public, qui combine cryptographie symétrique et asymétrique. Il
 explique très bien dans son article « Why I Wrote PGP
@@ -566,9 +607,29 @@ rotors, le disque de Jefferson, \dots) tandis que les professionnels
 amélioraient les techniques de cryptanalyse.
 
 Le futur de la cryptographie se tournera donc sûrement vers la
-cryptographie quantique et vers l'allongement des clés utilisés par
+cryptographie quantique ainsi que l'allongement des clés utilisés par
 les algorithmes symétriques et asymétriques.
+% avec des logiciels
+% combinant diverses méthodes de chiffrement (comme le fait PGP)
 
-La plupart des concepts et méthodes citées ou expliquées brièvement
-dans ce chapitre seront expliqués plus en détails dans les chapitres
-suivants.
+% La plupart des concepts et méthodes citées ou expliquées brièvement
+% dans ce chapitre seront expliqués plus en détails dans les chapitres
+% suivants.
+
+% \begin{figure}[h]
+%   \begin{center}
+%     \includegraphics[scale=0.2]{images/Puffy.png}
+%     \hspace{1cm}
+%     \includegraphics[scale=0.3]{images/BruceSchneier.jpg}
+%     \hspace{1cm}
+%     \includegraphics[scale=1.2]{images/PhilipZimmermann.jpg}
+%   \end{center}
+%   \caption{De droite à gauche : le poisson lune, emblème de
+%     l'algorithme de chiffrement \emph{blowfish}, du logiciel de
+%     communications sécurisées \emph{OpenSSH}, et du système
+%     d'exploitation mettant l'accent sur la sécurité, \emph{OpenBSD} ;
+%     Bruce Schneier, figure importante de la cryptologie actuelle,
+%     inventeur de \emph{blowfish} ; Philip Zimmermann, créateur du
+%     logiciel PGP}
+%   \label{fig:ChiffrementSymetrique}
+% \end{figure}

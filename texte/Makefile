@@ -37,11 +37,12 @@ $(EPSDIR)/%.eps: $(FIGSDIR)/%.dia
 pdf: 
 	pdflatex main.tex
 	bibtex main
+	makeindex main.nlo -s gglo.ist -o main.nls
 	pdflatex main.tex
 	pdflatex main.tex
 #dvipdf main.dvi $(OUTPUT)
 #	rm -f main.dvi
 clean:
-	rm -f *.aux *.log *.bbl *.toc
+	rm -f *.aux *.log *.bbl *.toc *.glo *.gls *.ilg *.out *.nls *.nlo *.blg
 distclean: clean
 	rm -f *.pdf *.dvi

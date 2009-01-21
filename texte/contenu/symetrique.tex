@@ -25,7 +25,7 @@ aléatoire, réside dans la façon de transporter les clés.
   \label{fig:ChiffrementSymetrique}
 \end{figure}
 
-\subsection{Le principe de Kerckhoffs}
+\subsection{Le principe de Kerckhoffs\label{sec:PrincipeKerchofs}}
 Dans son article \emph{La cryptographie militaire}
 \cite{CryptographieMilitaire1,CryptographieMilitaire2}, Auguste
 Kerckhoffs critique le manque d'application dans l'utilisation des
@@ -67,6 +67,7 @@ Il y a deux moyens de chiffrer les données avec les algorithmes à clé
 publiques : le \emph{chiffrement par bloc} et le \emph{chiffrement
 par flot} aussi appelé \emph{chiffrement par flux}. \\
 
+\label{syst:XOR}
 Tout d'abord, le chiffrement par flux traite les données commes elles
 arrivent, élément par élément. Sur les systèmes informatiques et
 électroniques, un élément est composé d'un bit, chaque bit est donc

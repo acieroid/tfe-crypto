@@ -1,25 +1,96 @@
-\documentclass[10pt,a4paper,oneside]{memoir}
+\documentclass[12pt,a4paper,oneside]{memoir}
 
 \usepackage{a4wide}
+%\usepackage{glossaire}
+%\usepackage{nomencl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{a4}
-\usepackage{color}
-%\usepackage{geometry}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage[usenames]{color}
 \usepackage[francais]{babel}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage{listings}
-%\usepackage{latexsym}
-%\usepackage{graphicx}
-%\usepackage{appendix}
 \usepackage{fancybox}
 \usepackage{url}
 \usepackage{graphics}
 \usepackage{graphicx}
-%\usepackage{harvard}
-\urlstyle{sf}
-\makeatletter\def\input@path{{contenu/}{src/}{eps/}}\makeatother
+\usepackage{geometry}
 
+% Pour le glossaire
+% /!\ ATTENTION
+% Le fichier nomencl.sty à été modifié afin d'y ajouter le style
+% gloss, néanmoins, la redéfinition de nomname devrait être utilisé (2
+% lignes plus bas), mais celle ci ne fonctionnant pas (va savoir
+% pourquoi), j'ai du y aller par la manière forte
+%\usepackage{glossary}
+%\makeglossary
+\usepackage[gloss]{nomencl}
+\makenomenclature
+%\renewcommand*{nomname}{Glossaire}
+
+%\glossary{[Mot] definition}
+%\glossary{[Mot] definition}
+\geometry{hmargin=2.5cm, vmargin=2cm}
+
+\urlstyle{sf}
+\makeatletter
+\def\input@path{{contenu/}{src/}{eps/}{annexes/}}
+\def\maketitle{
+  \null
+  \thispagestyle{empty}
+
+  % Titre
+  \vspace{0.1\textheight}
+  \begin{center}
+    \large
+    \textsc{Athéné Royal de Waterloo}
+    \\[0.05\textwidth]
+    \textsc{Travail de fin d'études}
+    \\[0.2\textwidth]
+    \rule{\linewidth}{0.2mm}
+    {\Huge\@title }
+    \rule{\linewidth}{0.2mm}
+  \end{center}
+  \vspace{0.1\textwidth}
+  % Noms
+  \begin{minipage}{0.4\textwidth}
+    \begin{flushleft} \large
+      \emph{Auteur :} \\
+      \@author
+    \end{flushleft}
+  \end{minipage}
+  \hspace{0.2\textwidth}
+  \begin{minipage}{0.4\textwidth}
+%    \vspace{-25pt}
+    \begin{flushright} \large
+      \emph{Professeur guide :}\\
+      Mr. \textsc{Suain}
+    \end{flushright}
+  \end{minipage}
+  
+  % Date
+  \vspace{0.6\textwidth}
+  \begin{center}
+    \large \@date
+  \end{center}
+  \clearpage
+}
+\makeatother
+\definecolor{light-gray}{gray}{0.95}
+\lstset{
+  basicstyle=\footnotesize, 
+  backgroundcolor=\color{light-gray},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false
+  frame=single,
+  breaklines=true,
+  numbers=left
+}
+
+\input{definitions.tex}
 
 \newcommand{\crypt}[2]{\begin{center}\texttt{#1}\ \ $\Longrightarrow$\ \ \texttt{#2}\end{center}}
 \newenvironment{fminipage}%
@@ -32,34 +103,27 @@
           : }#1\end{minipage}\end{center}}
 \newcommand{\bc}[1]{#1\ieme~ siècle avant J.-C.}
 
-
-%\setlength{\voffset}{-0.9in}
-%\setlength{\hoffset}{-0.5in}
-%\setlength{\textwidth}{6.5in}
-%\setlength{\textheight}{10.5in}
-
-\title{Travail de fin d'études \\
-  \textbf{La cryptographie} \\ 
+\title{\textsc{La cryptologie} \\[0.3cm]
   Peut on réellement cacher des informations ?}
-\author{Quentin Stiévenart\\
-Athéné Royal de Waterloo}
+\author{Quentin \textsc{Stiévenart}}
 \date{Année scolaire 2008 - 2009}
 
 
 \pagestyle{headings}
 \begin{document}
+
 % Titre, table des matières
 \frontmatter
-\maketitle \clearpage
-\tableofcontents \clearpage
-
-% Introduction
-\input{intro.tex}
+\maketitle %\clearpage
+\tableofcontents %\clearpage
 
 % Partie principale
 \mainmatter
 
-\input{presentation.tex}
+% Introduction
+\input{intro.tex}
+
+%\input{presentation.tex}
 \input{histoire.tex}
 \input{techniques.tex}
 \input{cryptanalyse.tex}
@@ -67,12 +131,30 @@ Athéné Royal de Waterloo}
 
 %\part{ Annexes}
 \appendix
+%\input{xor.tex}
 
-% Fin du travail : La bibliographie, le glossaire, à propos
+% Fin du travail : La bibliographie, le glossaire, a propos
 \backmatter
+
+% biblio
 \nocite{*}
 \bibliographystyle{abbrv-fr}
 \bibliography{bibliographie/bibliographie}
+
+% glossaire
+%\glossary{[Mot] definition}
+%\\
+%\glossary{[Autre mot] avec sa def}
+%\\
+%\addcontentsline{toc}{section}{Glossary}
+%\input{main.gls}
+%\glossary{[mot] def}
+%\entreeglossaire{mot}{def}
+%\printglossary
+\printglossary
+
+%\printnomenclature
+\addcontentsline{toc}{chapter}{Glossaire}
 
 
 \end{document}

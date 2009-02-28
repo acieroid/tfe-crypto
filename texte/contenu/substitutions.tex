@@ -19,9 +19,8 @@ On peut distinguer plusieurs sortes de substitutions :
 \end{itemize}
 
 \note{Dans ce chapitre, nous ferons abstraction des caractères
-  spéciaux, comme les lettres avec accents, des signes de
-  ponctuations, ou autre caractères. Nous remplacerons ceux-ci par une
-  espace si besoin est.}
+  spéciaux, comme les lettres accentuées ou les signes de
+  ponctuations.}
 
 \subsection{Les substitutions monoalphabétiques}
 Ce type de substitution consiste simplement à remplacer chaque lettre
@@ -49,7 +48,7 @@ Une application du chiffre de César est, par exemple, le \emph{ROT13},
 qui est simplement un chiffre de César pour lequel la clé $k$ a une
 valeur de $13$.\\
 
-L'interêt du ROT13 réside dans le fait qu'il suffit d'appliquer deux
+L'intérêt du ROT13 réside dans le fait qu'il suffit d'appliquer deux
 fois la méthode de chiffrement pour retrouver le texte en clair
 ($e_{13}(e_{13}(M)) = M$), ainsi, il n'y a qu'une et une seule fonction utilisée
 pour le chiffrement et le déchiffrement (donc $e_{13}(x) =
@@ -378,10 +377,11 @@ de lettre. Comme chiffre polygrammique, il existe par exemple le
 chiffre de Playfair, inventé par Charles Wheatstone en 1854 et qui fut
 réutilisé pendant la Première Guerre mondiale. Pour l'anecdote,
 quand Wheatstone proposa au \emph{Foreign Office} --- qui trouvait son chiffre
-trop compliqué pour être utiliser --- de montrer sa simplicité en
+trop compliqué pour être utilisé --- de montrer sa simplicité en
 l'apprenant aux trois-quarts des enfants de l'école primaire voisine
 en moins d'un quart d'heure, on lui répondit « C'est bien possible,
 mais vous ne pourrez jamais l'apprendre à des spécialistes ».
+
 
 Cette méthode chiffre les lettres par digrammes (par deux) en se
 basant sur quatre simples règles. On utilise un tableau de $5x$ cases,
@@ -449,7 +449,3 @@ lettre dans le tableau :
   \label{fig:Playfair}
 \end{figure}
 
-%\subsection{Substitution homophonique}
-% Chaque lettre peut être remplacée par plusieurs lettres/chiffres
-%\subsection{Substitution polygrammique}
-% Subsitituions de plusieurs caractères

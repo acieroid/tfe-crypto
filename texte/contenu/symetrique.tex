@@ -1,4 +1,4 @@
-\section{Chiffrement symétrique}
+\section{Le chiffrement symétrique}
 Dans les systèmes cryptographiques utilisant des clés, il faut bien
 distinguer les deux types existants : le chiffrement symétrique et le
 chiffrement asymétrique. Penchons nous d'abord sur le chiffrement
@@ -25,7 +25,7 @@ aléatoire, réside dans la façon de transporter les clés.
   \label{fig:ChiffrementSymetrique}
 \end{figure}
 
-\subsection{Le principe de Kerckhoffs\label{sec:PrincipeKerchofs}}
+\subsection{Le principe de Kerckhoffs\label{sec:PrincipeKerchoffs}}
 Dans son article \emph{La cryptographie militaire}
 \cite{CryptographieMilitaire1,CryptographieMilitaire2}, Auguste
 Kerckhoffs critique le manque d'application dans l'utilisation des
@@ -78,7 +78,7 @@ l'algèbre de Boole, qui, pour deux valeurs données pouvant être soit
 vraies (1 en binaire) soit fausse (0 en binaire), renvoie \emph{vrai}
 dans le cas ou une et une seule des valeurs données est vraie ; dans
 les autres cas, le ou exclusif nous renverra \emph{faux}. Cet
-opérateur est représenté par le symbole $\oplus$ et on le définir
+opérateur est représenté par le symbole $\oplus$ et peut on le définir
 simplement comme suit, en considérant $A$ et $B$ comme des bits (valant 0
 où 1), et ayant chacun une valeur différente de l'autre (si $A=0$,
 $B=1$ et inversément).
@@ -88,7 +88,7 @@ $B=1$ et inversément).
 \end{center} 
 
 Ainsi, avec un flux de texte clair contenant les bits $m_1,
-m_2, m_3, \dots, m_n$ et une clé contenants les bits $k_1, k_2, k_3,
+m_2, m_3, \dots, m_n$ et une clé contenats les bits $k_1, k_2, k_3,
 \dots, k_n$, on applique la règle suivante pour chiffrer le message,
 où l'ensemble $c_1, c_2, c_3, \dots, c_n$ est le message chiffré :
 \begin{center}
@@ -99,7 +99,8 @@ On comprends alors vite que la fiabilitée de cet algorithme dépend de
 la clé utilisée. Si la clé est parfaitement aléatoire et de la
 longueur du message, on a un chiffre de Vernam, complètement
 indéchiffrable ; si ce n'est pas le cas, il y a moyen de retrouver la
-clé, ce que nous verrons en détail dans le chapitre \ref{chap:Cryptanalyse}
+clé, ce que nous verrons en détail dans le chapitre
+\ref{chap:Cryptanalyse} sur la cryptanalyse.
 
 
 

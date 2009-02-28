@@ -1,17 +1,36 @@
 \section{Les fonctions de hachages}
-Les fonctions de hachages sont principalement utilisé en cryptographie
-pour assurer l'intégrité des données. Une fonction de hachage produit
-ce qu'on appelle communément un \emph{hash} ou \emph{somme de
-  contrôle}  de taille fixe à partir de
-données de taille indéfinie. Ceci peut amener à des \emph{collisions},
-c'est à dire que deux données différentes peuvent donner la même somme
-de contrôle, elles seront alors considérées comme identiques et cela
-peut poser de sérieux problèmes de confidentialitée, de sécurité, ...
+Les fonctions de hachage sont des fonctions à sens unique, et
+produise à partir d'un texte d'une quelconque longueur, une 
+\emph{somme de contrôle} (aussi appelée \emph{empreinte}
+ou \emph{hash}) de longueur fixe, qu'on peut voir comme un résumé
+du texte (à partir duquel on ne peut pas retrouver le texte
+d'origine, ou du moins très difficilement\footnote{Par très
+difficile, nous entendons qui n'est pas faisable en pratique, car
+cela demanderait des années (voire des centaines d'années, ou
+plus) de calculs, même en réunissant la puissance de calculs de
+tous les ordinateurs}).
 
-Dans ce chapitre, nous allons plus nous focaliser sur les méthodes
-utilisées pour calculer la somme à partir des données, nous
-regarderons en détail les problèmes de sécurités posés dans le
-chapitre \ref{SecuriteHash}, page \pageref{SecuriteHash}.
+Les fonctions de hachage doivent être résistantes aux collisions,
+c'est à dire qu'on ne peut pas trouver facilement deux messages
+différents ayant la même empreinte. Bien évidemment, la taille de
+l'emprunte étant fixe, il existera toujours des collisions du fait
+qu'il y a un nombre limité d'empreintes alors que le nombre de
+messages initiaux est illimiteé.
+On peut remarquer que la plupart des fonctions de hachages sont
+très sensibles, si l'on change un seul caractère à un message, son
+empreinte sera totalement changée. Nous pouvons vérifier cela avec
+la fonction MD5, qui est encore beaucoup utilisée de nos jours,
+malgré ses failles de sécurité. Cette fonction est inclue de base
+dans la plupart des systèmes Unix, sous le nom de \emph{md5sum}.
 
-%TODO
+\lstset{language=bash}
+\begin{lstlisting}
+% echo "Cryptologie" | md5sum
+c457c5d7aedcce9ac99abaa264de9f9e  -
+% echo "Cryptologie " | md5sum
+c96beec742489f176c84acb07db3ae55  -
+% echo "cryptologie" | md5sum
+966733eea2d1437b911b4be58ed22c8a  -
+\end{lstlisting}
 
+%TODO parler de la construction de l'empreinte ?

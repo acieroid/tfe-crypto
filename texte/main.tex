@@ -1,8 +1,6 @@
 \documentclass[12pt,a4paper,oneside]{memoir}
 
 \usepackage{a4wide}
-%\usepackage{glossaire}
-%\usepackage{nomencl}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{a4}
@@ -10,13 +8,12 @@
 \usepackage{subfig}
 \usepackage[usenames]{color}
 \usepackage[francais]{babel}
-%\usepackage{hyperref}
 \usepackage{listings}
 \usepackage{fancybox}
 \usepackage{url}
 \usepackage{graphics}
 \usepackage{graphicx}
-\usepackage{geometry}
+\usepackage[top=2cm, bottom=1cm, left=2.5cm, right=2.5cm]{geometry}
 
 % Pour le glossaire
 % /!\ ATTENTION
@@ -26,13 +23,21 @@
 % pourquoi), j'ai du y aller par la manière forte
 %\usepackage{glossary}
 %\makeglossary
-\usepackage[gloss]{nomencl}
-\makenomenclature
+%\usepackage[gloss]{nomencl}
+%\makenomenclature
 %\renewcommand*{nomname}{Glossaire}
 
-%\glossary{[Mot] definition}
-%\glossary{[Mot] definition}
-\geometry{hmargin=2.5cm, vmargin=2cm}
+%\geometry{hmargin=2.5cm, tlength=2cm, blength=1cm }
+
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+  colorlinks,
+  citecolor=black,%
+  filecolor=black,%
+  linkcolor=black,%
+  urlcolor=black
+}
+
 
 \urlstyle{sf}
 \makeatletter
@@ -90,7 +95,7 @@
   numbers=left
 }
 
-\input{definitions.tex}
+%\input{definitions.tex}
 
 \newcommand{\crypt}[2]{\begin{center}\texttt{#1}\ \ $\Longrightarrow$\ \ \texttt{#2}\end{center}}
 \newenvironment{fminipage}%
@@ -102,17 +107,22 @@
 \newcommand{\note}[1]{\begin{center}\begin{minipage}{0.7\textwidth}\textsc{Note
           : }#1\end{minipage}\end{center}}
 \newcommand{\bc}[1]{#1\ieme~ siècle avant J.-C.}
+\newcommand{\ssi}[0]{si et seulement si}
 
 \title{\textsc{La cryptologie} \\[0.3cm]
   Peut on réellement cacher des informations ?}
 \author{Quentin \textsc{Stiévenart}}
 \date{Année scolaire 2008 - 2009}
 
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
 
 \pagestyle{headings}
+
 \begin{document}
 
 % Titre, table des matières
+OLOLOLOLOLOL  
 \frontmatter
 \maketitle %\clearpage
 \tableofcontents %\clearpage
@@ -138,6 +148,7 @@
 
 % biblio
 \nocite{*}
+%\bibliographystyle{abbrv-fr}
 \bibliographystyle{abbrv-fr}
 \bibliography{bibliographie/bibliographie}
 
@@ -151,10 +162,10 @@
 %\glossary{[mot] def}
 %\entreeglossaire{mot}{def}
 %\printglossary
-\printglossary
+%\printglossary
 
 %\printnomenclature
-\addcontentsline{toc}{chapter}{Glossaire}
+%\addcontentsline{toc}{chapter}{Glossaire}
 
 
 \end{document}

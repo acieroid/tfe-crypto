@@ -1,0 +1,41 @@
+\section{Les niveaux d'attaques}
+Un attaquant peu avoir accès à plusieurs informations avant de
+commencer la cryptanalyse d'un message chiffré.
+
+Tout d'abord, il faut considérer que l'attaquant connaît en détail
+la méthode de chiffrement, la seule partie qu'il ne connaît pas
+est la clé (c'est le principe de
+Kerckhoffs\footref{sec:PrincipeKerchoffs}). Son but est donc de
+retrouver cette clé, et il pourra ainsi déchiffrer le message.
+
+L'attaquant peu aussi avoir d'autres informations que le texte
+chiffré et la connaissance de l'algorithme, il existe alors trois
+différents niveau d'attaques.
+
+\begin{itemize}
+  \renewcommand{\makelabel}[1]{\sffamily\textbf{#1}}
+  \item[L'attaque à texte chiffré seul] :
+    l'attaquant dispose d'un ou de plusieurs textes chiffrés, son but
+    est de retrouver les messages clairs, et idéalement (mais pas
+    nécessairement) de retrouver la clé utilisée pour le chiffrement,
+    afin de pouvoir déchiffrer d'autres messages ayant été chiffrés
+    avec cette clé.
+
+  \item[L'attaque à texte clair connu] :
+    ici, l'attaquant possède en plus des messages chiffrés, les
+    messages initiaux. Il doit alors retrouver la clé utilisée pour 
+    chiffrer les messages ou un algorithme pour déchiffrer n'importe
+    quel autre message chiffré avec cette clé. 
+
+  \item[L'attaque à texte clair choisi] :
+    cette attaque est presque identique que celle à texte clair connu,
+    sauf que l'attaquant peut choisir quel texte sera chiffré. Cette
+    attaque est donc plus facile, car il peut choisir des messages qui
+    pourraient lui apporter plus d'informations sur la clé.
+
+    Ce type d'attaque se divise en deux attaques : une où les textes
+    clairs sont tous choisis avant le chiffrement, et une où on
+    chiffre des textes en fonction des résultats des chiffrements
+    précédents
+
+\end{itemize}

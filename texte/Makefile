@@ -37,7 +37,7 @@ $(EPSDIR)/%.eps: $(FIGSDIR)/%.dia
 pdf: 
 	pdflatex main.tex
 	bibtex main
-	makeindex main.nlo -s gglo.ist -o main.nls
+#	makeindex main.nlo -s gglo.ist -o main.nls
 	pdflatex main.tex
 	pdflatex main.tex
 #dvipdf main.dvi $(OUTPUT)

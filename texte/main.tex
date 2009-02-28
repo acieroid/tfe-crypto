@@ -15,20 +15,6 @@
 \usepackage{graphicx}
 \usepackage[top=2cm, bottom=1cm, left=2.5cm, right=2.5cm]{geometry}
 
-% Pour le glossaire
-% /!\ ATTENTION
-% Le fichier nomencl.sty à été modifié afin d'y ajouter le style
-% gloss, néanmoins, la redéfinition de nomname devrait être utilisé (2
-% lignes plus bas), mais celle ci ne fonctionnant pas (va savoir
-% pourquoi), j'ai du y aller par la manière forte
-%\usepackage{glossary}
-%\makeglossary
-%\usepackage[gloss]{nomencl}
-%\makenomenclature
-%\renewcommand*{nomname}{Glossaire}
-
-%\geometry{hmargin=2.5cm, tlength=2cm, blength=1cm }
-
 \usepackage[pdftex]{hyperref}
 \hypersetup{
   colorlinks,
@@ -38,8 +24,6 @@
   urlcolor=black
 }
 
-
-\urlstyle{sf}
 \makeatletter
 \def\input@path{{contenu/}{src/}{eps/}{annexes/}}
 \def\maketitle{
@@ -83,6 +67,7 @@
   \clearpage
 }
 \makeatother
+
 \definecolor{light-gray}{gray}{0.95}
 \lstset{
   basicstyle=\footnotesize, 
@@ -95,15 +80,14 @@
   numbers=left
 }
 
-%\input{definitions.tex}
-
-\newcommand{\crypt}[2]{\begin{center}\texttt{#1}\ \ $\Longrightarrow$\ \ \texttt{#2}\end{center}}
+%\newcommand{\crypt}[2]{\begin{center}\texttt{#1}\ \ $\Longrightarrow$\ \ \texttt{#2}\end{center}}
 \newenvironment{fminipage}%
   {\begin{center}\begin{Sbox}\begin{minipage}{1\textwidth}}%
   {\end{minipage}\end{Sbox}\fbox{\TheSbox}\end{center}}
 \newcommand{\definition}[1]{\begin{center}#1\end{center}}
 \renewcommand{\footref}[1]{\footnote{voir chapitre \ref{#1}, page
     \pageref{#1}}}
+\renewcommand{\thesubsection}{\thesection .\alph{subsection}}
 \newcommand{\note}[1]{\begin{center}\begin{minipage}{0.7\textwidth}\textsc{Note
           : }#1\end{minipage}\end{center}}
 \newcommand{\bc}[1]{#1\ieme~ siècle avant J.-C.}
@@ -114,15 +98,13 @@
 \author{Quentin \textsc{Stiévenart}}
 \date{Année scolaire 2008 - 2009}
 
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
-
+\setcounter{tocdepth}{2}
+\urlstyle{sf}
 \pagestyle{headings}
 
 \begin{document}
 
 % Titre, table des matières
-OLOLOLOLOLOL  
 \frontmatter
 \maketitle %\clearpage
 \tableofcontents %\clearpage
@@ -130,9 +112,11 @@ OLOLOLOLOLOL
 % Partie principale
 \mainmatter
 
+\setcounter{secnumdepth}{2}
+
 % Introduction
 \input{intro.tex}
-
+%
 %\input{presentation.tex}
 \input{histoire.tex}
 \input{techniques.tex}
@@ -141,31 +125,14 @@ OLOLOLOLOLOL
 
 %\part{ Annexes}
 \appendix
-%\input{xor.tex}
+\input{xor.tex}
 
 % Fin du travail : La bibliographie, le glossaire, a propos
 \backmatter
 
 % biblio
 \nocite{*}
-%\bibliographystyle{abbrv-fr}
 \bibliographystyle{abbrv-fr}
 \bibliography{bibliographie/bibliographie}
-
-% glossaire
-%\glossary{[Mot] definition}
-%\\
-%\glossary{[Autre mot] avec sa def}
-%\\
-%\addcontentsline{toc}{section}{Glossary}
-%\input{main.gls}
-%\glossary{[mot] def}
-%\entreeglossaire{mot}{def}
-%\printglossary
-%\printglossary
-
-%\printnomenclature
-%\addcontentsline{toc}{chapter}{Glossaire}
-
 
 \end{document}

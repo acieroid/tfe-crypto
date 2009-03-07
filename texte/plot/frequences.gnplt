@@ -1,0 +1,31 @@
+#set title "Fréquence d'apparition des lettres en français"
+set auto x
+set yrange [0:15]
+set xrange [0:27]
+
+# style
+set style data histograms 
+set style histogram clustered gap 1
+set style fill solid border -1
+set boxwidth 1.5 
+set border 11
+set xlabel "Lettre" 
+set xtics out nomirror
+set ylabel "Fréquence d'apparition (%)" rotate left
+set ytics 1
+set mytics 2
+#unset key
+
+set terminal png font "DejaVuSans-Bold"
+set output "Frequences.png"
+
+set xtics ("a" 1, "b" 2, "c" 3, "d" 4, "e" 5, \
+           "f" 6, "g" 7, "h" 8, "i" 9, "j" 10, \
+           "k" 11, "l" 12, "m" 13, "n" 14, "o" 15, \
+           "p" 16, "q" 17, "r" 18, "s" 19, "t" 20, \
+           "u" 21, "v" 22, "w" 23, "x" 24, "y" 25, \
+           "z" 26)
+#plot 'frequences.dat' u 2:3
+
+plot 'frequences.dat' u 2 title "Français", '' u 3 title "Anglais"
+

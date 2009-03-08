@@ -4,7 +4,7 @@ très grand nombre d'attaques différentes pour retrouver le message
 clair ou la clé utilisée pendant le chiffrement. Voyons les
 attaques les plus utilisées.
 
-\subsection{L'analyse des fréquences}
+\subsection{L'analyse des fréquences\label{sec:AnalyseFrequences}}
 Exposée pour la première fois par Al-Kindi au IX\ieme~ siècle,
 l'analyse fréquentielle permet de déchiffrer des chiffrements
 simples. Dans le cas d'une substitution, les
@@ -25,7 +25,8 @@ d'apparitions des lettres unique (voir la figure \ref{fig:Frequences}).
 Bien évidemment, la fréquence d'apparition des lettres peut varier
 au sein d'une même langue selon certains critères (par exemple un
 message d'origine militaire risque de contenir beaucoup
-d'abréviations).
+d'abréviations). Une analyse des fréquence aura donc des résultats
+plus probables sur des messages d'une certaine longueur.
 
 \begin{figure}[h]
   \centering
@@ -34,78 +35,178 @@ d'abréviations).
 anglais}
   \label{fig:Frequences}
 \end{figure}
+
+
 \subsection{L'indice de coïncidence}
-\subsection{L'attaque par mot probable}
+Inventé en 1920 par William Friedman, l'indice de coïncidence
+permet de découvrir à quel type de chiffrement on a affaire 
+, et dans le cas d'une
+substitution polyalphabétique, il permet de trouver la taille de
+la clé.
 
-\subsection*{Application : cassage d'un cryptogramme proposé par
-le FBI}
-Pour mettre en pratique l'analyse des fréquences et l'attaque par
-mot probable, nous allons
-casser un message chiffré\footnote{Disponible sur
-\url{http://www.fbi.gov/page2/nov07/code112107.html}}, 
-proposé par le FBI sur leur site fin
-octobre 2007 (conçus par leurs cryptanalystes « just for fun »)
-\\
-Le cryptogramme est donc « PIKODENHFENJIKM! YIH QELB GDISBK NQB
-PICB. OI NI AGJ.OIL/PICB.QNT MI WB SKIW, EKC UFBEMB PIKMJCBD E
-PEDBBD WJNQ NQB AGJ. »
+Cet indice représente en fait la probabilité que deux lettres
+choisies au hasard dans un texte soient identiques. Comme pour
+l'analyse des fréquences, cette indice varie selon la langue.
+Ainsi, si l'indice de coïncidence d'un texte chiffré correspond à
+celui d'une certaine langue, le texte est chiffré avec une
+substitution monoalphabétique ou une transposition dans cette 
+langue. Si par contre l'indice ne correspond à rien, on a affaire 
+à une substitution polyalphabétique.
 
-À première vue, le cryptogramme à tout l'air d'une substitution
-monoalphabétique, du fait de la présence d'espaces et de
-ponctuation.
-Avant tout, essayons de trouver des éléments spéciaux dans le
-cryptogramme. On remarque assez vite un E seul vers la fin, ce qui
-a beaucoup de chance de correspondre avec la lettre A (« a » étant
-le seul mot composé d'une lettre en anglais), ainsi que le «
-AGJ.OIL/PICB.QNT », qui ressemble à une URL (sans le préfixe
-\emph{www}). Comme ce code est proposé par le site
-\url{www.fbi.gov}, on se doute bien que c'est cette même URL.
+Nous noterons l'indice de coïncidence propre au langage $I_l$, et
+l'indice de coïncidence correspondant à un texte où les lettres
+seraient placées uniformément $I_m$ (c'est en fait l'indice
+minimal). 
 \\
 
-Faisons ensuite une analyse des fréquences ; les lettres
-apparaissant le plus souvent dans le cryptogramme sont I et B (12
-fois), N et E (7 fois), et K (6 fois).
-Nous savons déjà que I correspond à O en clair, et E correspond à
-A. En regardant les fréquences moyenne d'apparition des lettres en
-anglais, la lettre apparaissant le plus est le E, qui devrait
-correspondre à B ici, suivie de la lettre T, qui correspond alors
-sûrement à N, et enfin (après A et O, que nous connaissons déjà),
-viens la lettre N, qui correspond donc sûrement à K ici.
+Calculons cet indice :
+\begin{itemize}
+  \item La probabilité que deux lettres tirées dans un texte est
+égal à la probabilité de prendre deux A, plus la probabilité de
+prendre deux B, \dots L'indice de coïncidence du texte est donc la
+somme de ces probabilités :
+  \begin{center}
+    \[ Ic = p(\mbox{prendre deux A}) + p(\mbox{prendre deux B}) +
+\dots + p(\mbox{prendre deux Z}) \]
+  \end{center}
+  \item Comme nous avons $C^{n}_2$ façons de prendre deux lettres
+d'un texte de $n$ lettres, et $C^{n_A}_2$ façons de prendre deux A
+dans ce même texte, s'il contient $n_A$ A, la probabilité de prendre 
+deux A est
+  \begin{center}
+    \[ p(\mbox{prendre deux A}) = \dfrac{C^{n_A}_2}{C^{n}_2} =
+\dfrac{\dfrac{n_A!}{2 (n_A - 2)!}}{\dfrac{n!}{2 (n - 2)!}} = 
+\dfrac{n_A (n_A - 1)}{n (n - 1)} \]
+  \end{center}
+  \item L'indice de coïncidence devient alors, pour $n_i$
+représentant la $i$\ieme~ lettre de l'alphabet :
+  \begin{center}
+    \[ Ic = \frac{n_1 (n_1 - 1)}{n (n - 1)} + \frac{n_2 (n_2 - 1)}{n
+(n - 1)} + \dots + \frac{n_{26} (n_{26} - 1)}{n (n - 1)} = \sum_{i = 1}^{i
++ 1} \frac{n_i (n_i - 1)}{n (n - 1)} \] 
+  \end{center}
+\end{itemize}
+
+%TODO: grandes par
+Dans le cas d'une substitution polyalphabétique, comme le chiffre
+de Vigenère, on pourrait diviser le message chiffré en plusieurs
+partie, chacune de ces parties étant l'équivalent d'une
+substitution simple, sur laquelle on pourrait procéder à une
+analyse fréquentielle. Le nombre de partie étant égal à la
+longueur de la clé, le plus important est alors de trouver la
+longueur de la clé.
+
+Considérons un message de $n$ caractères, chiffré avec une clé de
+longueur $k$. Si nous écrivons ce message dans un tableau de $k$
+colonnes, nous nous retrouverons avec un tableau de $\frac{n}{k}$
+lignes, où chaque colonne correspondrait à une substitution
+simple.
+
+Si maintenant, nous sélectionnons deux lettres dans ce tableau :
+\begin{enumerate}
+  \item Soit elles se trouvent dans deux colonnes différentes, 
+nous avons
+alors $C^k_2 ~ (\frac{n}{k})^2$ façons de les choisir. Le nombre
+de paire de lettres identiques au sein de deux colonnes distinctes
+est alors
+\[ I_m ~ C^k_2 ~ \left(\dfrac{n}{k}\right)^2 = 
+I_m ~ \dfrac{k (k - 1)}{2} ~
+\left(\dfrac{n}{k}\right)^2 = I_m ~ \dfrac{n^2 ~ (k-1)}{2k} \]
+  \item Soit elles se trouvent dans la même colonne, nous avons
+alors $C^{\frac{n}{k}}_2 ~ k $ façons de les choisir. Le nombre de paire de lettres
+identiques au sein d'une même colonne est
+\[ I_l C^{\frac{n}{k}}_2 ~ k = I_l
+\dfrac{n ~ (n-k)}{2k} \]
+\end{enumerate}
+
+On peut donc retrouver la valeur de l'indice de coïncidence du
+texte :
+\[Ic = \dfrac{I_m ~ \dfrac{n^2 ~ (k-1)}{2k} +
+I_l \dfrac{n ~ (n-k)}{2k}}{C^n_2} =
+\dfrac{I_m ~ n (k-1) + I_l (n-k)}{k ~
+(n+1)} \]
+
+De cette équation, on peut isoler $k$ :
+\[k = \dfrac{n (I_l - I_m)}{n (Ic - I_m) + (I_l - Ic)} \]
+Cette formule nous permet donc d'avoir une valeur assez proche de
+la longueur de la clé.
+
+
+\subsection{L'attaque par mot probable\label{sec:MotProbable}}
+Quand on a la connaissance d'un mot qui pourrait être dans le
+message chiffré, on a recours à cette attaque. On connaît alors le
+mot en clair et en chiffré, on peut alors trouver des informations
+pratique sur la clé, ou bien un bout ou l'entièreté de la clé.
+
+Dans l'annexe \ref{Apx:FBI}, nous verrons une simple mise en pratique
+de cette méthode, couplée avec l'analyse des fréquences.
+
+\subsection{L'attaque par force brute}
+L'attaque par force brute est une attaque qui théoriquement
+fonctionne à tous les coups. Elle consiste à essayer toutes les
+clés possibles, une à une, jusqu'à ce qu'on retrouve
+la clé utilisée pour le chiffrement.
+
+Bien évidemment, à cause des restrictions matérielles, cette
+technique prends énormément de temps à trouver une solution. Ce
+temps dépend de l'algorithme de chiffrement utilisé ainsi que de
+la longueur de la clé. On comprends alors l'intérêt de choisir des
+clés d'une certaine taille, afin de pouvoir résister à une attaque
+par force brute (et cela ralentira aussi d'autres types
+d'attaque).
 \\
 
-Nous connaissons alors déjà quelques correspondances entre lettres
-claires et lettres chiffrées : \\
-\begin{center}
-  \begin{tabular}{c|c}
-    Lettre claire & Lettre chiffrée \\
-    \hline
-    A & E \\
-    F & A \\
-    B & G \\
-    I & J \\
-    G & O \\
-    O & I \\
-    V & L \\
-    E & B \\
-    T & N \\
-    N & K
-  \end{tabular}
-\end{center}
+Il faut bien distinguer la longueur de la clé entre les
+algorithmes de chiffrement symétriques et asymétriques, par
+exemple, une clé de 1024 bits pour RSA (algorithme à clé
+publique) correspond à une clé de 80 bits dans les algorithmes de
+chiffrement symétriques. 
 
-On pourrait encore essayer de trouver plus de lettres via
-l'analyse des fréquence des lettres et des bigrammes présent dans
-le cryptogramme.
+Dans le cas des chiffrements symétriques, pour une clé de $n$
+bits, il existe alors $2^n$ clés possible, c'est donc autant
+d'opérations qu'il faudra effectuer afin de trouver la bonne clé. 
 \\
 
-La suite consiste à écrire le message avec les lettres que nous
-connaissons déjà, et à essayer de trouver les lettres manquantes.
+On considère un algorithme de chiffrement cassé lorsque le nombres
+d'opérations à effectuer pour casser un message est plus
+petit que le nombre d'opération qu'effectuerait une attaque par
+force brute. Ainsi, dans le cas de la méthode de chiffrement
+Triple DES, avec une clé de longueur de $2^{128}$ bits, une
+attaque permet de casser un code en $2^{112}$ opérations (on dit
+alors qu'il a 112 bits de sécurité). Ce nombre
+reste très grand, mais l'algorithme est considéré comme cassé.
+\\
 
-Ainsi, le premier mot serait « \_ONG\_AT\_\_ATION\_! », et on trouve
-assez rapidement que ce mot est « CONGRATULATIONS! », ce qui nous
-permet de connaître encore 5 lettres de plus.
+Afin de pallier aux limites matérielles, il existe diverses
+méthodes permettant d'avoir accès à une puissance de
+calcul considérable :
+\begin{itemize}
+  \renewcommand{\makelabel}[1]{\sffamily\textbf{#1}}
+  \item[Le calcul distribué] qui consiste comme son nom l'indique
+à distribuer le calcul sur différentes machines, qui effectueront
+les opérations en tâche de fond. C'est utilisé par exemple dans
+les nombreux projets nommés « @home » comme « Folding@Home
+»\footnote{Voir \url{http://folding.stanford.edu} pour plus
+d'informations sur ce projet},
+organisé par l'université de Stanford, et qui consiste à étudier
+le repliement des protéines en fonction de diverses facteurs, dans
+le but de fabriquer de nouveaux médicaments.
+  \item[Les fermes de calcul (ou clustering)], qui, comme le
+calcul distribué, permettent de rassembler les puissances de
+calculs de plusieurs machines, sauf que dans ce cas ci, cette
+puissance de calcul sera uniquement utilisée pour la tâche
+désirée.
+  \item[Les machines spécialisées], comme c'est le cas de
+\emph{Deep Crack}, une machine mise au point en 1998 qui déchiffra
+un message en 56 heures lors du DES Challenge.\\
+\end{itemize}
 
-Il suffit alors de continuer ainsi de suite jusqu'à avoir
-déchiffré le message en entier, dans ce cas ci, le message clair
-est « CONGRATULATIONS! YOU HAVE BROKEN THE CODE. GO TO
-FBI.GOV/CODE.HTM SO WE KNOW, AND PLEASE CONSIDER A CAREER WITH THE
-FBI »
+On peut aussi citer une méthode utilisée par certains logiciel pour
+cracker les sommes MD5, qui est d'utiliser la
+puissance de calcul du processeur graphique (GPU) en plus de celle
+du processeur (CPU). Ce genre de logiciel peut essayer plus de
+$2^{28}$ empreintes MD5 par secondes sur un ordinateur 
+personnel, et qui permet alors de retrouver le message clair en
+moins d'une minute\footnote{Test disponible à l'adresse
+\url{http://fz-corp.net/repository/MD5-GPU.html}}.
+

@@ -228,8 +228,7 @@ modifié légèrement la méthode de Trithème en rendant l'utilisation de
 clé de chiffrement possible.\\
 
 La technique de Jean Trithème est d'utiliser ce qu'il décrit comme une
-\emph{tabula recta}
-\ref{fig:TabulaRecta}) qui est composée de 24 rangées de 24
+\emph{tabula recta} qui est composée de 24 rangées de 24
 lettres chacune. On retire donc deux lettres, le J et le V, qui seront
 respectivement remplacées par le I et le W. Le W est placé après le
 Z.\\
@@ -237,25 +236,27 @@ Chaque rangée correspond à un chiffre de César\footref{syst:ChiffreCesar},
 avec à chaque fois un décalage augmenté d'une unité. \\
 
 Par exemple, pour chiffrer le mot « cryptographie » avec la table se
-trouvant à la figure \ref{fig:TabulaRecta}~: 
+trouvant à la figure \ref{fig:VigenereTableau} (sans prendre
+compte de la première ligne, utilisée pour le chiffrement de
+Vigenère)~: 
 \begin{itemize}
   \item la lettre C est chiffrée sur la première ligne, et reste
     donc C~;
   \item la lettre R est chiffrée sur la 2\ieme~ ligne, et devient
     S. Pour cela, trouvez la colonne de R dans la première rangée, et
     descendez d'une ligne~;
-  \item La lettre Y devient W (même colonne, deux rangées plus bas)~;
+  \item La lettre Y devient A (même colonne, deux rangées plus bas)~;
   \item Et ainsi de suite ~\dots~;
-  \item « cryptographie » sera donc chiffré en « csasztnwiwsur ».
+  \item « cryptographie » sera donc chiffré en « csasxsmywuwt ».
 \end{itemize}
 
-\begin{figure}[h]
-  \begin{center}
-    \includegraphics[scale=0.5]{images/TabulaRecta.jpg}
-  \end{center}
-  \caption{La \emph{tabula recta} de Jean Trithème}
-  \label{fig:TabulaRecta}
-\end{figure}
+%\begin{figure}[h]
+%  \begin{center}
+%    \includegraphics[scale=0.5]{images/TabulaRecta.jpg}
+%  \end{center}
+%  \caption{La \emph{tabula recta} de Jean Trithème}
+%  \label{fig:TabulaRecta}
+%\end{figure}
 
 Vigenère reprends donc cette méthode pour légèrement la modifier (y
 ajouter l'utilisation d'une clé en fait), et la publie dans son livre

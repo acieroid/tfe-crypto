@@ -1,0 +1,67 @@
+\chapter{Mise en place d'un XOR en C}
+Nous allons voir ici comment mettre en place un chiffrement via le
+\emph{ou exclusif}, expliqué dans le chapitre \ref{syst:XOR}, page
+\pageref{syst:XOR}.
+
+Le programme que nous allons écrire nous chiffrera un message à partir
+d'une clé donnée. Nous devrons donc indiquer deux paramètres aux
+programme : le fichier contenant le message ainsi que le fichier
+contenant la clé.
+
+Ensuite, le programme parcourera les fichiers simultanéments en mode
+binaire, caractère par caractère en effectuant à chaque fois un ou
+exclusif entre le caractère du message et celui de la clé. Si nous
+arrivons à la fin de la clé avant la fin du message, nous répetons la
+clé à partir du début. À chaque caractère chiffré, nous l'affichons
+sur la sortie standard.
+
+La mise en place d'un tel programme est assez simple, voici le code
+source en C : 
+\lstset{language=C}
+\lstinputlisting[]{src/xor.c}
+
+L'opération XOR est effectuée à la ligne 25, grâce à l'opérateur \texttt{\^}.
+
+On peut alors facilement utiliser un générateur de nombres
+pseudo-aléatoires pour créer une clé, qui sera de la même taille que
+le message, et nous aurons donc un masque jetable.
+
+Sur la plupart des systèmes basés sur Unix (Linux, FreeBSD, Solaris,
+\dots), de tels générateurs sont présent par défaut ; souvent au
+nombre de deux : un plus rapide mais moins aléatoire, et un au
+contraire plus aléatoire mais plus lent. Ces générateurs sont
+respictivement dans les fichiers spéciaux \texttt{/dev/urandom} et
+\texttt{/dev/random}. Utilisons alors la commande \texttt{dd} pour
+écrire un fichier de la même taille que le message, contenant des bits
+aléatoires venant de \texttt{/dev/random}.
+
+Si le contenu à chiffrer est dans le fichier \texttt{message}, nous le
+chiffrerons ainsi (la commande \texttt{du message | awk '{print \$1}'}
+nous donne la taille du fichier en octets) : 
+\lstset{language=csh}
+\begin{lstlisting}
+# Creation de la cle
+% dd if=/dev/random of=key bs=1 count=`du message | awk '{print $1}'`
+# Chiffrement
+% ./xor message key > encrypted-message
+# Dechiffrement
+% ./xor encrypted-message key 
+\end{lstlisting}
+
+Pour faciliter le chiffrement et la création de la clé, nous pouvons
+utiliser un simple script sh qui fera le travail pour nous : 
+
+\lstset{language=csh}
+\lstinputlisting[]{src/use-xor.sh}
+
+Il nous suffira alors d'appeler ce script en lui spécifiant le fichier
+contenant le message.\\
+
+Il y a deux inconvénients donc à ce système : le transport de la clé,
+qu'on pourrait communiquer via un système de communication possédant
+déjà un chiffrement à clé publique. Le second problème est la
+génération de la clé ; le générateur \texttt{/dev/random} est fiable
+au niveau du contenu aléatoire, mais est extrêmement lent et sa
+vitesse dépend de l'activité de la machine.
+
+%TODO: autres générateurs ?

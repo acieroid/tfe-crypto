@@ -69,12 +69,12 @@ somme de ces probabilités :
     \[ Ic = p(\mbox{prendre deux A}) + p(\mbox{prendre deux B}) +
 \dots + p(\mbox{prendre deux Z}) \]
   \end{center}
-  \item Comme nous avons $C^{n}_2$ façons de prendre deux lettres
-d'un texte de $n$ lettres, et $C^{n_A}_2$ façons de prendre deux A
+  \item Comme nous avons $C_{n}^2$ façons de prendre deux lettres
+d'un texte de $n$ lettres, et $C_{n_A}^2$ façons de prendre deux A
 dans ce même texte, s'il contient $n_A$ A, la probabilité de prendre 
 deux A est
   \begin{center}
-    \[ p(\mbox{prendre deux A}) = \dfrac{C^{n_A}_2}{C^{n}_2} =
+    \[ p(\mbox{prendre deux A}) = \dfrac{C_{n_A}^2}{C_{n}^2} =
 \dfrac{\dfrac{n_A!}{2 (n_A - 2)!}}{\dfrac{n!}{2 (n - 2)!}} = 
 \dfrac{n_A (n_A - 1)}{n (n - 1)} \]
   \end{center}
@@ -82,12 +82,11 @@ deux A est
 représentant la $i$\ieme~ lettre de l'alphabet :
   \begin{center}
     \[ Ic = \frac{n_1 (n_1 - 1)}{n (n - 1)} + \frac{n_2 (n_2 - 1)}{n
-(n - 1)} + \dots + \frac{n_{26} (n_{26} - 1)}{n (n - 1)} = \sum_{i = 1}^{i
-+ 1} \frac{n_i (n_i - 1)}{n (n - 1)} \] 
+(n - 1)} + \dots + \frac{n_{26} (n_{26} - 1)}{n (n - 1)} = \sum_{i
+= 1}^{26} \frac{n_i (n_i - 1)}{n (n - 1)} \] 
   \end{center}
 \end{itemize}
 
-%TODO: grandes par
 Dans le cas d'une substitution polyalphabétique, comme le chiffre
 de Vigenère, on pourrait diviser le message chiffré en plusieurs
 partie, chacune de ces parties étant l'équivalent d'une
@@ -106,23 +105,23 @@ Si maintenant, nous sélectionnons deux lettres dans ce tableau :
 \begin{enumerate}
   \item Soit elles se trouvent dans deux colonnes différentes, 
 nous avons
-alors $C^k_2 ~ (\frac{n}{k})^2$ façons de les choisir. Le nombre
+alors $C_k^2 ~ (\frac{n}{k})^2$ façons de les choisir. Le nombre
 de paire de lettres identiques au sein de deux colonnes distinctes
 est alors
-\[ I_m ~ C^k_2 ~ \left(\dfrac{n}{k}\right)^2 = 
+\[ I_m ~ C_k^2 ~ \left(\dfrac{n}{k}\right)^2 = 
 I_m ~ \dfrac{k (k - 1)}{2} ~
 \left(\dfrac{n}{k}\right)^2 = I_m ~ \dfrac{n^2 ~ (k-1)}{2k} \]
   \item Soit elles se trouvent dans la même colonne, nous avons
-alors $C^{\frac{n}{k}}_2 ~ k $ façons de les choisir. Le nombre de paire de lettres
+alors $C_{\frac{n}{k}}^2 ~ k $ façons de les choisir. Le nombre de paire de lettres
 identiques au sein d'une même colonne est
-\[ I_l C^{\frac{n}{k}}_2 ~ k = I_l
+\[ I_l C_{\frac{n}{k}}^2 ~ k = I_l
 \dfrac{n ~ (n-k)}{2k} \]
 \end{enumerate}
 
 On peut donc retrouver la valeur de l'indice de coïncidence du
 texte :
 \[Ic = \dfrac{I_m ~ \dfrac{n^2 ~ (k-1)}{2k} +
-I_l \dfrac{n ~ (n-k)}{2k}}{C^n_2} =
+I_l \dfrac{n ~ (n-k)}{2k}}{C_n^2} =
 \dfrac{I_m ~ n (k-1) + I_l (n-k)}{k ~
 (n+1)} \]
 
@@ -130,7 +129,24 @@ De cette équation, on peut isoler $k$ :
 \[k = \dfrac{n (I_l - I_m)}{n (Ic - I_m) + (I_l - Ic)} \]
 Cette formule nous permet donc d'avoir une valeur assez proche de
 la longueur de la clé.
+\\
 
+Nous pouvons assez simplement calculer $I_m$, l'indice d'un texte
+contenant des lettres aléatoirement placées. Considérons un très
+long texte de $n$ lettres, contenant toutes les lettres de
+l'alphabet autant de fois les unes que les autres.
+ Il est alors évident que le nombre de A
+sera égal au nombre de B, au nombre de C, \dots~
+Donc, $n_i$ (le nombre d'apparition de la $i$\ieme~ lettre de
+l'alphabet dans le texte) vaudra $\dfrac{n}{26}$.
+Comme $n$ est très grand, on considère que $n (n-1) = n^2$, et de
+même pour $n_i$ : $\dfrac{n}{26} \left(\dfrac{n}{26} - 1\right) =
+\left(\dfrac{n}{26}\right)^2$.
+Calculons alors cet indice de coïncidence :
+
+\[I_m = \dfrac{1}{n^2} \sum_{i = 1}^{26} \left(\dfrac{n}{26}\right)^2 =
+\dfrac{1}{n^2} ~26~ \dfrac{n^2}{26^2} = \dfrac{1}{26} \approx
+0,384\] 
 
 \subsection{L'attaque par mot probable\label{sec:MotProbable}}
 Quand on a la connaissance d'un mot qui pourrait être dans le
@@ -204,9 +220,41 @@ un message en 56 heures lors du DES Challenge.\\
 On peut aussi citer une méthode utilisée par certains logiciel pour
 cracker les sommes MD5, qui est d'utiliser la
 puissance de calcul du processeur graphique (GPU) en plus de celle
-du processeur (CPU). Ce genre de logiciel peut essayer plus de
+du processeur (CPU). Ce genre de logiciel peut essayer dans les
+meilleurs cas plus de
 $2^{28}$ empreintes MD5 par secondes sur un ordinateur 
 personnel, et qui permet alors de retrouver le message clair en
 moins d'une minute\footnote{Test disponible à l'adresse
 \url{http://fz-corp.net/repository/MD5-GPU.html}}.
+
+\subsection{L'attaque par dictionnaire}
+Cette attaque est souvent utilisée en parallèle avec l'attaque par
+force brute, et consiste à essayer de déchiffrer un mot de passe
+en essayant tous les mots d'une liste, contenant des mots souvent
+utilisés en tant que mot de passe.
+
+Les logiciels procédant à ce type d'attaques (comme \emph{John the
+Ripper}\footnote{Disponible sur
+\url{http://www.openwall.com/john/}} utilisent des « règles » à
+partir de la liste de mot. Ces règles permettent d'essayer
+plusieurs combinaisons utilisant le mot, ainsi, pour le mot
+\texttt{password}, grâce aux règles, on pourra tester les mots
+\texttt{password15}, \texttt{pAsSworD}, \texttt{p4ssw0rd}, \dots
+
+Ce genre d'attaque (ainsi que l'attaque par brute force) n'ont
+aucun intérêt à être utilisée dans le déchiffrement de textes,
+mais sont grandement efficaces contre des mots de passe. C'est
+pour cela que l'on conseille de compliquer les mots de passe, via
+diverses méthodes, la plus efficace étant d'en générer un
+aléatoirement, de nombreux sites internet nous offrant cette
+possibilité\footnote{Comme
+\url{http://www.eurnet.fr/passwd/passwd.html}, qui informe aussi
+du temps que tiendrait le mot de passe face à une attaque de type
+% TODO: trouver un site libre
+force brute ou par dictionnaire}, ou via une commande de ce genre sous les systèmes
+Unix :
+\lstset{language=bash}
+\begin{lstlistings}
+% < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c8 
+\end{lstlistings}
 

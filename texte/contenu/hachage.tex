@@ -1,6 +1,6 @@
 \section{Les fonctions de hachages\label{sec:FonctionHachage}}
 Les fonctions de hachage sont des fonctions à sens unique, et
-produise à partir d'un texte d'une quelconque longueur, une 
+produisent à partir d'un texte d'une quelconque longueur, une 
 \emph{somme de contrôle} (aussi appelée \emph{empreinte}
 ou \emph{hash}) de longueur fixe, qu'on peut voir comme un résumé
 du texte (à partir duquel on ne peut pas retrouver le texte
@@ -15,13 +15,15 @@ c'est à dire qu'on ne peut pas trouver facilement deux messages
 différents ayant la même empreinte. Bien évidemment, la taille de
 l'emprunte étant fixe, il existera toujours des collisions du fait
 qu'il y a un nombre limité d'empreintes alors que le nombre de
-messages initiaux est illimiteé.
+messages initiaux est illimité.
 On peut remarquer que la plupart des fonctions de hachages sont
 très sensibles, si l'on change un seul caractère à un message, son
-empreinte sera totalement changée. Nous pouvons vérifier cela avec
+empreinte sera totalement changée.
+
+Nous pouvons vérifier cela avec
 la fonction MD5, qui est encore beaucoup utilisée de nos jours,
 malgré ses failles de sécurité. Cette fonction est inclue de base
-dans la plupart des systèmes Unix, sous le nom de \emph{md5sum}.
+dans la plupart des systèmes Unix, via le programme \texttt{md5sum}.
 
 \lstset{language=bash}
 \begin{lstlisting}

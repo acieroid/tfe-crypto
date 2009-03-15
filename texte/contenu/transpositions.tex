@@ -8,13 +8,14 @@ Scytale des Spartiates (voir la figure \ref{fig:Scytale}, page
 \pageref{fig:Scytale}).
 
 Il existe de nombreux systèmes de chiffrement de ce type, souvent
-simple à utiliser « à la main ». C'est le cas par exemple du
+simple à utiliser «~à la main~». C'est le cas par exemple du
 \emph{Rail Fence}, un procédé utilisé pendant la guerre de Sécession
 qui consiste à simplement écrire une lettre par ligne (on utilisera donc
-une clé, correspondant au nombre de lignes que nous utilisons), et
+une clé numérique, correspondant au nombre de lignes que nous utilisons), et
 reprendre à la première ligne une fois la dernière atteinte. Ensuite,
 le message chiffré se lit simplement comme n'importe quel texte.
-Ainsi, « Chiffrement » sera chiffré en « Cifeethfrmn » (voir la figure \ref{fig:Transposition}
+Ainsi, «~Chiffrement~» sera chiffré en «~Cifeethfrmn~» sur deux
+lignes (voir la figure \ref{fig:Transposition})
 \begin{figure}[h]
   \begin{center}
     \includegraphics[scale=0.4]{images/Transposition.png}
@@ -26,15 +27,15 @@ Ainsi, « Chiffrement » sera chiffré en « Cifeethfrmn » (voir la figure \ref
 La plupart des chiffres de transposition utilisent des tableaux pour
 chiffrer, il suffit alors d'écrire le message initial dans un tableau
 d'une taille donnée, et de faire quelques opérations sur ce tableau
-afin de « mélanger » les lettres. On peut facilement représenter cela
-à l'aide des matrices mathématiques : utilisons une matrice de 5
-colonnes, dans laquelle nous écrivons « chiffrement par transposition
+afin de «~mélanger~» les lettres. On peut facilement représenter cela
+à l'aide des matrices : utilisons une matrice de 5
+colonnes, dans laquelle nous écrivons «~chiffrement par transposition
 ». Un problème se pose alors pour la dernière ligne, elle n'est pas
 complète ; deux choix s'offrent alors à nous : 
 \begin{itemize}
   \item Laisser ces cases vides
-  \item Utiliser des « caractères nuls », caractères aléatoires qui ne
-    servent qu'à completer la matrice et éventuellement à perturber la
+  \item Utiliser des «~caractères nuls~», caractères aléatoires qui ne
+    servent qu'à compléter la matrice et éventuellement à perturber la
     cryptanalyse du message chiffré.
 \end{itemize}
 Pour cet exemple, nous allons choisir la seconde méthode, et ajouter
@@ -73,7 +74,7 @@ ou chaque lettre sera numérotée selon l'ordre alphabétique. Quand une
 lettre apparait plus d'une fois, la lettre la plus à gauche aura
 l'indice le plus faible, la plus à droite l'indice le plus fort.
 
-Utilisons ici la clé « Pomme », ce qui donne « 54231 » en chiffres,
+Utilisons ici la clé «~Pomme~», ce qui donne «~54231~» en chiffres,
 nous réarrangons donc les colonnes selon cet ordre (la dernière
 colonne sera la première, la troisème la seconde, ...)
 
@@ -92,11 +93,11 @@ colonne sera la première, la troisème la seconde, ...)
   \right)
   $
   \end{center}
-  \caption{La matrice réarrangée, selon la clé « Pomme »}
+  \caption{La matrice réarrangée, selon la clé «~Pomme~»}
   \label{fig:TranspositionMatriceCode}
 \end{figure}
 
-Ainsi, le message codé sera « FNTOOZIMASTOFEROIKHEPAIGCRTRSN », et on
+Ainsi, le message codé sera «~FNTOOZIMASTOFEROIKHEPAIGCRTRSN~», et on
 pourra facilement le déchiffrer en le réécrivant verticalement dans
 une matrice possédant le même nombre de colonnes que la clé (5 ici),
 en numérotant les colonnes de droite à gauche et en les remettant dans

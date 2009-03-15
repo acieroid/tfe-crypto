@@ -15,7 +15,10 @@
    sodipodi:version="0.32"
    inkscape:version="0.46"
    sodipodi:docname="symetrique.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/quentin/tfe/texte/images/ChiffrementSymetrique.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3260">
     <linearGradient
@@ -37,24 +40,6 @@
        inkscape:vp_z="744.09448 : 526.18109 : 1"
        inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
        id="perspective3266" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3835"
-       id="linearGradient3841"
-       x1="88.90358"
-       y1="239.69446"
-       x2="228.28433"
-       y2="239.69446"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-551.58746,-29.92337)" />
-    <filter
-       inkscape:collect="always"
-       id="filter3883">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.7638682"
-         id="feGaussianBlur3885" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3835"
@@ -103,16 +88,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0025609"
-     inkscape:cx="337.106"
-     inkscape:cy="867.08695"
+     inkscape:zoom="0.70891761"
+     inkscape:cx="189.7302"
+     inkscape:cy="834.53786"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1278"
+     inkscape:window-width="1280"
      inkscape:window-height="1008"
      inkscape:window-x="0"
-     inkscape:window-y="14" />
+     inkscape:window-y="16" />
   <metadata
      id="metadata3263">
     <rdf:RDF>
@@ -129,13 +114,17 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="opacity:1;fill:#aa4400;fill-opacity:1;fill-rule:nonzero;stroke:#2b1100;stroke-width:4.14155244999999983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter3883)"
-       id="rect3268"
-       width="221.7717"
-       height="96.512787"
-       x="-436.15497"
-       y="13.146151"
-       ry="32.91909" />
+       ry="16.640972"
+       y="0.85743618"
+       x="13.205799"
+       height="155.00337"
+       width="698.52771"
+       id="rect3887"
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:6.15129995;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="/home/quentin/tfe/texte/images/ChiffrementSymetrique.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       rx="22.930834" />
     <text
        xml:space="preserve"
        style="font-size:32.70937347px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
@@ -162,26 +151,6 @@
          x="183.92134"
          y="366.12485"
          id="tspan3286">Déchiffrement</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       x="-270.72089"
-       y="272.52441"
-       id="text3290"><tspan
-         sodipodi:role="line"
-         id="tspan3292"
-         x="-270.72089"
-         y="272.52441">Clé identique</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       x="-559.62451"
-       y="330.10312"
-       id="text3294"><tspan
-         sodipodi:role="line"
-         id="tspan3296"
-         x="-559.62451"
-         y="330.10312">Système de communication</tspan></text>
     <g
        id="g3309"
        transform="matrix(0.7457865,0,0,0.7457865,647.41208,-257.80045)"
@@ -227,40 +196,6 @@
          style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.69999981;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          sodipodi:type="arc" />
     </g>
-    <rect
-       style="opacity:1;fill:url(#linearGradient3841);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect3316"
-       width="137.38075"
-       height="148.49243"
-       x="-461.6839"
-       y="135.52489"
-       rx="9.0913725"
-       ry="8.0812206" />
-    <rect
-       ry="32.91909"
-       y="13.146151"
-       x="9.7032537"
-       height="96.512787"
-       width="221.7717"
-       id="rect3887"
-       style="fill:#aa4400;fill-opacity:1;fill-rule:nonzero;stroke:#2b1100;stroke-width:4.14155245;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter3883)"
-       transform="matrix(0.5408222,0,0,0.5408222,4.5021105,30.189577)"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/ChiffrementSymetrique.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <text
-       xml:space="preserve"
-       style="font-size:31.99230766px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-       x="32.159393"
-       y="73.87603"
-       id="text3270"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/ChiffrementSymetrique.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan3272"
-         x="32.159393"
-         y="73.87603">Alice</tspan></text>
     <g
        id="g3918"
        transform="matrix(0.5706241,0,0,0.5706241,136.43179,-54.558961)"
@@ -300,55 +235,9 @@
          sodipodi:role="line"
          id="tspan3904"
          x="157.59642"
-         y="168.62531"></tspan><tspan
+         y="168.62531" /><tspan
          sodipodi:role="line"
          id="tspan3906" /></text>
-    <g
-       id="g3930">
-      <path
-         id="path3924"
-         d="M -298.23626,379.08634 C -110.71647,379.08634 -109.71903,379.08634 -109.71903,379.08634"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
-      <path
-         sodipodi:nodetypes="cccc"
-         id="path3928"
-         d="M -123.07496,367.86794 L -103.14264,379.37587 L -122.93531,389.17435 L -123.07496,367.86794 z"
-         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
-    </g>
-    <g
-       id="g3942">
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4,4;stroke-opacity:1;stroke-dashoffset:0"
-         d="M -298.23626,493.34504 C -110.71647,493.34504 -109.71903,493.34504 -109.71903,493.34504"
-         id="path3936" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:1,1;stroke-dashoffset:0"
-         d="M -123.07496,482.12664 L -103.14264,493.63457 L -122.93531,503.43305 L -123.07496,482.12664 z"
-         id="path3938"
-         sodipodi:nodetypes="cccc" />
-    </g>
-    <g
-       id="g3960"
-       transform="matrix(0.4075249,0,0,0.4075249,-39.79961,349.65671)">
-      <rect
-         ry="9.3323936"
-         rx="10.498941"
-         y="425.88324"
-         x="-109.71725"
-         height="149.86774"
-         width="37.466934"
-         id="rect3950"
-         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         ry="8.0812206"
-         rx="9.0913725"
-         y="479.65808"
-         x="-157.98734"
-         height="39.026619"
-         width="134.00713"
-         id="rect3954"
-         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
     <g
        transform="matrix(0.4075249,0,0,0.4075249,336.83092,-137.00071)"
        id="g3964"
@@ -573,30 +462,73 @@
            y="204.07324"
            id="tspan4056">clair </tspan></text>
     </g>
-    <g
-       id="g4067"
-       inkscape:export-filename="/home/quentin/tfe/texte/images/ChiffrementSymetrique.png"
+    <rect
+       rx="22.923359"
+       inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-filename="/home/quentin/tfe/texte/images/ChiffrementSymetrique.png"
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:6.37899113;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5541"
+       width="698.30005"
+       height="166.74503"
+       x="13.319644"
+       y="210.43488"
+       ry="17.901543" />
+    <g
+       id="g3245" />
+    <g
+       id="g3260">
       <rect
-         ry="32.91909"
-         y="13.146151"
-         x="9.7032537"
-         height="96.512787"
-         width="221.7717"
-         id="rect4065"
-         style="fill:#aa4400;fill-opacity:1;fill-rule:nonzero;stroke:#2b1100;stroke-width:4.14155245;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter3883)"
-         transform="matrix(0.5408222,0,0,0.5408222,4.5021105,238.65573)" />
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.83400011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect2473"
+         width="91.689064"
+         height="47.255138"
+         x="41.612732"
+         y="-20.399996"
+         rx="0"
+         ry="0" />
       <text
-         id="text3274"
-         y="285.42758"
-         x="31.327347"
-         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/quentin/tfe/texte/images/ChiffrementSymetrique.png"
+         id="text3270"
+         y="10.398978"
+         x="49.791908"
+         style="font-size:31.99230766px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
          xml:space="preserve"><tspan
-           y="285.42758"
+           y="10.398978"
+           x="49.791908"
+           id="tspan3272"
+           sodipodi:role="line">Alice</tspan></text>
+    </g>
+    <g
+       id="g3265">
+      <rect
+         ry="0"
+         rx="0"
+         y="187.66368"
+         x="41.612732"
+         height="47.255138"
+         width="91.689064"
+         id="rect3254"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.83400011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <g
+         transform="translate(16.221913,-60.505477)"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/quentin/tfe/texte/images/ChiffrementSymetrique.png"
+         id="g4067">
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
            x="31.327347"
-           id="tspan3276"
-           sodipodi:role="line">Bob</tspan></text>
+           y="285.42758"
+           id="text3274"><tspan
+             sodipodi:role="line"
+             id="tspan3276"
+             x="31.327347"
+             y="285.42758">Bob</tspan></text>
+      </g>
     </g>
   </g>
 </svg>

@@ -259,6 +259,84 @@ Unix :
 \end{lstlisting}
 
 \subsection{Le paradoxe des anniversaire}
+Dans le cas d'une fonction de hachage, il y aura toujours des
+collisions entre les sommes de contrôles de deux données
+différentes, du fait que la taille du haché est définie, alors que
+la taille des données peut être aussi longue qu'on le veut.
+Dans le cas du MD5, la taille du haché est de 128 bits,
+c'est-à-dire que l'on a $2^{128}$ haché possibles.
+
+Il peut être alors intéressant pour une personne malveillante de
+trouver deux messages différents ayant la même somme de contrôle,
+afin de remplacer un message par un autre, tout en laissant le
+destinataire que le message est original et non modifié. Pour ce
+faire, l'attaquant peut alors, via diverses modifications (ajouter
+des espaces en fin de ligne, ajouter des lignes vides, …) essayer
+de trouver une collision entre les sommes de contrôle des deux
+messages. Mais combien de messages devra-t-il essayer avant d'en
+trouver un qui correspond ?
+\\
+
+Illustrons cela par le problème des anniversaires : quelle est la
+probabilité, en prenant une personne précise dans une pièce de $n$
+personnes, qu'une autre personne de cette pièce ait son
+anniversaire le même jour que cette personne.
+
+On peut reformuler cette phrase en « Quelle est la probabilité, en
+prenant une personne précise dans une pièce de $n$ personnes,
+\emph{que personne d'autre dans cette pièce ait son anniversaire
+le même jour que cette personne} ».
+
+Pour chaque personne, la probabilité d'avoir son anniversaire un
+jour différent de la personne choisie est de $\dfrac{364}{365}$.
+La probabilité qu'une personne ait son anniversaire le même jour
+que la personne choisie, parmi une pièce de $n$ personnes est de
+\[ 1 - \left(\dfrac{364}{365}\right)^{n-1} \]
+
+De cette équation, on peut trouver que pour avoir une probabilité
+de $\dfrac{1}{2}$ : 
+\[ n =
+\dfrac{log\left(\dfrac{1}{2}\right)}{log\left(\dfrac{364}{365}\right)}
++ 1 \approx 264 \]
+
+On peut donc dire que quand $n \geq 264$, cette probabilité est
+supérieure à $\dfrac{1}{2}$. Pour généraliser, on dira que pour
+trouver une personne ayant le même anniversaire qu'une autre
+personne (précisée), il faudra regarder l'anniversaire d'environ
+$365$ personnes.
+\\
+
+Regardons maintenant la probabilité de prendre deux personnes
+ayant leur anniversaire le même jour dans une pièce de $n$
+personnes. C'est donc le complémentaire de « Toutes les personnes
+de la pièce ont leur anniversaire le même jour ».
+La première personne peut avoir son anniversaire n'importe quel
+jour, la seconde tous les jours, sauf celui où est née la première
+personne, …
+
+Cette probabilité vaut donc
+\[1 - \dfrac{365}{365} ~ \dfrac{364}{365} ~ \dots ~ \dfrac{365 - n
++ 1}{365} \]
+
+En cherchant $n$ pour que cette probabilité vale 
+$\dfrac{1}{2}$, on trouve $n \approx 23$. Comme approximation, nous
+dirons que $n \approx \sqrt{365} \approx 19$
+\\
+
+Nous pouvons alors utiliser ceci pour trouver le nombre
+de sommes de contrôles à tester avant de trouver une collision.
+Si l'attaquant, à partir d'une somme de contrôle $x$,
+déterminée par $x = h(M)$ ($h$ étant la fonction de hachage, et
+$M$ le message initial), essaye de trouver $M'$ tel que $h(M') =
+h(M)$, il lui faudra alors, pour $h$ produisant une sortie sur $n$
+bits, $2^n$ messages avant de trouver une collision.
+
+Si maintenant, l'attaquant applique des modifications aux deux
+messages en même temps, il ne lui faudra plus qu'essayer
+$\sqrt{2^n}$ sommes de contrôles, soit $2^{\frac{n}{2}}$.
+Pour avoir une fonction de hachage résistante aux collisions, il
+faut donc que $n$ soit assez grands pour que l'attaquant ne puisse
+pas faire ces $2^{\frac{n}{2}}$ opérations nécessaires.
 
 \subsection{Cryptanalyse différentielle}
 

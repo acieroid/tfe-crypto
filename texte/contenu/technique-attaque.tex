@@ -339,10 +339,36 @@ faut donc que $n$ soit assez grands pour que l'attaquant ne puisse
 pas faire ces $2^{\frac{n}{2}}$ opérations nécessaires.
 
 \subsection{Cryptanalyse différentielle}
+Découverte à la fin des années 1980, la cryptanalyse
+différentielle analyse comment les différences dans les messages
+clairs influencent les différences dans les messages chiffrés.
+L'étude de ces différences renseigne alors l'attaquant de certains
+bits de la clé. Il
+faut donc alors être dans une situation d'attaque à texte clair
+choisi (l'attaque à texte clair connu est aussi possible, mais
+nécessite un plus grand nombre de textes connus). 
 
-\subsection{Cryptanalyse linéaire}
-Ce type d'attaque à été inventé par Mitsuru Matsui en 1992 pour
-attaquer le chiffre FEAL, et a été publiée en 1993  dans une
-attaque contre le chiffrement DES.
+Nous n'allons pas plus développer cette attaque, qui serait bien
+trop longue à décrire en détail dans ce travail.
 
+%\subsection{Cryptanalyse linéaire}
+%Ce type d'attaque à été inventé par Mitsuru Matsui en 1992 pour
+%attaquer le chiffre FEAL, et a été publiée en 1993  dans une
+%attaque contre le chiffrement DES.
+
+\subsection{Autres attaques}
+Il existe encore d'autres types d'attaque non développées ici. Le
+secteur de la cryptanalyse est en perpétuelle évolution, chacun
+peut trouver de nouvelles méthodes de cryptanalyse avec beaucoup
+de travail et de connaissances.
+
+Les attaques présentées ici ne sont faisables que sur des
+algorithmes de chiffrements symétriques, les systèmes de
+chiffrements utilisant un lien entre la clé publique et la clé
+privée, on essayera plutôt d'exploiter ce lien pour trouver la
+clé privée. Dans le cas de RSA, il faut factoriser le nombre $e$,
+afin de trouver ses deux diviseurs, $p$ et $q$, on pourra alors
+retrouver facilement la clé privée $d$. La sécurité de cet
+algorithme réside alors dans la difficulté de factoriser un nombre
+qui est le produit de deux grands nombres premiers.
 

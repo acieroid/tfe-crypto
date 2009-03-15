@@ -11,6 +11,7 @@ octobre 2007 (conçus par leurs cryptanalystes « just for fun »)
 Le cryptogramme est « PIKODENHFENJIKM! YIH QELB GDISBK NQB
 PICB. OI NI AGJ.OIL/PICB.QNT MI WB SKIW, EKC UFBEMB PIKMJCBD E
 PEDBBD WJNQ NQB AGJ. »
+\\
 
 À première vue, le cryptogramme à tout l'air d'une substitution
 monoalphabétique, du fait de la présence d'espaces et de
@@ -29,7 +30,8 @@ apparaissant le plus souvent dans le cryptogramme sont I et B (12
 fois), N et E (7 fois), et K (6 fois).
 Nous savons déjà que I correspond à O en clair, et E correspond à
 A. En regardant les fréquences moyenne d'apparition des lettres en
-anglais, la lettre apparaissant le plus est le E, qui devrait
+anglais (figure \ref{fig:Frequences}, page
+\pageref{fig:Frequences}), la lettre apparaissant le plus est le E, qui devrait
 correspondre à B ici, suivie de la lettre T, qui correspond alors
 sûrement à N, et enfin (après A et O, que nous connaissons déjà),
 viens la lettre N, qui correspond donc sûrement à K ici.
@@ -38,22 +40,32 @@ viens la lettre N, qui correspond donc sûrement à K ici.
 Nous connaissons alors déjà quelques correspondances entre lettres
 claires et lettres chiffrées : \\
 \begin{center}
-  \begin{tabular}{c|c}
-    Lettre claire & Lettre chiffrée \\
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
     \hline
-    A & E \\
-    F & A \\
-    B & G \\
-    I & J \\
-    G & O \\
-    O & I \\
-    V & L \\
-    E & B \\
-    T & N \\
-    N & K
+    Lettre claire & A & F & B & I & G & O & V & E & T & N \\
+    \hline
+    Lettre chiffrée & E & A & G & J & O & I & L & B & N & K \\
+    \hline
   \end{tabular}
 \end{center}
-
+%\begin{center}
+%  \begin{tabular}{|c|c|}
+%    \hline
+%    Lettre claire & Lettre chiffrée \\
+%    A & E \\
+%    F & A \\
+%    B & G \\
+%    I & J \\
+%    G & O \\
+%    O & I \\
+%    V & L \\
+%    E & B \\
+%    T & N \\
+%    N & K \\
+%    \hline
+%  \end{tabular}
+%\end{center}
+%
 On pourrait encore essayer de trouver plus de lettres via
 l'analyse des fréquence des lettres et des bigrammes présent dans
 le cryptogramme.

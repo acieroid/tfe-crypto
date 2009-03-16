@@ -54,7 +54,7 @@ De ce fait, ROT13 n'est pas du tout pratique pour cacher des
 informations, mais est parfois utilisé sur internet, dans les forums,
 afin d'empêcher la lecture involontaire d'un texte (qui pourrait
 dévoiler une information sur un film par exemple, et gâcherait le
-plaisir au gens n'ayant pas vu le film, c'est ce qu'on appelle un 
+plaisir aux gens n'ayant pas vu le film, c'est ce qu'on appelle un 
 \emph{spoiler}) 
 
 \subsubsection{Par remplacement}
@@ -111,7 +111,7 @@ lettres dans un ordre spécial, qui constituera la clé.
 
 Le carré de Polybe est assez intéressant car il convertit les lettres
 en chiffres et réduit le nombre de symbole utilisés dans le message
-chiffrés (9 chiffres plutôt que 26 lettres). \\
+chiffré (9 chiffres plutôt que 26 lettres). \\
 
 \begin{figure}[h]
   $
@@ -157,8 +157,8 @@ chiffrés (9 chiffres plutôt que 26 lettres). \\
 \end{figure}
 
 Polybe imaginait un moyen de communiquer les messages via des torches
-: le nombre de torches placée à gauche correspondrait au numéro de la
-ligne, et le nombre de torches à droit au numéro de la colonne. \\
+: le nombre de torches placées à gauche correspondrait au numéro de la
+ligne, et le nombre de torches à droite au numéro de la colonne. \\
 
 Le carré de Polybe était utilisé par les nihilistes russes entre le
 XIX\ieme~ et le XX\ieme~ siècle (des «~terroristes~» dont le but était de
@@ -226,13 +226,13 @@ Vigenère)~:
 %  \label{fig:TabulaRecta}
 %\end{figure}
 
-Vigenère reprends donc cette méthode pour légèrement la modifier (y
+Vigenère reprend donc cette méthode pour légèrement la modifier (y
 ajouter l'utilisation d'une clé en fait), et la publie dans son livre
 \emph{Traicté des chiffres, ou secretes
   manieres d'escrire} en 1586. \\
 
 Comme pour la méthode de Trithème, on utilise une table, composée
-cette fois ci des 26 chiffres de César possibles, comme sur la figure
+cette fois-ci des 26 chiffres de César possibles, comme sur la figure
 \ref{fig:VigenereTableau}. \\
 
 
@@ -335,9 +335,9 @@ fréquences (voir le chapitre \ref{chap:Cryptanalyse} sur la
 cryptanalyse), permettent de remplacer une lettre par plusieurs
 symboles différents, choisis arbitrairement. On peut par exemple citer
 une variante du chiffre de Vigenère, où l'on chiffre chaque lettre par
-une des lettres de la même ligne suivie d'une des lettre de la même
+une des lettres de la même ligne suivie d'une des lettres de la même
 colonne. On peut aussi utiliser des tables de substitutions, et même
-varier le nombre de représentation possibles d'un symbole en fonction
+varier le nombre de représentations possibles d'un symbole en fonction
 de sa fréquence d'apparition (le \emph{E} pourra donc être représenté par
 de nombreux symboles, ce qui ne sera pas le cas du \emph{Z}).\\
 
@@ -363,7 +363,7 @@ Tout d'abord, dans le cas où les deux lettres sont
 identiques, on ajoute un \emph{X} à la suite de la première
 lettre. C'est aussi valable dans le cas où il ne reste qu'une lettre.
 Ensuite, nous avons trois possibilités en regardant la position des
-lettre dans le tableau : 
+lettres dans le tableau : 
 \begin{itemize}
   \item les lettres sont sur la même ligne : on les remplace par les
     lettres situées à droite (en considérant les lignes comme
@@ -372,7 +372,7 @@ lettre dans le tableau :
   \item les lettres sont dans la même colonne : on les remplace par la
     lettre située en dessous (en considérant aussi les colonnes comme
     cycliques)
-  \item les lettre ne sont ni sur la même colonne, ni sur la même
+  \item les lettres ne sont ni sur la même colonne, ni sur la même
     ligne : on remplace la lettre par celle se situant sur la même
     ligne que la lettre à chiffrer, et sur la colonne de la seconde
     lettre (on forme une sorte de rectangle avec les lettres).

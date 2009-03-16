@@ -8,12 +8,12 @@ attaques les plus utilisées.
 Exposée pour la première fois par Al-Kindi au IX\ieme~ siècle,
 l'analyse fréquentielle permet de déchiffrer des chiffrements
 simples. Dans le cas d'une substitution, les
-caractères sont représentés par autre chose, mais leur fréquences
-d'apparition ne change pas, on peut donc alors facilement
+caractères sont représentés par autre chose, mais leurs fréquences
+d'apparition ne changent pas, on peut donc alors facilement
 retrouver le message initial, connaissant les fréquences
-normale d'apparition des caractères dans la langue du message.
+normaless d'apparition des caractères dans la langue du message.
 
-L'analyse des fréquence ne se limite pas aux lettres
+L'analyse des fréquences ne se limite pas aux lettres
 individuelles, l'analyse des bigrammes peut aussi être très
 pratique.
 \\
@@ -25,7 +25,7 @@ d'apparitions des lettres unique (voir la figure \ref{fig:Frequences}).
 Bien évidemment, la fréquence d'apparition des lettres peut varier
 au sein d'une même langue selon certains critères (par exemple un
 message d'origine militaire risque de contenir beaucoup
-d'abréviations). Une analyse des fréquence aura donc des résultats
+d'abréviations). Une analyse des fréquences aura donc des résultats
 plus probables sur des messages d'une certaine longueur.
 
 \begin{figure}[h]
@@ -89,7 +89,7 @@ représentant la $i$\ieme~ lettre de l'alphabet :
 
 Dans le cas d'une substitution polyalphabétique, comme le chiffre
 de Vigenère, on pourrait diviser le message chiffré en plusieurs
-partie, chacune de ces parties étant l'équivalent d'une
+parties, chacune de ces parties étant l'équivalent d'une
 substitution simple, sur laquelle on pourrait procéder à une
 analyse fréquentielle. Le nombre de partie étant égal à la
 longueur de la clé, le plus important est alors de trouver la
@@ -112,7 +112,8 @@ est alors
 I_m ~ \dfrac{k (k - 1)}{2} ~
 \left(\dfrac{n}{k}\right)^2 = I_m ~ \dfrac{n^2 ~ (k-1)}{2k} \]
   \item Soit elles se trouvent dans la même colonne, nous avons
-alors $C_{\frac{n}{k}}^2 ~ k $ façons de les choisir. Le nombre de paire de lettres
+alors $C_{\frac{n}{k}}^2 ~ k $ façons de les choisir. Le nombre de
+paires de lettres % TODO: ortho ? singulier ou pluriel ?
 identiques au sein d'une même colonne est
 \[ I_l C_{\frac{n}{k}}^2 ~ k = I_l
 \dfrac{n ~ (n-k)}{2k} \]
@@ -152,7 +153,7 @@ Calculons alors cet indice de coïncidence :
 Quand on a la connaissance d'un mot qui pourrait être dans le
 message chiffré, on a recours à cette attaque. On connaît alors le
 mot en clair et en chiffré, on peut alors trouver des informations
-pratique sur la clé, ou bien un bout ou l'entièreté de la clé.
+pratiques sur la clé, ou bien un bout ou l'entièreté de la clé.
 
 Dans l'annexe \ref{Apx:FBI}, nous verrons une simple mise en pratique
 de cette méthode, couplée avec l'analyse des fréquences.
@@ -164,9 +165,9 @@ clés possibles, une à une, jusqu'à ce qu'on retrouve
 la clé utilisée pour le chiffrement.
 
 Bien évidemment, à cause des restrictions matérielles, cette
-technique prends énormément de temps à trouver une solution. Ce
+technique prend énormément de temps à trouver une solution. Ce
 temps dépend de l'algorithme de chiffrement utilisé ainsi que de
-la longueur de la clé. On comprends alors l'intérêt de choisir des
+la longueur de la clé. On comprend alors l'intérêt de choisir des
 clés d'une certaine taille, afin de pouvoir résister à une attaque
 par force brute (et cela ralentira aussi d'autres types
 d'attaque).
@@ -179,11 +180,11 @@ publique) correspond à une clé de 80 bits dans les algorithmes de
 chiffrement symétriques. 
 
 Dans le cas des chiffrements symétriques, pour une clé de $n$
-bits, il existe alors $2^n$ clés possible, c'est donc autant
+bits, il existe alors $2^n$ clés possibles, c'est donc autant
 d'opérations qu'il faudra effectuer afin de trouver la bonne clé. 
 \\
 
-On considère un algorithme de chiffrement cassé lorsque le nombres
+On considère un algorithme de chiffrement cassé lorsque le nombre
 d'opérations à effectuer pour casser un message est plus
 petit que le nombre d'opération qu'effectuerait une attaque par
 force brute. Ainsi, dans le cas de la méthode de chiffrement
@@ -205,7 +206,7 @@ les nombreux projets nommés « @home » comme « Folding@Home
 »\footnote{Voir \url{http://folding.stanford.edu} pour plus
 d'informations sur ce projet},
 organisé par l'université de Stanford, et qui consiste à étudier
-le repliement des protéines en fonction de diverses facteurs, dans
+le repliement des protéines en fonction de divers facteurs, dans
 le but de fabriquer de nouveaux médicaments.
   \item[Les fermes de calcul (ou clustering)], qui, comme le
 calcul distribué, permettent de rassembler les puissances de
@@ -222,7 +223,7 @@ cracker les sommes MD5, qui est d'utiliser la
 puissance de calcul du processeur graphique (GPU) en plus de celle
 du processeur (CPU). Ce genre de logiciel peut essayer dans les
 meilleurs cas plus de
-$2^{28}$ empreintes MD5 par secondes sur un ordinateur 
+$2^{28}$ empreintes MD5 par seconde sur un ordinateur 
 personnel, et qui permet alors de retrouver le message clair en
 moins d'une minute\footnote{Test disponible à l'adresse
 \url{http://fz-corp.net/repository/MD5-GPU.html}}.
@@ -241,9 +242,8 @@ plusieurs combinaisons utilisant le mot, ainsi, pour le mot
 \texttt{password}, grâce aux règles, on pourra tester les mots
 \texttt{password15}, \texttt{pAsSworD}, \texttt{p4ssw0rd}, \dots
 
-Ce genre d'attaque (ainsi que l'attaque par brute force) n'ont
-aucun intérêt à être utilisée dans le déchiffrement de textes,
-mais sont grandement efficaces contre des mots de passe. C'est
+Ce genre d'attaque (ainsi que l'attaque par brute force)
+est grandement efficace contre des mots de passe. C'est
 pour cela que l'on conseille de compliquer les mots de passe, via
 diverses méthodes, la plus efficace étant d'en générer un
 aléatoirement, de nombreux sites internet nous offrant cette
@@ -258,18 +258,18 @@ Unix :
 % < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c8 
 \end{lstlisting}
 
-\subsection{Le paradoxe des anniversaire}
+\subsection{Le paradoxe des anniversaires}
 Dans le cas d'une fonction de hachage, il y aura toujours des
 collisions entre les sommes de contrôles de deux données
 différentes, du fait que la taille du haché est définie, alors que
 la taille des données peut être aussi longue qu'on le veut.
 Dans le cas du MD5, la taille du haché est de 128 bits,
-c'est-à-dire que l'on a $2^{128}$ haché possibles.
+c'est-à-dire que l'on a $2^{128}$ hachés possibles.
 
 Il peut être alors intéressant pour une personne malveillante de
 trouver deux messages différents ayant la même somme de contrôle,
 afin de remplacer un message par un autre, tout en laissant le
-destinataire que le message est original et non modifié. Pour ce
+destinataire croire que le message est original et non modifié. Pour ce
 faire, l'attaquant peut alors, via diverses modifications (ajouter
 des espaces en fin de ligne, ajouter des lignes vides, …) essayer
 de trouver une collision entre les sommes de contrôle des deux
@@ -335,7 +335,7 @@ Si maintenant, l'attaquant applique des modifications aux deux
 messages en même temps, il ne lui faudra plus qu'essayer
 $\sqrt{2^n}$ sommes de contrôles, soit $2^{\frac{n}{2}}$.
 Pour avoir une fonction de hachage résistante aux collisions, il
-faut donc que $n$ soit assez grands pour que l'attaquant ne puisse
+faut donc que $n$ soit assez grand pour que l'attaquant ne puisse
 pas faire ces $2^{\frac{n}{2}}$ opérations nécessaires.
 
 \subsection{Cryptanalyse différentielle}

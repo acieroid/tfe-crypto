@@ -9,7 +9,7 @@ permet aussi l'authentification en s'aidant des fonctions de hachage
 Chaque utilisateur possède alors deux clés : une clé publique qu'il
 distribue à tout le monde ainsi qu'une clé privée, qu'il garde
 secrète. La clé publique permettra de chiffrer un message, que
-l'utilisateur pourra déchiffrer grâce à se clé privée. Ainsi, seul la
+l'utilisateur pourra déchiffrer grâce à sa clé privée. Ainsi, seul la
 personne en possession de la clé de déchiffrement (privée), le
 destinataire donc, pourra déchiffrer le message. \\
 
@@ -22,7 +22,7 @@ message chiffré $C$ :
     \begin{center}
       $D(E(M)) = M$
     \end{center}
-  \item $E$ et $D$ sont facile à calculer
+  \item $E$ et $D$ sont faciles à calculer
   \item $D$ est introuvable si l'on connait $E$
   \item Si on applique l'opération de déchiffrement suivie de
     l'opération de chiffrement sur un message, on retrouve le message
@@ -48,7 +48,7 @@ Pour ce qui est de la troisième proposition, on pourrait trouver $D$
 via une recherche exhaustive (en essayant tous les cas possibles), ou
 en essayant d'exploiter les liens liant $E$ à $D$ ; mais ce type
 de recherche est impossible en pratique, à cause du nombre de
-possibilité et des restrictions matérielles de calculs. Nous
+possibilités et des restrictions matérielles de calculs. Nous
 expliquerons ceci plus en détail dans le chapitre
 \ref{chap:Cryptanalyse} sur la cryptanalyse.
 
@@ -73,7 +73,7 @@ Dans leur publication, Diffie et Hellman n'ont pas pu donner
 d'exemple de système de chiffrement à clé publique. Le premier
 système de ce genre est mis au point en 1977 par Adi Shamir, Rom
 Rivest et Len Adleman, et publié en 1978 \cite{RSAPaper}.
-La force de cette méthode réside dans la difficultée à factoriser
+La force de cette méthode réside dans la difficulté à factoriser
 un nombre qui est le produit de deux très grands nombres premiers. 
 
 RSA se base donc sur le choix de deux nombres premiers, que nous
@@ -88,7 +88,7 @@ que nous coderons ainsi :
   $C_i = (M_i)^e ~mod~n$
 \end{center}
 
-La clé privée est elle formée par le couple $(d,n)$, tel que
+La clé privée est formée par le couple $(d,n)$, tel que
 $e d = 1 [mod (p-1) (q-1)]$.
 Pour déchiffrer le message chiffré composée des entiers $C_1. C_2,
 \dots, C_n$, on applique la formule

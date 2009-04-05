@@ -1,0 +1,43 @@
+\section{Les mots de passe}
+Les mots de passes sont omniprésents sur les systèmes
+informatiques, ils doivent donc être introuvables par une
+quelconque personne.
+
+Il faut donc qu'ils soient sécurisés à plusieurs niveaux : 
+\begin{itemize}
+  \item Au niveau de leur forme d'abord, en effet, ils doivent
+être résistant à une attaque par force brute ou à une attaque 
+par dictionnaire
+  \item Au niveau de la transmission des mots de passe, en effet
+il est assez simple d'écouter (de \emph{sniffer}) une connexion
+réseau, et si le mot de passe est transmit en clair, on peut
+facilement le retrouver. Le mot de passe doit alors être chiffré
+pour la transmission.
+  \item Au niveau de l'endroit où est stocké le mot de passe, car
+si un attaquant prends possession d'une machine où sont stockés
+des mots de passe, il aura accès à des centaines, milliers de mots
+de passes directement, alors que si les mots de passes sont
+chiffrés il ne pourra pas connaître ces mots de passe.
+\end{itemize}
+
+Bien que l'on entend souvent que le problème est situé «~ entre la
+chaise et le clavier ~», de nombreux systèmes informatiques ou
+sites internet ne respectent pas ces mesures. Néanmoins, il reste
+quand même un grand effort à faire de la part de l'utilisateur :
+choisir un mot de passe aléatoire, le retenir sans le noter, …
+
+Au niveau du chiffrement du mot de passe, il est préférable
+d'utiliser une fonction de hachage (fiable), ainsi les seules
+attaques possibles sont celles par force brute et par
+dictionnaire. La sécurité du mot de passe dépend alors du mot de
+passe uniquement, et non de la méthode de chiffrement utilisée.
+
+Il reste néanmoins d'autres méthodes pour retrouver un mot de
+passe, non basées sur la cryptologie, notamment le hameçonnage
+(\emph{phishing}) ainsi que les logiciels malveillant (les
+\emph{keylogger} par exemple, qui enregistrent les touches
+frappées par l'utilisateur).
+Les mots de passe n'offrent alors plus un niveau de sécurité assez
+élevé, et l'on privilégie donc l'authentification forte.
+
+%% TODO: image de MITM ?

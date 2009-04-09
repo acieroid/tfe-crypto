@@ -52,9 +52,31 @@ de passe via l'empreinte MD4 produite par l'algorithme NTLM.
  
 \subsection{TLS/SSL}
 TLS (Transport Layer Security), anciennement SSL (Secure Socket
-Layer),
-%% TODO
+Layer) permet d'établir un canal de communication chiffré entre
+deux machines, et peut servir pour sécuriser n'importe quel
+protocole (par exemple le protocole HTTP, on reconnaît alors qu'il
+est chiffré par l'ajout du S, dans HTTPS, pour \emph{HTTP
+secured})
+\\
  
+Au niveau du fonctionnement de SSLv2, le client envoie d'abord la liste des
+algorithmes de chiffrement supportés, le serveur envoie alors le
+nom du chiffrement à utiliser, ainsi qu'un
+certificat contenant sa clé publique. Le client, après avoir
+vérifié la validité du certificat, génère alors une clé, qu'il
+chiffre avec la clé publique du serveur, et envoie au serveur la
+clé secrète chiffrée. Le serveur peut alors la déchiffrer, est est
+en possession de la clé secrète.
+Cette clé secrète (clé de session) permet de chiffrer toutes les
+communications entre le client et le serveur.
+
+\\
+La version 3 de SSL permet l'authentification mutuelle (le client
+s'identifie auprès du serveur, et le serveur s'identifie auprès du
+client). La différence entre SSLv3 et TLS réside dans la
+génération des clés, plus sécurisée dans TLS, mais TLS reste
+compatible avec SSLv3.
+
 \subsection{SSH}
 SSH (Secure Shell) est un protocole de communication réseau
 sécurisé. Il permet à la base d'ouvrir un \emph{shell} (une invite

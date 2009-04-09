@@ -109,19 +109,31 @@ client), qui servira pendant toute la
 durée de session pour chiffrer les communications (via un
 algorithme symétrique donc). Les algorithmes utilisés dépendent
 des algorithmes supportés par le client et par le serveur, en
-effet, SSH est compatible avec de nombreux algorithmes.
+effet, SSH est compatible avec de nombreux algorithmes (à titre
+d'exemple, OpenSSH implémente quatre algorithmes de chiffrement non
+brevetés : le Triple DES, Blowfish, AES et Arcfour).
 
  
 \begin{figure}[h]
+\vspace{-10pt}
   \centering
-    \label{fig:CanalSecuriseSSH}\includegraphics[width=0.85\textwidth]{images/SSH.png}
-    \caption{La mise en place d'un canal sécurisé via SSH}
-%    \vspace{-15pt}
+    \subfloat[Mise en place d'un canal sécurisé via SSH (la clé
+bleue est la clé de session]{
+      \label{fig:CanalSecuriseSSH}\includegraphics[width=0.4\textwidth]{images/SSH.png}}
+    \hspace{1.2cm}
+    \subfloat[Puffy, la mascotte du projet OpenBSD et de OpenSSH
+choisi à cause de l'algorithme \emph{blowfish} utilisé dans
+OpenSSH, qui lui même tire son nom du poisson globe, représentant
+la sécurité, la résistance aux attaques]{
+      \label{fig:Puffy}\includegraphics[width=0.4\textwidth]{images/Puffy.png}}
+    %\caption{Deux anciennes techniques de chiffrement}
+    %\vspace{-15pt}
+%  \label{fig:ScytaleChiffreCesar}
 \end{figure}
 
 Ensuite, l'authentification se fait la plupart du temps via un
 simple nom d'utilisateur et mot de passe, mais peut se faire via
-l'utilisation des clés publiques : le serveur chiffre un message 
+l'utilisation d'un chiffrement asymétrique : le serveur chiffre un message 
 avec la clé
 publique du client, et si celui ci parvient à le déchiffrer, il
 sera identifié.

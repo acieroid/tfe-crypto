@@ -15,7 +15,7 @@ Sous les unixoïdes, le programme qui se charge de
 l'identification est \texttt{login} (lancé directement après
 \texttt{init} et \texttt{getty}). À la base, les mots de passe
 étaient stockés en clair dans le fichier \texttt{/etc/passwd},
-mais maintenant les mots de passe se trouvent, chiffrés, dans le
+mais se trouvent se trouvent désormais chiffrés dans le
 fichier \texttt{/etc/shadow}. Les algorithmes de chiffrements
 utilisés sont des algorithmes dérivés de DES ou de MD5, et ce
 fichier n'est accessible que par le «~super utilisateur~»
@@ -26,7 +26,7 @@ la même empreinte pour deux mots de passe identiques.
 \\
  
 Sous les Windows® NT (dont font partie Windows® xp et Windows
-Vista¿, la gestion des mots de passe est assez désastreuse. Les
+Vista™), la gestion des mots de passe est assez désastreuse. Les
 mots de passe se trouvent dans le fichier
 \texttt{\bslash winnt\bslash system32\bslash config}, et bien
 que ce fichier ne soit pas
@@ -41,15 +41,25 @@ simplifié le mot de passe (ajout de 0 pour avoir 14 caractères, et
 mise du mot de passe en majuscule).
 Le second algorithme utilisé est l'algorithme NTLM, qui produit
 une empreinte MD4 du mot de passe une fois transformé sous sa
-forme Unicode. Aucune méthode de salage n'est utilisée dans aucun
+forme Unicode\footnote{norme qui permet de représenter
+numériquement n'importe quel caractère}.
+ Aucune méthode de salage n'est utilisée dans aucun
 des deux algorithmes. Il est donc très facile de retrouver les
-mots de passes, tout d'abord sans la casse grâce au chiffrement
+mots de passes, tout d'abord sans la casse\footnote{différenciation
+entre les majuscules et les minuscules} grâce au chiffrement
 Lanman, qui à un domaine de recherche restreint (uniquement des
-majuscules, ¿), ensuite il suffit d'essayer les différentes
+majuscules, …), ensuite il suffit d'essayer les différentes
 combinaisons possibles de majuscules et de minuscules dans le mot
 de passe via l'empreinte MD4 produite par l'algorithme NTLM.
 \\
  
+Il faut néanmoins préciser qu'un accès physique à la machine
+permet de changer le mot de passe, dans les deux cas. Par un accès
+via distance, il faut avoir accès au compte super utilisateur sous
+Unix, alors que sous Windows, un simple accès en tant
+qu'utilisateur normal permet non seulement de changer le mot de
+passe, mais aussi de le retrouver (ce qui n'est pas possible sous
+les Unix).
 \subsection{TLS/SSL}
 TLS (Transport Layer Security), anciennement SSL (Secure Socket
 Layer) permet d'établir un canal de communication chiffré entre
@@ -69,8 +79,8 @@ clé secrète chiffrée. Le serveur peut alors la déchiffrer, est est
 en possession de la clé secrète.
 Cette clé secrète (clé de session) permet de chiffrer toutes les
 communications entre le client et le serveur.
-
 \\
+
 La version 3 de SSL permet l'authentification mutuelle (le client
 s'identifie auprès du serveur, et le serveur s'identifie auprès du
 client). La différence entre SSLv3 et TLS réside dans la
@@ -93,7 +103,7 @@ problèmes de sécurités.
 \\
 
 La mise en place du canal sécurisé est décrite dans la figure
-\ref{CanalSecuriseSSH}. SSH utilise donc un algorithme asymétrique
+\ref{fig:CanalSecuriseSSH}. SSH utilise donc un algorithme asymétrique
 afin d'échanger la clé de session (générée aléatoirement par le
 client), qui servira pendant toute la
 durée de session pour chiffrer les communications (via un

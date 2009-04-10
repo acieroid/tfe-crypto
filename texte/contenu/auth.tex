@@ -17,13 +17,45 @@ une signature.
 Avec ces données, il est alors possible d'avoir deux types
 d'authentifications : 
 \begin{itemize}
-  \item L'authentification simple qui consiste simplement à
+  \item l'authentification simple qui consiste simplement à
 utiliser un des quatre éléments cités ci-dessus pour authentifier
-l'utilisateur. L'élément le plus utilisé est le mot de passe
-  \item L'authentification forte, qui 
+l'utilisateur. L'élément le plus utilisé est le mot de passe ~;
+  \item l'authentification forte, qui combine plus d'un élément
+des quatre cités ci-dessus.
+\end{itemize}
+
+Pour l'authentification forte, on utilise souvent des
+\emph{token} (un objet que possède l'utilisateur), 
+combinés à l'utilisation traditionnelle de mot de passe.
+Il existe plusieurs alors plusieurs méthodes utilisant des token,
+que nous allons voir ci-dessous.
+
+\subsection{Les mots de passe à usage unique (OTP)}
+Let token à mot de passe unique (OTP pour \emph{One Time
+Password}) utilisent un secret qui est connu du client et du
+serveur. Grâce à ce secret, les deux parties peuvent alors générer
+un mot de passe unique, via diverses méthodes : 
+
+\begin{itemize}
+  \item l'utilisation d'un compteur : le client ainsi que le
+serveur ont possession, en plus du secret, d'un compteur, 
+
 
 \end{itemize}
 
+\subsection{Certificats}
+X.509
+
+\subsection{Biométrie}
+Outre les certificats et les \emph{One Time Password}, on peut
+utiliser la biométrie pour l'authentification forte, qui consiste
+à identifier l'utilisateur via une de ses caractéristiques
+physiques (reconnaissance vocale, digitale, faciale et
+reconnaissance d'iris).
+Cette technique est plus coûteuse à mettre en place et peu poser
+des problèmes juridiques (les bases de données contenant les
+informations sur les utilisateurs se rapprochent de celles
+utilisées par la police).
 \subsection{Protocoles d'authentifications}
 
 \subsection{Authentification des messages}

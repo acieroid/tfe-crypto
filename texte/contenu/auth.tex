@@ -26,9 +26,10 @@ des quatre cités ci-dessus.
 
 Pour l'authentification forte, on utilise souvent des
 \emph{token} (un objet que possède l'utilisateur), 
-combinés à l'utilisation traditionnelle de mot de passe.
-Il existe plusieurs alors plusieurs méthodes utilisant des token,
-que nous allons voir ci-dessous.
+combinés à l'utilisation traditionnelle de mot de passe, souvent
+sous la forme de code PIN, qui permet d'activer le token.
+On peut aussi utiliser une carte à puce, ou des logiciels présents
+sur un PDA, un ordinateur, un téléphone portable, …
 
 \subsection{Les mots de passe à usage unique (OTP)}
 Let token à mot de passe unique (OTP pour \emph{One Time
@@ -38,8 +39,29 @@ un mot de passe unique, via diverses méthodes :
 
 \begin{itemize}
   \item l'utilisation d'un compteur : le client ainsi que le
-serveur ont possession, en plus du secret, d'un compteur, 
+serveur ont possession, en plus du secret, d'un compteur en
+commun. À chaque authentification, ce compteur est augmenté, et le
+mot de passe produit est donc tout le temps différent ~;
+  \item l'utilisation du temps : plutôt que de produire le mot de
+passe à partir d'un compteur, on se base sur le temps actuel, le
+mot de passe sera alors valable pendant une certaine durée
+(habituellement entre 30 secondes et 1 minute) ~;
+  \item l'utilisation de \emph{challenge} : le serveur crée un
+\emph{challenge} (des données aléatoires), qu'il communique au
+client. Le client crée alors le OTP à partir de ce challenge et de
+secret connu du serveur et de lui même. Il faut alors éviter de
+donner plusieurs fois le même challenge, sinon le mot de passe en
+résultant serait le même, et un attaquant pourrait alors
+s'identifier en tant qu'utilisateur, s'il a écouté les
+communications lors de la première authentification avec le même
+challenge. 
 
+L'utilisation de challenge (dite asynchrone, car ce n'est pas
+immédiat, l'utilisateur doit d'abord rentrer le challenge dans 
+son token) pose donc certains problèmes comparé aux autres 
+utilisations (dites synchrones). Notons que l'on peut
+l'utilisation d'un compteur et du temps peuvent être utilisées de
+manière complémentaire.
 
 \end{itemize}
 

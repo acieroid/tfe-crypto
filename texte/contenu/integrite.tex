@@ -1,0 +1,39 @@
+
+\section{Intégrité et signature}
+Comment s'assurer que le prétendu auteur d'un message est
+réellement cette personne, et que le message n'a pas été modifié ?
+Il faut que l'auteur ait signé son message, et qu'il mette à
+disposition une méthode pour vérifier l'intégrité de son message.
+
+\subsection{Intégrité}
+Pour vérifier l'intégrité d'un message, on envoie, en plus de ce
+message, une empreinte du message. Ainsi, à la réception du
+message, on recalcule cette empreinte, et si elle correspond à
+l'empreinte envoyée en même temps que le message, le message est
+donc authentique. Par contre, si l'attaquant modifie le message,
+il peut alors aussi modifier l'empreinte. L'expéditeur chiffre
+alors cette empreinte avec sa clé privée, ainsi personne ne peut
+changer cette empreinte car personne n'est en possession de sa clé
+privée. Le destinataire déchiffrera alors l'empreinte à l'aide de
+la clé publique de l'expéditeur, et la comparera avec celle qu'il
+aura calculé lui même.
+\\
+
+En outre, l'intégrité permet aussi de vérifier que le
+téléchargement d'un fichier s'est bien passé. Il faut alors faire
+l'empreinte du fichier téléchargé et la comparer avec l'empreinte
+qu'a le fichier d'origine (donnée par le miroir qui distribue le
+fichier normalement). Si ces deux empreintes correspondent, les
+deux fichiers sont donc identiques. À titre d'exemple, le protocole
+de P2P BitTorrent vérifie l'empreinte SHA-1 de chaque bout de donnée
+du fichier 
+(le fichier a télécharger est divisé plusieurs petites parties, 
+appelées \emph{chunks}).  
+
+Il est alors important d'utiliser une fonction qui ne comporte pas
+de problème de sécurité, sinon un fichier avec du code malicieux
+pourrait avoir la même empreinte que le fichier que l'on souhaite
+télécharger. Néanmoins, l'algorithme MD5 reste fortement utilisés
+malgré ses faiblesses.
+
+\subsection{Signature numérique}

@@ -32,11 +32,11 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 
 Home: ~/.gnupg
-Algorithmes supportés:
-Clé publique: RSA, RSA-E, RSA-S, ELG-E, DSA
+Algorithmes supportes:
+Cle publique: RSA, RSA-E, RSA-S, ELG-E, DSA
 Chiffrement: 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH
 Hachage: MD5, SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
-Compression: Non-compressé, ZIP, ZLIB, BZIP2
+Compression: Non-compresse, ZIP, ZLIB, BZIP2
 
 \end{lstlisting}
 
@@ -50,19 +50,20 @@ Nous avons donc un fichier \texttt{foo.txt}, contenant la phrase
 «~Ce message va être chiffré via blowfish~».
 
 \begin{lstlisting}
-% echo "Ce message va être chiffré via blowfish" > foo.txt
+% echo "Ce message va etre chiffre via blowfish" > foo.txt
 % gpg -c --cipher-algo blowfish foo.txt
 Entrez la phrase de passe: 
-Répétez la phrase de passe: 
+Repetez la phrase de passe: 
 % cat foo.txt
-Ce message va être chiffré via blowfish
-% cat foo.txt.gpg
-öBï"E`ÉG­¨@\Q3b6Þ}¨ù¯i{Á´J&¯њà÷¤ï;mÈõ%``aW/êÆÉ,*#g&4ÑDì~À¬ãÍG?Fï
+Ce message va etre chiffre via blowfish
+% ls foo.txt*
+foo.txt  foo.txt.gpg
                                                                 S
 \end{lstlisting}
 
 On remarque donc que GPG a créé un fichier \texttt{foo.txt.gpg},
-contenant le message chiffré. Avant le chiffrement, GPG nous a
+contenant le message chiffré (donc illisible). 
+Avant le chiffrement, GPG nous a
 demandé d'entrer une «~phrase de passe~», ce qui correspond à la
 clé utilisé pour le chiffrement.
 \\
@@ -73,11 +74,11 @@ chargera) :
 
 \begin{lstlisting}
 % gpg -d foo.txt.gpg 
-gpg: données chiffrées avec BLOWFISH
+gpg: donnees chiffrees avec BLOWFISH
 Entrez la phrase de passe: 
-gpg: chiffré avec 1 phrase de passe
-Ce message va être chiffré via blowfish
-gpg: AVERTISSEMENT: l'intégrité du message n'était pas protégée
+gpg: chiffre avec 1 phrase de passe
+Ce message va etre chiffre via blowfish
+gpg: AVERTISSEMENT: l'integrite du message n'etait pas protegee
 \end{lstlisting}
 
 GPG affiche donc le contenu du fichier une fois déchiffré (dans le
@@ -94,8 +95,13 @@ Dans le cas où l'on aurait rentré une mauvaise clé, GPG nous
 aurait averti : 
 \begin{lstlisting}
 % gpg -d foo.txt.gpg
-gpg: données chiffrées avec BLOWFISH
+gpg: donnees chiffrees avec BLOWFISH
 Entrez la phrase de passe:
-gpg: chiffré avec 1 phrase de passe
-gpg: le déchiffrement a échoué: mauvaise clé
+gpg: chiffre avec 1 phrase de passe
+gpg: le dechiffrement a echoue: mauvaise cle
 \end{lstlisting}
+
+\section{Chiffrement asymétrique}
+\subsection{Gérer les clés}
+\subsection{Chiffrer}
+\subsection{Signatures}

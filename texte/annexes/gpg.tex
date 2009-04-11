@@ -1,0 +1,101 @@
+\chapter{La cryptographie en pratique via GPG}
+GPG\emph{\url{http://www.gnupg.org/}}, pour 
+\emph{GNU Privacy Guard} est une version libre du
+standard de cryptographie OpenPGP.
+
+%% TODO histoire ?
+
+Nous allons voir ici comment chiffrer et signer des informations 
+grâce à ce
+logiciel, via une interface en ligne de commande (il existe
+néanmoins de nombreuses interfaces plus intuitives\footnote{voir
+\url{http://www.gnupg.org/related_software/frontends.html}}, mais
+l'utilisation de la ligne commande permet de mieux comprendre le
+fonctionnement du programme, et de mieux le contrôler).
+\\
+
+GPG supporte aussi bien le chiffrement symétrique qu'asymétrique
+(bien qu'il est très peu utilisé pour le chiffrement symétrique)
+au travers de nombreux algorithmes. Pour avoir la liste des
+algorithmes supportés, il faut appeler le programme avec comme
+argument \texttt{--version} : 
+
+\lstset{language=bash}
+\begin{lstlisting}
+
+% gpg --version 
+gpg (GnuPG) 1.4.9
+Copyright (C) 2008 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later
+<http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Home: ~/.gnupg
+Algorithmes supportés:
+Clé publique: RSA, RSA-E, RSA-S, ELG-E, DSA
+Chiffrement: 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH
+Hachage: MD5, SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
+Compression: Non-compressé, ZIP, ZLIB, BZIP2
+
+\end{lstlisting}
+
+\section{Chiffrement symétrique}
+Chiffrons un fichier contenant du texte, via l'algorithme
+blowfish. Pour chiffrer, il faut utiliser le paramètre
+\texttt{-c}, et pour préciser un algorithme de chiffrement, on
+utilise le paramètre \texttt{--cipher-algo}, suivi du nom de
+l'algorithme.\\
+Nous avons donc un fichier \texttt{foo.txt}, contenant la phrase
+«~Ce message va être chiffré via blowfish~».
+
+\begin{lstlisting}
+% echo "Ce message va être chiffré via blowfish" > foo.txt
+% gpg -c --cipher-algo blowfish foo.txt
+Entrez la phrase de passe: 
+Répétez la phrase de passe: 
+% cat foo.txt
+Ce message va être chiffré via blowfish
+% cat foo.txt.gpg
+öBï"E`ÉG­¨@\Q3b6Þ}¨ù¯i{Á´J&¯њà÷¤ï;mÈõ%``aW/êÆÉ,*#g&4ÑDì~À¬ãÍG?Fï
+                                                                S
+\end{lstlisting}
+
+On remarque donc que GPG a créé un fichier \texttt{foo.txt.gpg},
+contenant le message chiffré. Avant le chiffrement, GPG nous a
+demandé d'entrer une «~phrase de passe~», ce qui correspond à la
+clé utilisé pour le chiffrement.
+\\
+
+Pour déchiffrer, on appelle alors GPG avec le paramètre
+\texttt{-d}, sans devoir préciser l'algorithme utilisé (GPG s'en
+chargera) : 
+
+\begin{lstlisting}
+% gpg -d foo.txt.gpg 
+gpg: données chiffrées avec BLOWFISH
+Entrez la phrase de passe: 
+gpg: chiffré avec 1 phrase de passe
+Ce message va être chiffré via blowfish
+gpg: AVERTISSEMENT: l'intégrité du message n'était pas protégée
+\end{lstlisting}
+
+GPG affiche donc le contenu du fichier une fois déchiffré (dans le
+cas de données, et non d'un texte, on peut utiliser une
+redirection de flux (via le mot clé \texttt{>}) pour écrire ces 
+données directement dans un fichier.
+
+L'avertissement est normal, il nous préviens qu'une autre personne
+aurait pu déchiffrer le message, le modifier et le chiffrer à
+nouveau. Pour pallier à cela, GPG met à notre disposition des
+mécanismes pour vérifier l'intégrité des données. 
+
+Dans le cas où l'on aurait rentré une mauvaise clé, GPG nous
+aurait averti : 
+\begin{lstlisting}
+% gpg -d foo.txt.gpg
+gpg: données chiffrées avec BLOWFISH
+Entrez la phrase de passe:
+gpg: chiffré avec 1 phrase de passe
+gpg: le déchiffrement a échoué: mauvaise clé
+\end{lstlisting}

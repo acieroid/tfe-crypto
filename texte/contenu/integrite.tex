@@ -4,8 +4,8 @@ Comment s'assurer que le prétendu auteur d'un message est
 réellement cette personne, et que le message n'a pas été modifié ?
 Il faut que l'auteur ait signé son message, et qu'il mette à
 disposition une méthode pour vérifier l'intégrité de son message.
+\\
 
-\subsection{Intégrité}
 Pour vérifier l'intégrité d'un message, on envoie, en plus de ce
 message, une empreinte du message. Ainsi, à la réception du
 message, on recalcule cette empreinte, et si elle correspond à
@@ -17,7 +17,13 @@ changer cette empreinte car personne n'est en possession de sa clé
 privée. Le destinataire déchiffrera alors l'empreinte à l'aide de
 la clé publique de l'expéditeur, et la comparera avec celle qu'il
 aura calculé lui même.
+
+Ainsi, on est à la fois sûr que le message n'a pas été modifiée,
+mais en plus on sait qui est l'expéditeur, car uniquement cette
+personne a connaissance de sa clé privée. C'est donc le mécanisme
+de signature numérique.
 \\
+%% TODO: parler des PKI
 
 En outre, l'intégrité permet aussi de vérifier que le
 téléchargement d'un fichier s'est bien passé. Il faut alors faire
@@ -36,4 +42,3 @@ pourrait avoir la même empreinte que le fichier que l'on souhaite
 télécharger. Néanmoins, l'algorithme MD5 reste fortement utilisés
 malgré ses faiblesses.
 
-\subsection{Signature numérique}

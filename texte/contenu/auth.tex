@@ -114,17 +114,19 @@ manière complémentaire.
 
 \subsection{Certificats}
 Un certificat numérique est une sorte de carte d'identité,
-utilisée pour identifier une personne, une machine, …
+utilisée pour associer une personne, une machine avec sa clé
+publique.
 La norme établissant le format de ces certificats est la norme
 X.509, elle décrit les éléments qui doivent être présent dans le
 certificat (algorithme de signature, nom, dates de validité, …).
 
-Les certificats sont gérés par une autorité de certification (AC).
+Les certificats sont gérés par une autorité de certification (AC),
+qui délivre les certificats, .
 Lors d'une communication entre un utilisateur et un service,
 le service envoie son certificat, que l'utilisateur va vérifier
 auprès de d'autorité de certification.
 
-%% TODO: plus développer ?
+%% TODO: plus développer ? PKI ?
 
 \subsection{Biométrie}
 Outre les certificats et les \emph{One Time Password}, on peut

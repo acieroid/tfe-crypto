@@ -3,8 +3,6 @@ GPG\emph{\url{http://www.gnupg.org/}}, pour
 \emph{GNU Privacy Guard} est une version libre du
 standard de cryptographie OpenPGP.
 
-%% TODO histoire ?
-
 Nous allons voir ici comment chiffrer et signer des informations 
 grâce à ce
 logiciel, via une interface en ligne de commande (il existe
@@ -12,6 +10,9 @@ néanmoins de nombreuses interfaces plus intuitives\footnote{voir
 \url{http://www.gnupg.org/related_software/frontends.html}}, mais
 l'utilisation de la ligne commande permet de mieux comprendre le
 fonctionnement du programme, et de mieux le contrôler).
+La plupart des fonctions présentées ici sont intégrées dans les
+programmes en ayant besoin (les clients mail par exemple), rendant
+l'utilisation de GPG via la ligne de commande très peu fréquente.
 \\
 
 GPG supporte aussi bien le chiffrement symétrique qu'asymétrique
@@ -102,6 +103,47 @@ gpg: le dechiffrement a echoue: mauvaise cle
 \end{lstlisting}
 
 \section{Chiffrement asymétrique}
+GnuPG met à notre disposition un ensemble d'outil utilisant les
+clés publiques afin de pouvoir chiffrer et de signer des données.
+
 \subsection{Gérer les clés}
+Avant toute chose, il est nécessaire de générer ses clés si ce
+n'est pas déjà fait. Ceci se fait via la commande \texttt{gpg
+--gen-key}. Nous pouvons alors choisir divers paramètre (le type
+de chiffrement, la longueur de la clé, le temps de validité de la
+clé, l'identité de la personne, ainsi qu'un mot de passe).
+La clé se génère ensuite, et il est conseillé de produire des
+évènements systèmes afin d'améliorer le flux de données
+aléatoires nécessaire à la formation de la clé.
+\\
+
+Nous pouvons alors gérer les clés, le paramètre
+\texttt{--list-key} nous listera les clés publiques que l'on
+possède, \texttt{--list-secret-keys} fera de même avec les clés
+privées. \texttt{--delete-key laclé} ainsi que
+\texttt{--delete-secret-key laclé} permettent de supprimer une clé
+publique ou privée.
+\\
+
+Pour exporter une clé publique dans un fichier (afin de l'envoyer sur un
+serveur de clés PGP par exemple), cela se fait via la commande
+\texttt{gpg --export --armor laclé > cle.asc} (le paramètre
+--armort permet d'avoir du texte «~lisible~» (format ASCII et non
+binaire)).
+
+L'importation d'une clé se fera alors via la commande \texttt{gpg
+--import cle.asc}
 \subsection{Chiffrer}
+Pour chiffrer un fichier, cela se fait via la commande \texttt{gpg
+--recipient laclé --armor --encrypt fichier}. Il faut bien entendu
+indiquer la clé publique du récepteur.
+Une fois le message reçu, le destinataire pourra le déchiffrer via
+la commande \texttt{gpg --decrypt fichier}
 \subsection{Signatures}
+Pour signer un fichier (afin de prouver que l'on est bien
+l'expéditeur du fichier, et que le fichier n'a pas été modifié
+depuis la signature), il faut exécuter la commande \texttt{gpg
+--default-key lacle --clearsign fichier}.
+
+Pour vérifier l'intégrité du fichier, on appellera GPG ainsi :
+\texttt{gpg --verify fichier}

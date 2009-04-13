@@ -4,13 +4,13 @@ l'identité de l'utilisateur.
 
 Cette authentification peut se faire sur plusieurs données : 
 \begin{itemize}
-  \item Une donnée connue par l'utilisateur. Exemple : un mot de
+  \item une donnée connue par l'utilisateur. Exemple : un mot de
 passe ~;
-  \item Quelque chose que possède l'utilisateur, un \emph{token}.
+  \item quelque chose que possède l'utilisateur, un \emph{token}.
 Exemple : une carte magnétique ~;
-  \item Quelque chose propre à l'utilisateur, une donnée physique.
+  \item quelque chose propre à l'utilisateur, une donnée physique.
 Exemple : une empreinte digitale ~;
-  \item Quelque chose que seul l'utilisateur sait faire. Exemple :
+  \item quelque chose que seul l'utilisateur sait faire. Exemple :
 une signature.
 \end{itemize}
 
@@ -22,10 +22,12 @@ utiliser un des quatre éléments cités ci-dessus pour authentifier
 l'utilisateur. L'élément le plus utilisé est le mot de passe ~;
   \item l'authentification forte, qui combine plus d'un élément
 des quatre cités ci-dessus.
+\\
 \end{itemize}
 
 Pour l'authentification forte, on utilise souvent des
-\emph{token} (un objet que possède l'utilisateur), 
+\emph{token} (un objet que possède l'utilisateur, servant
+uniquement pour l'authentification), 
 combinés à l'utilisation traditionnelle de mot de passe, souvent
 sous la forme de code PIN, qui permet d'activer le token.
 On peut aussi utiliser une carte à puce, ou des logiciels présents
@@ -51,10 +53,11 @@ réseau, et si le mot de passe est transmit en clair, on peut
 facilement le retrouver. Le mot de passe doit alors être chiffré
 pour la transmission.
   \item Au niveau de l'endroit où est stocké le mot de passe, car
-si un attaquant prends possession d'une machine où sont stockés
+si un attaquant prend possession d'une machine où sont stockés
 des mots de passe, il aura accès à des centaines, milliers de mots
-de passes directement, alors que si les mots de passes sont
+de passes directement, alors que s'ils sont
 chiffrés il ne pourra pas connaître ces mots de passe.
+\\
 \end{itemize}
 
 Au niveau du chiffrement du mot de passe, il est préférable
@@ -62,6 +65,7 @@ d'utiliser une fonction de hachage (fiable), ainsi les seules
 attaques possibles sont celles par force brute et par
 dictionnaire. La sécurité du mot de passe dépend alors du mot de
 passe uniquement, et non de la méthode de chiffrement utilisée.
+%%TODO: temps mis par johntheripper sur un mot de passe md5
 
 Il reste néanmoins beaucoup d'autres méthodes pour retrouver un mot de
 passe, non basées sur la cryptologie, notamment le hameçonnage
@@ -77,7 +81,7 @@ pour les services nécessitant une grande sécurité, comme les
 banques en ligne, …).
 
 \subsection{Les mots de passe à usage unique (OTP)}
-Let token à mot de passe unique (OTP pour \emph{One Time
+Les mot de passe à usage unique (OTP pour \emph{One Time
 Password}) utilisent un secret qui est connu du client et du
 serveur en plus d'un mot de passe, c'est donc un mécanisme
 d'authentification forte.
@@ -92,39 +96,41 @@ mot de passe produit est donc tout le temps différent ~;
   \item l'utilisation du temps : plutôt que de produire le mot de
 passe à partir d'un compteur, on se base sur le temps actuel, le
 mot de passe sera alors valable pendant une certaine durée
-(habituellement entre 30 secondes et 1 minute) ~;
+(habituellement courte, le temps de recopier le mot de passe, 
+ entre 30 secondes et 1 minute) ~;
   \item l'utilisation de \emph{challenge} : le serveur crée un
 \emph{challenge} (des données aléatoires), qu'il communique au
-client. Le client crée alors le OTP à partir de ce challenge et de
+client. Le client crée alors le OTP à partir de ce challenge et du
 secret connu du serveur et de lui même. Il faut alors éviter de
 donner plusieurs fois le même challenge, sinon le mot de passe en
 résultant serait le même, et un attaquant pourrait alors
 s'identifier en tant qu'utilisateur, s'il a écouté les
 communications lors de la première authentification avec le même
 challenge. 
+\\
+\end{itemize}
 
 L'utilisation de challenge (dite asynchrone, car ce n'est pas
 immédiat, l'utilisateur doit d'abord rentrer le challenge dans 
 son token) pose donc certains problèmes comparé aux autres 
-utilisations (dites synchrones). Notons que l'on peut
+utilisations (dites synchrones). Notons que 
 l'utilisation d'un compteur et du temps peuvent être utilisées de
 manière complémentaire.
 
-\end{itemize}
 
 \subsection{Certificats}
 Un certificat numérique est une sorte de carte d'identité,
-utilisée pour associer une personne, une machine avec sa clé
+utilisé pour associer une personne, une machine avec sa clé
 publique.
 La norme établissant le format de ces certificats est la norme
 X.509, elle décrit les éléments qui doivent être présent dans le
 certificat (algorithme de signature, nom, dates de validité, …).
 
 Les certificats sont gérés par une autorité de certification (AC),
-qui délivre les certificats, .
+qui délivre les certificats.
 Lors d'une communication entre un utilisateur et un service,
 le service envoie son certificat, que l'utilisateur va vérifier
-auprès de d'autorité de certification.
+auprès de l'autorité de certification.
 
 %% TODO: plus développer ? PKI ?
 
@@ -134,7 +140,7 @@ utiliser la biométrie pour l'authentification forte, qui consiste
 à identifier l'utilisateur via une de ses caractéristiques
 physiques (reconnaissance vocale, digitale, faciale et
 reconnaissance d'iris).
-Cette technique est plus coûteuse à mettre en place et peu poser
+Cette technique est plus coûteuse à mettre en place et peut poser
 des problèmes juridiques (les bases de données contenant les
 informations sur les utilisateurs se rapprochent de celles
-utilisées par la police).
+utilisées par la police, soumises à des règles strictes).

@@ -8,25 +8,28 @@ Commençons par le commencement : lorsqu'on allume un ordinateur,
 et qu'on s'identifie (on se \emph{log}), il faut dans la plupart
 des cas entrer un mot de passe (bien que cette fonctionnalité
 n'est plus activée par défaut sur les systèmes d'exploitations
-Windows®, elle reste fortement conseillée).
+Windows, elle reste fortement conseillée).
 \\
  
 Sous les unixoïdes, le programme qui se charge de
 l'identification est \texttt{login} (lancé directement après
 \texttt{init} et \texttt{getty}). À la base, les mots de passe
 étaient stockés en clair dans le fichier \texttt{/etc/passwd},
-mais se trouvent se trouvent désormais chiffrés dans le
-fichier \texttt{/etc/shadow}. Les algorithmes de chiffrements
-utilisés sont des algorithmes dérivés de DES ou de MD5, et ce
-fichier n'est accessible que par le «~super utilisateur~»
-(l'utilisateur \emph{root}). De plus, avant le chiffrement, le mot
+mais se trouvent se trouvent désormais chiffrés dans un autre
+fichier (\texttt{/etc/shadow} sous Linux,
+\texttt{/etc/master.passwd} sous FreeBSD, …), 
+lisible uniquement par le «~super utilisateur~»
+(l'utilisateur \texttt{root}).
+Les algorithmes de chiffrements
+utilisés sont des algorithmes dérivés de DES ou de MD5.
+ De plus, avant le chiffrement, le mot
 de passe est «~salé~» (ajout de caractères aléatoires en fin de
-mot de passe), ce qui empêche deux mots de passe d'avoir
+mot de passe), ce qui empêche deux d'avoir
 la même empreinte pour deux mots de passe identiques.
 \\
  
-Sous les Windows® NT (dont font partie Windows® xp et Windows
-Vista™), la gestion des mots de passe est assez désastreuse. Les
+Sous les Windows NT (dont font partie Windows XP et Windows
+Vista), la gestion des mots de passe est assez désastreuse. Les
 mots de passe se trouvent dans le fichier
 \texttt{\bslash winnt\bslash system32\bslash config}, et bien
 que ce fichier ne soit pas
@@ -47,10 +50,12 @@ numériquement n'importe quel caractère}.
 des deux algorithmes. Il est donc très facile de retrouver les
 mots de passes, tout d'abord sans la casse\footnote{différenciation
 entre les majuscules et les minuscules} grâce au chiffrement
-Lanman, qui à un domaine de recherche restreint (uniquement des
+Lanman, qui a un domaine de recherche restreint (car il garde 
+uniquement des
 majuscules, …), ensuite il suffit d'essayer les différentes
 combinaisons possibles de majuscules et de minuscules dans le mot
-de passe via l'empreinte MD4 produite par l'algorithme NTLM.
+de passe, de les chiffrer via NTLM, et de les comparer à
+l'empreinte du mot de passe que l'on recherche. 
 \\
  
 Il faut néanmoins préciser qu'un accès physique à la machine
@@ -59,7 +64,7 @@ via distance, il faut avoir accès au compte super utilisateur sous
 Unix, alors que sous Windows, un simple accès en tant
 qu'utilisateur normal permet non seulement de changer le mot de
 passe, mais aussi de le retrouver (ce qui n'est pas possible sous
-les Unix).
+les Unix, à moins d'avoir un accès \texttt{root}).
 \subsection{TLS/SSL}
 TLS (Transport Layer Security), anciennement SSL (Secure Socket
 Layer) permet d'établir un canal de communication chiffré entre
@@ -73,9 +78,9 @@ Au niveau du fonctionnement de SSLv2, le client envoie d'abord la liste des
 algorithmes de chiffrement supportés, le serveur envoie alors le
 nom du chiffrement à utiliser, ainsi qu'un
 certificat contenant sa clé publique. Le client, après avoir
-vérifié la validité du certificat, génère alors une clé, qu'il
-chiffre avec la clé publique du serveur, et envoie au serveur la
-clé secrète chiffrée. Le serveur peut alors la déchiffrer, est est
+vérifié la validité du certificat, génère une clé, qu'il
+chiffre avec la clé publique du serveur, et envoie au serveur.
+Le serveur peut alors la déchiffrer, est est
 en possession de la clé secrète.
 Cette clé secrète (clé de session) permet de chiffrer toutes les
 communications entre le client et le serveur.
@@ -97,7 +102,8 @@ sécuriser n'importe quel protocole réseau (un attaquant ne peut
 donc écouter les données qui transitent sur le réseau).
 L'implémentation libre de SSH est OpenSSH, développée par le
 projet OpenBSD (système d'exploitation visant à être sécurisé, et
-à fournir des outils de cryptographie intégrés). La version
+à fournir des outils de cryptographie intégrés). La version 
+du protocole
 actuellement utilisée est la version 2, la version 1 posant des
 problèmes de sécurités.
 \\
@@ -121,8 +127,9 @@ brevetés : le Triple DES, Blowfish, AES et Arcfour).
 bleue est la clé de session]{
       \label{fig:CanalSecuriseSSH}\includegraphics[width=0.4\textwidth]{images/SSH.png}}
     \hspace{1.2cm}
-    \subfloat[Puffy, la mascotte du projet OpenBSD et de OpenSSH
-choisi à cause de l'algorithme \emph{blowfish} utilisé dans
+    \subfloat[Puffy, la mascotte du projet OpenBSD et de OpenSSH a
+été 
+choisie d'après l'algorithme \emph{blowfish} utilisé dans
 OpenSSH, qui lui même tire son nom du poisson globe, représentant
 la sécurité, la résistance aux attaques]{
       \label{fig:Puffy}\includegraphics[width=0.4\textwidth]{images/Puffy.png}}

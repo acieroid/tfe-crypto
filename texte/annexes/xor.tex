@@ -28,7 +28,7 @@ pseudo-aléatoires pour créer une clé, qui sera de la même taille que
 le message, et nous aurons donc un masque jetable.
 
 Sur la plupart des systèmes basés sur Unix (Linux, FreeBSD, Solaris,
-\dots), de tels générateurs sont présent par défaut ; souvent au
+\dots), de tels générateurs sont présents par défaut ; souvent au
 nombre de deux : un plus rapide mais moins aléatoire, et un au
 contraire plus aléatoire mais plus lent. Ces générateurs sont
 respectivement dans les fichiers spéciaux \texttt{/dev/urandom} et
@@ -58,13 +58,17 @@ utiliser un simple script sh qui fera le travail pour nous :
 Il nous suffira alors d'appeler ce script en lui spécifiant le fichier
 contenant le message.\\
 
-Il y a deux inconvénients donc à ce système : le transport de la clé,
+Il y a deux inconvénients  à ce système : 
+\begin{itemize}
+  \item le transport de la clé,
 qu'on pourrait communiquer via un système de communication possédant
-déjà un chiffrement à clé publique. Le second problème est la
+déjà un chiffrement à clé publique.
+  \item la
 génération de la clé ; le générateur \texttt{/dev/random} est fiable
 au niveau du contenu aléatoire, mais est extrêmement lent et sa
 vitesse dépend de l'activité de la machine, alors que le
 générateur \texttt{/dev/urandom} est moins fiable, mais bien plus
 rapide.
+\end{itemize}
 
 %TODO: autres générateurs ?

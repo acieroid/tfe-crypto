@@ -26,19 +26,20 @@ de signature numérique.
 %% TODO: parler des PKI
 
 En outre, l'intégrité permet aussi de vérifier que le
-téléchargement d'un fichier s'est bien passé. Il faut alors faire
+téléchargement d'un fichier s'est bien passé. Il faut alors
+établir 
 l'empreinte du fichier téléchargé et la comparer avec l'empreinte
-qu'a le fichier d'origine (disponible sur le même serveur où on a
+qu'a le fichier d'origine (disponible sur le même serveur où a été 
 téléchargé le fichier). Si ces deux empreintes correspondent, les
 deux fichiers sont identiques. À titre d'exemple, le protocole
 de P2P BitTorrent vérifie l'empreinte SHA-1 de chaque bout de donnée
 du fichier 
-(le fichier à télécharger est divisé plusieurs petites parties, 
+(le fichier à télécharger est divisé en plusieurs petites parties, 
 appelées \emph{chunks}).  
 
 Il est alors important d'utiliser une fonction qui ne comporte pas
 de problème de sécurité, sinon un fichier avec du code malicieux
 pourrait avoir la même empreinte que le fichier que l'on souhaite
-télécharger. Néanmoins, l'algorithme MD5 reste fortement utilisés
+télécharger. Néanmoins, l'algorithme MD5 reste fortement utilisé
 malgré ses faiblesse.
 

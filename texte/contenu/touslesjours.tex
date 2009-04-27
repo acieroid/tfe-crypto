@@ -5,17 +5,17 @@ quotidiennes de la cryptographie.
  
 \subsection{Login système}
 Commençons par le commencement : lorsqu'on allume un ordinateur,
-et qu'on s'identifie (on se \emph{log}), il faut dans la plupart
+et qu'on s'identifie (on se \emph{log}), il faut généralement 
 des cas entrer un mot de passe (bien que cette fonctionnalité
-n'est plus activée par défaut sur les systèmes d'exploitations
+n'est plus activée par défaut sur les systèmes d'exploitation
 Windows, elle reste fortement conseillée).
 \\
  
-Sous les unixoïdes, le programme qui se charge de
+Sous les systèmes bade type UNIX, le programme qui se charge de
 l'identification est \texttt{login} (lancé directement après
 \texttt{init} et \texttt{getty}). À la base, les mots de passe
 étaient stockés en clair dans le fichier \texttt{/etc/passwd},
-mais se trouvent se trouvent désormais chiffrés dans un autre
+mais se trouvent désormais chiffrés dans un autre
 fichier (\texttt{/etc/shadow} sous Linux,
 \texttt{/etc/master.passwd} sous FreeBSD, …), 
 lisible uniquement par le «~super utilisateur~»
@@ -25,7 +25,7 @@ utilisés sont des algorithmes dérivés de DES ou de MD5.
  De plus, avant le chiffrement, le mot
 de passe est «~salé~» (ajout de caractères aléatoires en fin de
 mot de passe), ce qui empêche deux d'avoir
-la même empreinte pour deux mots de passe identiques.
+deux fois la même empreinte.
 \\
  
 Sous les Windows NT (dont font partie Windows XP et Windows
@@ -69,7 +69,7 @@ les Unix, à moins d'avoir un accès \texttt{root}).
 TLS (Transport Layer Security), anciennement SSL (Secure Socket
 Layer) permet d'établir un canal de communication chiffré entre
 deux machines, et peut servir pour sécuriser n'importe quel
-protocole (par exemple le protocole HTTP, on reconnaît alors qu'il
+protocole (par exemple pour le protocole HTTP, on reconnaît alors qu'il
 est chiffré par l'ajout du S, dans HTTPS, pour \emph{HTTP
 secured})
 \\
@@ -105,7 +105,7 @@ projet OpenBSD (système d'exploitation visant à être sécurisé, et
 à fournir des outils de cryptographie intégrés). La version 
 du protocole
 actuellement utilisée est la version 2, la version 1 posant des
-problèmes de sécurités.
+problèmes de sécurité.
 \\
 
 La mise en place du canal sécurisé est décrite dans la figure
@@ -133,7 +133,7 @@ choisie d'après l'algorithme \emph{blowfish} utilisé dans
 OpenSSH, qui lui même tire son nom du poisson globe, représentant
 la sécurité, la résistance aux attaques]{
       \label{fig:Puffy}\includegraphics[width=0.4\textwidth]{images/Puffy.png}}
-    %\caption{Deux anciennes techniques de chiffrement}
+    \caption{SSH}
     %\vspace{-15pt}
 %  \label{fig:ScytaleChiffreCesar}
 \end{figure}

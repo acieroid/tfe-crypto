@@ -1,28 +1,28 @@
-\section{Les fonctions de hachages\label{sec:FonctionHachage}}
+\section{Les fonctions de hachage\label{sec:FonctionHachage}}
 Les fonctions de hachage sont des fonctions à sens unique, et
-produisent à partir d'un texte d'une quelconque longueur, une 
+produisent à partir d'un texte d'une longueur quelconque, une 
 \emph{somme de contrôle} (aussi appelée \emph{empreinte}
 ou \emph{hash}) de longueur fixe, qu'on peut voir comme un résumé
 du texte (à partir duquel on ne peut pas retrouver le texte
 d'origine, ou du moins très difficilement\footnote{Par très
 difficile, nous entendons qui n'est pas faisable en pratique, car
-cela demanderait des années (voire des centaines d'années, ou
+cela demanderait des années (voire des centaines d'années ou
 plus) de calculs, même en réunissant la puissance de calculs de
-tous les ordinateurs}).
+tous les ordinateurs.}).
 
 Les fonctions de hachage doivent être résistantes aux collisions,
-c'est à dire qu'on ne peut pas trouver facilement deux messages
+c'est-à-dire qu'on ne peut pas trouver facilement deux messages
 différents ayant la même empreinte. Bien évidemment, la taille de
 l'empreinte étant fixe, il existera toujours des collisions du fait
 qu'il y a un nombre limité d'empreintes alors que le nombre de
 messages initiaux est illimité.
-On peut remarquer que la plupart des fonctions de hachages sont
-très sensibles, si l'on change un seul caractère à un message, son
+On peut remarquer que la plupart des fonctions de hachage sont
+très sensibles~; si l'on change un seul caractère à un message, son
 empreinte sera totalement changée.
 
 Nous pouvons vérifier cela avec
 la fonction MD5, qui est encore beaucoup utilisée de nos jours,
-malgré ses failles de sécurité. Cette fonction est inclue de base
+malgré ses failles de sécurité. Cette fonction est incluse de base
 dans la plupart des systèmes Unix, via le programme \texttt{md5sum}.
 
 \lstset{language=bash}

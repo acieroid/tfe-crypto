@@ -1,5 +1,5 @@
 \section{Les chiffres de transposition\label{sec:Transposition}}
-Un chiffre de transposition est un chiffre, où à la place de changer
+Un chiffre de transposition est un chiffre où, au lieu de changer
 les lettres et les chiffres par d'autres lettres, chiffres ou signes,
 on réarrange ceux-ci selon un certain ordre.
 
@@ -8,12 +8,12 @@ Scytale des Spartiates (voir la figure \ref{fig:Scytale}, page
 \pageref{fig:Scytale}).
 
 Il existe de nombreux systèmes de chiffrement de ce type, souvent
-simple à utiliser «~à la main~». C'est le cas par exemple du
+simples à utiliser «~à la main~». C'est le cas par exemple du
 \emph{Rail Fence}, un procédé utilisé pendant la guerre de Sécession
 qui consiste à simplement écrire une lettre par ligne (on utilisera donc
-une clé numérique, correspondant au nombre de lignes que nous utilisons), et
-reprendre à la première ligne une fois la dernière atteinte. Ensuite,
-le message chiffré se lit simplement comme n'importe quel texte.
+une clé numérique, correspondant au nombre de lignes que nous utilisons) et
+reprendre à la première ligne, une fois la dernière atteinte. Ensuite,
+le message chiffré se lit comme n'importe quel texte.
 Ainsi, «~Chiffrement~» sera chiffré en «~Cifeethfrmn~» sur deux
 lignes (voir la figure \ref{fig:Transposition})
 \begin{figure}[h]
@@ -33,8 +33,8 @@ colonnes, dans laquelle nous écrivons «~chiffrement par transposition
 ». Un problème se pose alors pour la dernière ligne, elle n'est pas
 complète ; deux choix s'offrent alors à nous : 
 \begin{itemize}
-  \item Laisser ces cases vides
-  \item Utiliser des «~caractères nuls~», caractères aléatoires qui ne
+  \item laisser ces cases vides~;
+  \item utiliser des «~caractères nuls~», caractères aléatoires qui ne
     servent qu'à compléter la matrice et éventuellement à perturber la
     cryptanalyse du message chiffré.
 \end{itemize}
@@ -56,7 +56,7 @@ les caractères G, O, K et Z à la fin de la matrice (figure
   \right)
   $
   \end{center}
-  \caption{Le message écrit sous forme de matrice, avec l'ajout de
+  \caption{le message écrit sous forme de matrice, avec l'ajout de
     caractères nuls}
   \label{fig:TranspositionMatriceNul}
 \end{figure}
@@ -65,18 +65,18 @@ Ensuite, nous allons changer l'ordre des colonnes en attribuant un
 nombre à chacune des colonnes, et en les replaçant dans l'ordre des
 nombres attribués. Le message chiffré se lira alors verticalement.
 Nous pouvons éventuellement réitérer cette opération, c'est ce qu'on
-appelle la \emph{double transposition} (et ce qui rend la cryptanalyse plus
+appelle la \emph{double transposition} (ce qui rend la cryptanalyse plus
 compliquée).
 
 Les numéros attribués aux colonnes constitueront la clé ; pour
-faciliter la mémorisation de celle ci, nous pouvons utiliser un mot,
-ou chaque lettre sera numérotée selon l'ordre alphabétique. Quand une
-lettre apparait plus d'une fois, la lettre la plus à gauche aura
+faciliter la mémorisation de celle-ci, nous pouvons utiliser un mot
+où chaque lettre sera numérotée selon l'ordre alphabétique. Quand une
+lettre apparaît plus d'une fois, la lettre la plus à gauche aura
 l'indice le plus faible, la plus à droite l'indice le plus fort.
 
 Utilisons ici la clé «~Pomme~», ce qui donne «~54231~» en chiffres,
-nous réarrangons donc les colonnes selon cet ordre (la dernière
-colonne sera la première, la troisème la seconde, ...)
+nous réarrangeons donc les colonnes selon cet ordre (la dernière
+colonne sera la première, la troisième la seconde, ...)
 
 \begin{figure}[h]
   \begin{center}
@@ -93,11 +93,11 @@ colonne sera la première, la troisème la seconde, ...)
   \right)
   $
   \end{center}
-  \caption{La matrice réarrangée, selon la clé «~Pomme~»}
+  \caption{la matrice réarrangée, selon la clé «~Pomme~»}
   \label{fig:TranspositionMatriceCode}
 \end{figure}
 
-Ainsi, le message codé sera «~FNTOOZIMASTOFEROIKHEPAIGCRTRSN~», et on
+Ainsi, le message codé sera «~FNTOOZIMASTOFEROIKHEPAIGCRTRSN~» et on
 pourra facilement le déchiffrer en le réécrivant verticalement dans
 une matrice possédant le même nombre de colonnes que la clé (5 ici),
 en numérotant les colonnes de droite à gauche et en les remettant dans

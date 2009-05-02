@@ -5,13 +5,13 @@ polygramme, ou bien par un nombre ou un signe.
 
 On peut distinguer plusieurs sortes de substitutions : 
 \begin{itemize}
-  \renewcommand{\makelabel}[1]{\sffamily\textbf{#1}}
-  \item[Les substitutions monoalphabétiques ou simples] : 
+ % \renewcommand{\makelabel}[1]{\sffamily\textbf{#1}}
+  \item[les substitutions monoalphabétiques ou simples] : 
     chaque lettre est remplacée par une autre lettre tout au long du message~; 
-  \item[Les substitutions polyalphabétiques] :
-    c'est en fait une combinaison de substitutions simples~;
-  \item[Les substitutions polygrammiques]: 
-    à la place de substituer des lettres comme le fait la substitution
+  \item[les substitutions polyalphabétiques] :
+    il s'agit d'une combinaison de substitutions simples~;
+  \item[les substitutions polygrammiques]: 
+    au lieu de substituer des lettres comme dans le cas de la substitution
     monoalphabétique, on substitue des groupes de lettres~;
   \item[Les substitutions homophoniques] : 
     chaque lettre peut être remplacée par plusieurs valeurs, choisies
@@ -19,8 +19,6 @@ On peut distinguer plusieurs sortes de substitutions :
 \end{itemize}
 
 \subsection{Les substitutions monoalphabétiques}
-Ce type de substitution consiste simplement à remplacer chaque lettre
-de l'alphabet par une autre lettre.
 
 \subsubsection{Par simple décalage}
 On peut par exemple, comme le fait le chiffre de
@@ -39,7 +37,8 @@ Nous utilisons l'opérateur \emph{modulo}, qui nous donne le reste de
 la division entière de deux entiers ($5~ mod~ 2 = 1$), ce qui nous
 permet de rester dans un ensemble cyclique. \\
 
-\paragraph{Exemple: le rot13\label{syst:rot13}}
+%\paragraph{Exemple: le rot13\label{syst:rot13}}
+\label{syst:rot13}
 Une application du chiffre de César est, par exemple, le \emph{ROT13},
 qui est simplement un chiffre de César pour lequel la clé $k$ a une
 valeur de $13$.\\
@@ -54,7 +53,7 @@ De ce fait, ROT13 n'est pas du tout pratique pour cacher des
 informations, mais est parfois utilisé sur internet, dans les forums,
 afin d'empêcher la lecture involontaire d'un texte (qui pourrait
 dévoiler une information sur un film par exemple, et gâcherait le
-plaisir aux gens n'ayant pas vu le film, c'est ce qu'on appelle un 
+plaisir de eux qui n'ont pas vu le film~; c'est ce qu'on appelle un 
 \emph{spoiler}) 
 
 \subsubsection{Par remplacement}
@@ -84,16 +83,17 @@ clé du chiffrement.
       X & K & Q & G & F & F \\
       \hline
     \end{tabular}
-  \end{flushright}
-  \caption{Exemple simple de table de substitution}
+  \enl{flushright}
+  \caption{exemple simple de table de substitution}
   \label{fig:SubstitutionSimple}
 \end{figure}
 
-Il existe de nombreuses méthodes dans le même genre pour remplacer
-simplement une lettre par autre chose, voyons en une de plus près :
+Il existe de nombreuses méthodes du même genre pour remplacer
+simplement une lettre par autre chose. En voici une :
 \emph{le carré de Polybe.}\\
 
-\paragraph{Exemple: le carré de Polybe\label{syst:CarrePolybe}}
+%\paragraph{Exemple: le carré de Polybe\label{syst:CarrePolybe}}
+\label{syst:CarrePolybe}
 Polybe est un historien grec (210 av. J.-C., 126 av. J.-C.), qui
 explique vers 150 av. J.-C. une méthode de chiffrement par
 substitution assez simple et intéressante.\\
@@ -110,7 +110,7 @@ Nous pouvons représenter ce carré par une matrice de taille $5\times 5$
 lettres dans un ordre spécial, qui constituera la clé.
 
 Le carré de Polybe est assez intéressant car il convertit les lettres
-en chiffres et réduit le nombre de symbole utilisés dans le message
+en chiffres et réduit le nombre de symboles utilisés dans le message
 chiffré (9 chiffres plutôt que 26 lettres). \\
 
 \begin{figure}[h]
@@ -149,21 +149,22 @@ chiffré (9 chiffres plutôt que 26 lettres). \\
     \end{array}
   \right)
   $
-  \caption{Le carré de Polybe sous forme de matrice, la seconde
-    matrice ayant comme clé «~crypto~», et la troisième représentant
+  \caption{le carré de Polybe sous forme de matrice, la seconde
+    matrice ayant comme clé «~crypto~» et la troisième représentant
     les nombres par lesquels seront remplacés les caractères dans le
     message chiffré.}
   \label{fig:Polybe}
 \end{figure}
 
-Polybe imaginait un moyen de communiquer les messages via des torches
+Polybe avait imaginé un moyen de communiquer les messages via des torches
 : le nombre de torches placées à gauche correspondrait au numéro de la
 ligne, et le nombre de torches à droite au numéro de la colonne. \\
 
-Le carré de Polybe était utilisé par les nihilistes russes entre le
-XIX\ieme~ et le XX\ieme~ siècle (des «~terroristes~» dont le but était de
+Le carré de Polybe était utilisé par les nihilistes russes à la
+fin du 
+XIX\ieme~ siècle (des «~terroristes~» dont le but était de
 tuer le tsar pour reconstruire une société sur de nouvelles
-bases). Lorsqu'ils étaient attrapés et enfermés en prison, ils
+bases). Lorsqu'ils étaient appréhendés en emprisonnés, ils
 communiquaient via le carré de Polybe, en donnant des coups sur les
 murs. 
 
@@ -171,7 +172,7 @@ murs.
   \begin{center}
     \includegraphics[scale=1.5]{images/Nihilistes.jpg}
   \end{center}
-  \caption{Version du carré de Polybe utilisée par les nihilistes
+  \caption{version du carré de Polybe utilisée par les nihilistes
     russes}
   \label{fig:Nihilistes}
 \end{figure}
@@ -181,13 +182,14 @@ Les substitutions polyalphabétiques sont des combinaisons de plusieurs
 tables de substitutions simples, où l'on change de table à chaque
 lettre, ce qui rend le message chiffré plus dur à casser sans
 la clé (nous verrons ceci en détail dans le chapitre
-\ref{chap:Cryptanalyse} sur la cryptanalyse)
+\ref{chap:Cryptanalyse} sur la crypt\-analyse)
 
 Une des substitutions polyalphabétiques les plus connues est le
 \emph{Chiffre de Vigenère}.
 
-\paragraph{Exemple : Le chiffre de Vigenère\label{syst:ChiffreVigenere}}
-Au XIX\ieme~ siècle, Vigenère «~invente~» une nouvelle méthode de
+%\paragraph{Exemple : Le chiffre de Vigenère\label{syst:ChiffreVigenere}}
+\label{syst:ChiffreVigenere}}
+Au XVI\ieme~ siècle, Vigenère «~invente~» une nouvelle méthode de
 chiffrement en s'inspirant fortement des travaux de l'abbé allemand
 Jean Trithème du XVI\ieme~ siècle. Blaise de Vigenère a néanmoins
 modifié légèrement la méthode de Trithème en rendant l'utilisation de
@@ -201,10 +203,10 @@ de 26 lettres chacune).
 %respectivement remplacées par le I et le W. Le W est placé après le
 %Z.\\
 Chaque rangée correspond à un chiffre de César,
-avec à chaque fois un décalage augmenté d'une unité à chaque ligne. \\
+avec à chaque fois un décalage, augmenté d'une unité à chaque ligne. \\
 
 Par exemple, pour chiffrer le mot «~cryptographie~» avec la table se
-trouvant à la figure \ref{fig:VigenereTableau} (sans prendre
+trouvant à la figure \ref{fig:VigenereTableau} (sans tenir 
 compte de la première ligne, utilisée pour le chiffrement de
 Vigenère)~: 
 \begin{itemize}
@@ -213,8 +215,8 @@ Vigenère)~:
   \item la lettre R est chiffrée sur la 2\ieme~ ligne, et devient
     S. Pour cela, trouvez la colonne de R dans la première rangée, et
     descendez d'une ligne~;
-  \item La lettre Y devient A (même colonne, deux rangées plus bas)~;
-  \item Et ainsi de suite ~\dots ~ ;
+  \item la lettre Y devient A (même colonne, deux rangées plus bas)~;
+  \item et ainsi de suite ~\dots ~ ;
   \item «~cryptographie~» sera donc chiffré en «~csasxsmywuwt~».
 \end{itemize}
 
@@ -228,8 +230,8 @@ Vigenère)~:
 
 Vigenère reprend donc cette méthode pour légèrement la modifier (y
 ajouter l'utilisation d'une clé en fait), et la publie dans son livre
-\emph{Traicté des chiffres, ou secretes
-  manieres d'escrire} en 1586. \\
+\emph{Traité des chiffres, ou secrètes
+  manières d'écrire} en 1586. \\
 
 Comme pour la méthode de Trithème, on utilise une table, composée
 cette fois-ci des 26 chiffres de César possibles, comme sur la figure
@@ -250,11 +252,11 @@ de vigenere~» avec comme clé «~crypto~».
       r & y & 
       p & t & o & c & r & y & p & t \\
     \end{tabular}\\
-    La clé est donc répétée successivement~;
+    La clé est donc répétée successivement.
   \item Ensuite, chaque lettre du message clair est décalée du nombre
     de rang correspondant à la lettre de la clé qui lui est
     associée. Ainsi, pour la première lettre, C, on la décale de 2
-    rangs (la lettre C lui étant associée, et la place de cette lettre
+    rangs (la lettre C lui étant associée et la place de cette lettre
     dans l'alphabet en partant de 0 est 2). Pour s'aider, on peut
     utiliser la table du chiffre de Vigenère (voir la figure
     \ref{fig:VigenereTableau}), dans laquelle on trouve la case
@@ -298,7 +300,7 @@ claire, et la ligne de la lettre du message. \\
       Z & Z & A & B & C & D & E & F & G & H & I & J & K & L & M & N & O & P & Q & R & S & T & U & V & W & X & Y \\
     \end{tabular}
   \end{center}
-  \caption{Le tableau utilisé pour le chiffre de Vigenère}
+  \caption{le tableau utilisé pour le chiffre de Vigenère}
   \label{fig:VigenereTableau}
 \end{figure}
 
@@ -311,7 +313,7 @@ consistent à effectuer d'autres opérations simples avec le caractère
 clair et le caractère de la clé (facilement faisable à la main) ,
 comme on peut en voir quelques-unes dans la table \ref{tab:VariantesVigenere}. 
 \begin{table}[h]
-  \caption{Quelques variantes du chiffre de Vigenère}
+  \caption{quelques variantes du chiffre de Vigenère}
   \label{tab:VariantesVigenere}
   \begin{center}
     \begin{tabular}{|l|c|}
@@ -349,12 +351,12 @@ réutilisé pendant la Première Guerre mondiale. Pour l'anecdote,
 quand Wheatstone proposa au \emph{Foreign Office} --- qui trouvait son chiffre
 trop compliqué pour être utilisé --- de montrer sa simplicité en
 l'apprenant aux trois-quarts des enfants de l'école primaire voisine
-en moins d'un quart d'heure, on lui répondit «~C'est bien possible,
+en moins d'un quart d'heure, on lui répondit~: «~C'est bien possible,
 mais vous ne pourrez jamais l'apprendre à des spécialistes~».
 
 
 Cette méthode chiffre les lettres par digrammes (par deux) en se
-basant sur quatre simples règles. On utilise un tableau de $5
+basant sur quatre règles simples. On utilise un tableau de $5
 \times 5$ cases,
 où le chiffrement se fera en fonction de la position des deux lettres
 dans le tableau.  
@@ -370,11 +372,11 @@ lettres dans le tableau :
     cycliques, c'est à dire que la lettre à droite de la dernière
     lettre de la ligne est la lettre située la plus à gauche) ; 
   \item les lettres sont dans la même colonne : on les remplace par la
-    lettre située en dessous (en considérant aussi les colonnes comme
+    lettre située en-dessous (en considérant aussi les colonnes comme
     cycliques)
   \item les lettres ne sont ni sur la même colonne, ni sur la même
     ligne : on remplace la lettre par celle se situant sur la même
-    ligne que la lettre à chiffrer, et sur la colonne de la seconde
+    ligne que la lettre à chiffrer et sur la colonne de la seconde
     lettre (on forme une sorte de rectangle avec les lettres).
 \end{itemize}
 
@@ -414,9 +416,9 @@ lettres dans le tableau :
     \end{array}
   \right)
   $
-  \caption{Les trois règles du chiffre de Playfair, les lettre à
+  \caption{les trois règles du chiffre de Playfair, les lettres à
     chiffrer sont en vert et les lettres chiffrées en rouge. La
-    première lettre du digramme est soulignée}
+    première lettre du digramme est soulignée.}
   \label{fig:Playfair}
 \end{figure}
 

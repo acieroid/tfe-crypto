@@ -1,15 +1,16 @@
 \section{Le chiffrement asymétrique}
 Inventé en 1977 par Diffie et Hellman
 \cite{NewDirectionsInCryptography}, le chiffrement asymétrique, aussi
-connu sous le nom de chiffrement, à clé publique permet de résoudre le
+connu sous le nom de chiffrement à clé publique permet de résoudre le
 problème de communication des clés du chiffrement symétrique, et
-permet aussi l'authentification en s'aidant des fonctions de hachage 
+permet aussi l'authentification, en s'aidant des fonctions de hachage 
 (chapitre \ref{sec:FonctionHachage}). 
 
 Chaque utilisateur possède alors deux clés : une clé publique qu'il
 distribue à tout le monde ainsi qu'une clé privée, qu'il garde
 secrète. La clé publique permettra de chiffrer un message, que
-l'utilisateur pourra déchiffrer grâce à sa clé privée. Ainsi, seul la
+l'utilisateur pourra déchiffrer grâce à sa clé privée. Ainsi,
+seule la
 personne en possession de la clé de déchiffrement (privée), le
 destinataire donc, pourra déchiffrer le message. \\
 
@@ -60,12 +61,12 @@ dont seul le destinataire du message possède la clé.
   \begin{center}
     \includegraphics[scale=0.5]{images/ChiffrementAsymetrique.png}
   \end{center}
-  \caption{Le fonctionnement du chiffrement asymétrique, pour deux
+  \caption{le fonctionnement du chiffrement asymétrique, pour deux
     échanges de messages entre Alice et Bob.}
   \label{fig:ChiffrementSymetrique}
 \end{figure}
 
-Nous expliquerons les mécanismes d'authentifications dans le 
+Nous expliquerons les mécanismes d'authentification dans le 
 chapitre \ref{sec:Authentification}. \\
 
 \paragraph{Exemple : RSA}
@@ -79,8 +80,8 @@ un nombre qui est le produit de deux très grands nombres premiers.
 RSA se base donc sur le choix de deux nombres premiers, que nous
 nommerons $p$ et $q$.
 La clé publique est le couple $(e,n)$ tel que $n = p q$ et $e$ est
-premier avec $(p-1) (q-1)$\footnote{Deux nombres sont entiers
-entre eux \ssi~ leur plus grand commun diviseur est 1}.
+premier\footnote{Deux nombres sont entiers
+entre eux si et seulement si leur plus grand commun diviseur est 1.}avec $(p-1) (q-1)$.
 Pour l'encodage, on convertit d'abord notre message en une suite
 d'entiers $M_1, M_2, \dots, M_n$, % TODO parler de l'ascii ?
 que nous coderons ainsi :

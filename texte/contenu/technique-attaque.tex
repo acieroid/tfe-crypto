@@ -9,18 +9,19 @@ Exposée pour la première fois par Al-Kindi au IX\ieme~ siècle,
 l'analyse fréquentielle permet de déchiffrer des chiffrements
 simples. Dans le cas d'une substitution, les
 caractères sont représentés par autre chose, mais leurs fréquences
-d'apparition ne changent pas, on peut donc alors facilement
+d'apparition ne changent pas~; on peut donc alors facilement
 retrouver le message initial, connaissant les fréquences
-normaless d'apparition des caractères dans la langue du message.
+normales d'apparition des caractères dans la langue du message.
 
 L'analyse des fréquences ne se limite pas aux lettres
-individuelles, l'analyse des bigrammes peut aussi être très
+individuelles~; l'analyse des digrammes\footnote{Groupe de deux
+lettres.} peut aussi être très
 pratique.
 \\
 
-On peut via cette méthode aussi trouver la langue dans laquelle le
+On peut, via cette méthode, trouver la langue dans laquelle le
 message est écrit, car chaque langue possède une fréquence
-d'apparitions des lettres unique (voir la figure \ref{fig:Frequences}).
+d'apparition des lettres unique (voir la figure \ref{fig:Frequences}).
 
 Bien évidemment, la fréquence d'apparition des lettres peut varier
 au sein d'une même langue selon certains critères (par exemple un
@@ -31,7 +32,7 @@ plus probables sur des messages d'une certaine longueur.
 \begin{figure}[h]
   \centering
     \includegraphics[width=0.9\textwidth]{plot/Frequences.png}
-    \caption{Fréquences d'apparition des lettres en français et en
+    \caption{fréquences d'apparition des lettres en français et en
 anglais}
   \label{fig:Frequences}
 \end{figure}
@@ -44,17 +45,17 @@ intéressé à la cryptanalyse auparavant.
 \subsection{L'indice de coïncidence}
 Inventé en 1920 par William Friedman, l'indice de coïncidence
 permet de découvrir à quel type de chiffrement on a affaire 
-, et dans le cas d'une
+et dans le cas d'une
 substitution polyalphabétique, il permet de trouver la taille de
 la clé.
 
 Cet indice représente en fait la probabilité que deux lettres
 choisies au hasard dans un texte soient identiques. Comme pour
-l'analyse des fréquences, cette indice varie selon la langue.
+l'analyse des fréquences, cet indice varie selon la langue.
 Ainsi, si l'indice de coïncidence d'un texte chiffré correspond à
 celui d'une certaine langue, le texte est chiffré avec une
 substitution monoalphabétique ou une transposition dans cette 
-langue. Si par contre l'indice ne correspond à rien, on a affaire 
+langue. Si, en revanche, l'indice ne correspond à rien, on a affaire 
 à une substitution polyalphabétique.
 
 Nous noterons l'indice de coïncidence propre au langage $I_l$, et
@@ -65,9 +66,9 @@ minimal).
 
 Calculons cet indice :
 \begin{itemize}
-  \item La probabilité que deux lettres tirées dans un texte est
-égal à la probabilité de prendre deux A, plus la probabilité de
-prendre deux B, \dots L'indice de coïncidence du texte est donc la
+  \item la probabilité que deux lettres tirées dans un texte est
+égale à la probabilité de prendre deux A, plus la probabilité de
+prendre deux B, \dots~ L'indice de coïncidence du texte est donc la
 somme de ces probabilités :
   \begin{center}
     \[ Ic = p(\mbox{prendre deux A}) + p(\mbox{prendre deux B}) +
@@ -95,7 +96,7 @@ Dans le cas d'une substitution polyalphabétique, comme le chiffre
 de Vigenère, on pourrait diviser le message chiffré en plusieurs
 parties, chacune de ces parties étant l'équivalent d'une
 substitution simple, sur laquelle on pourrait procéder à une
-analyse fréquentielle. Le nombre de partie étant égal à la
+analyse fréquentielle. Le nombre de parties étant égal à la
 longueur de la clé, le plus important est alors de trouver la
 longueur de la clé.
 
@@ -105,17 +106,17 @@ colonnes, nous nous retrouverons avec un tableau de $\frac{n}{k}$
 lignes, où chaque colonne correspondrait à une substitution
 simple.
 
-Si maintenant, nous sélectionnons deux lettres dans ce tableau :
+Si maintenant nous sélectionnons deux lettres dans ce tableau :
 \begin{enumerate}
-  \item Soit elles se trouvent dans deux colonnes différentes, 
+  \item soit elles se trouvent dans deux colonnes différentes, 
 nous avons
 alors $C_k^2 ~ (\frac{n}{k})^2$ façons de les choisir. Le nombre
-de paire de lettres identiques au sein de deux colonnes distinctes
+de paires de lettres identiques au sein de deux colonnes distinctes
 est alors
 \[ I_m ~ C_k^2 ~ \left(\dfrac{n}{k}\right)^2 = 
 I_m ~ \dfrac{k (k - 1)}{2} ~
 \left(\dfrac{n}{k}\right)^2 = I_m ~ \dfrac{n^2 ~ (k-1)}{2k} \]
-  \item Soit elles se trouvent dans la même colonne, nous avons
+  \item soit elles se trouvent dans la même colonne, nous avons
 alors $C_{\frac{n}{k}}^2 ~ k $ façons de les choisir. Le nombre de
 paires de lettres % TODO: ortho ? singulier ou pluriel ?
 identiques au sein d'une même colonne est
@@ -169,7 +170,7 @@ clés possibles, une à une, jusqu'à ce qu'on retrouve
 la clé utilisée pour le chiffrement.
 
 Bien évidemment, à cause des restrictions matérielles, cette
-technique prend énormément de temps à trouver une solution. Ce
+technique prend énormément de temps pour trouver une solution. Ce
 temps dépend de l'algorithme de chiffrement utilisé ainsi que de
 la longueur de la clé. On comprend alors l'intérêt de choisir des
 clés d'une certaine taille, afin de pouvoir résister à une attaque
@@ -190,7 +191,7 @@ d'opérations qu'il faudra effectuer afin de trouver la bonne clé.
 
 On considère un algorithme de chiffrement cassé lorsque le nombre
 d'opérations à effectuer pour casser un message est plus
-petit que le nombre d'opération qu'effectuerait une attaque par
+petit que le nombre d'opérations qu'effectuerait une attaque par
 force brute. Ainsi, dans le cas de la méthode de chiffrement
 Triple DES, avec une clé de longueur de $2^{128}$ bits, une
 attaque permet de casser un code en $2^{112}$ opérations (on dit
@@ -198,65 +199,66 @@ alors qu'il a 112 bits de sécurité). Ce nombre
 reste très grand, mais l'algorithme est considéré comme cassé.
 \\
 
-Afin de pallier aux limites matérielles, il existe diverses
+Afin de pallier les limites matérielles, il existe diverses
 méthodes permettant d'avoir accès à une puissance de
 calcul considérable :
 \begin{itemize}
-  \renewcommand{\makelabel}[1]{\sffamily\textbf{#1}}
-  \item[Le calcul distribué] qui consiste comme son nom l'indique
+  %\renewcommand{\makelabel}[1]{\sffamily\textbf{#1}}
+  \item\sffamily{\textbf{le calcul distribué}} qui consiste, comme son nom
+l'indique,
 à distribuer le calcul sur différentes machines, qui effectueront
 les opérations en tâche de fond. C'est utilisé par exemple dans
-les nombreux projets nommés « @home » comme « Folding@Home
+les nombreux projets nommés «~@home~» comme «~Folding@Home
 »\footnote{Voir \url{http://folding.stanford.edu} pour plus
 d'informations sur ce projet},
-organisé par l'université de Stanford, et qui consiste à étudier
+organisé par l'université de Stanford et qui consiste à étudier
 le repliement des protéines en fonction de divers facteurs, dans
-le but de fabriquer de nouveaux médicaments.
-  \item[Les fermes de calcul (ou clustering)], qui, comme le
+le but de fabriquer de nouveaux médicaments~;
+  \item\sffamily{\textbf{les fermes de calcul (ou clustering)}}, qui, comme le
 calcul distribué, permettent de rassembler les puissances de
-calculs de plusieurs machines, sauf que dans ce cas ci, cette
+calculs de plusieurs machines excepté le fait que dans ce cas ci, cette
 puissance de calcul sera uniquement utilisée pour la tâche
-désirée.
-  \item[Les machines spécialisées], comme c'est le cas de
-\emph{Deep Crack}, une machine mise au point en 1998 qui déchiffra
+désirée~;
+  \item\sffamily{\textbf{les machines spécialisées}}, comme c'est le cas de
+\emph{Deep Crack}, une machine mise au point en 1998, qui déchiffra
 un message en 56 heures lors du DES Challenge.\\
 \end{itemize}
 
-On peut aussi citer une méthode utilisée par certains logiciel pour
-cracker les sommes MD5, qui est d'utiliser la
+On peut aussi citer une méthode utilisée par certains logiciels pour
+cracker les sommes MD5, qui consiste à utiliser la
 puissance de calcul du processeur graphique (GPU) en plus de celle
 du processeur (CPU). Ce genre de logiciel peut essayer dans les
 meilleurs cas plus de
 $2^{28}$ empreintes MD5 par seconde sur un ordinateur 
-personnel, et qui permet alors de retrouver le message clair en
-moins d'une minute\footnote{Test disponible à l'adresse
+personnel et permet alors de retrouver le message clair en
+moins d'une minute dans le cas d'un mot de passe simple\footnote{Test disponible à l'adresse
 \url{http://fz-corp.net/repository/MD5-GPU.html}}.
 
 \subsection{L'attaque par dictionnaire}
 Cette attaque est souvent utilisée en parallèle avec l'attaque par
 force brute, et consiste à essayer de déchiffrer un mot de passe
-en essayant tous les mots d'une liste, contenant des mots souvent
+en essayant tous les mots d'une liste contenant des mots souvent
 utilisés en tant que mot de passe.
 
 Les logiciels procédant à ce type d'attaques (comme \emph{John the
 Ripper}\footnote{Disponible sur
-\url{http://www.openwall.com/john/}} utilisent des « règles » à
-partir de la liste de mot. Ces règles permettent d'essayer
+\url{http://www.openwall.com/john/}}) utilisent des «~règles~» à
+partir de la liste de mots. Ces règles permettent d'essayer
 plusieurs combinaisons utilisant le mot, ainsi, pour le mot
 \texttt{password}, grâce aux règles, on pourra tester les mots
 \texttt{password15}, \texttt{pAsSworD}, \texttt{p4ssw0rd}, \dots
 
-Ce genre d'attaque (ainsi que l'attaque par brute force)
+Ce genre d'attaque (ainsi que l'attaque par force brute)
 est grandement efficace contre des mots de passe. C'est
-pour cela que l'on conseille de compliquer les mots de passe, via
+pour cela que l'on conseille de compliquer les mots de passe via
 diverses méthodes, la plus efficace étant d'en générer un
-aléatoirement, de nombreux sites internet nous offrant cette
+aléatoirement via les nombreux sites internet nous offrant cette
 possibilité\footnote{Comme
-\url{http://www.eurnet.fr/passwd/passwd.html}, qui informe aussi
+\url{http://www.eurnet.fr/passwd/passwd.html} qui informe aussi
 du temps que tiendrait le mot de passe face à une attaque de type
 % TODO: trouver un site libre
-force brute ou par dictionnaire}, ou via une commande de ce genre sous les systèmes
-Unix :
+force brute ou par dictionnaire} ou via une commande de ce genre sous les systèmes
+de type Unix :
 \lstset{language=bash}
 \begin{lstlisting}
 % < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c8 
@@ -284,12 +286,12 @@ trouver un qui correspond ?
 Illustrons cela par le problème des anniversaires : quelle est la
 probabilité, en prenant une personne précise dans une pièce de $n$
 personnes, qu'une autre personne de cette pièce ait son
-anniversaire le même jour que cette personne.
+anniversaire le même jour que cette personne ?
 
-On peut reformuler cette phrase en « Quelle est la probabilité, en
+On peut reformuler cette phrase en «~Quelle est la probabilité, en
 prenant une personne précise dans une pièce de $n$ personnes,
-\emph{que personne d'autre dans cette pièce ait son anniversaire
-le même jour que cette personne} ».
+\emph{que personne d'autre dans cette pièce n'ait son anniversaire
+le même jour que cette personne ?}~».
 
 Pour chaque personne, la probabilité d'avoir son anniversaire un
 jour différent de la personne choisie est de $\dfrac{364}{365}$.
@@ -322,7 +324,7 @@ Cette probabilité vaut donc
 \[1 - \dfrac{365}{365} ~ \dfrac{364}{365} ~ \dots ~ \dfrac{365 - n
 + 1}{365} \]
 
-En cherchant $n$ pour que cette probabilité vale 
+En cherchant $n$ pour que cette probabilité vaille 
 $\dfrac{1}{2}$, on trouve $n \approx 23$. Comme approximation, nous
 dirons que $n \approx \sqrt{365} \approx 19$
 \\
@@ -331,7 +333,7 @@ Nous pouvons alors utiliser ceci pour trouver le nombre
 de sommes de contrôles à tester avant de trouver une collision.
 Si l'attaquant, à partir d'une somme de contrôle $x$,
 déterminée par $x = h(M)$ ($h$ étant la fonction de hachage, et
-$M$ le message initial), essaye de trouver $M'$ tel que $h(M') =
+$M$ le message initial), essaie de trouver $M'$ tel que $h(M') =
 h(M)$, il lui faudra alors, pour $h$ produisant une sortie sur $n$
 bits, $2^n$ messages avant de trouver une collision.
 
@@ -361,9 +363,9 @@ trop longue à décrire en détail dans ce travail.
 %attaque contre le chiffrement DES.
 
 \subsection{Autres attaques}
-Il existe encore d'autres types d'attaque non développées ici. Le
+Il existe encore d'autres types d'attaque non abordées ici. Le
 secteur de la cryptanalyse est en perpétuelle évolution, chacun
-peut trouver de nouvelles méthodes de cryptanalyse avec beaucoup
+peut trouver de nouvelles méthodes de crypt\-analyse avec beaucoup
 de travail et de connaissances.
 
 Les attaques présentées ici ne sont faisables que sur des

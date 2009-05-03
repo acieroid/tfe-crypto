@@ -10,24 +10,23 @@ retrouver cette clé et il pourra ainsi déchiffrer le message.
 
 L'attaquant peut aussi avoir d'autres informations que le texte
 chiffré et la connaissance de l'algorithme~; il existe alors trois
-différents niveaux d'attaque.
+différents niveaux d'attaque :
 
 \begin{itemize}
-  \renewcommand{\makelabel}[1]{\sffamily\textbf{#1}}
-  \item[L'attaque à texte chiffré seul] :
+  \item {\sffamily\textbf{l'attaque à texte chiffré seul}} :
     l'attaquant dispose d'un ou de plusieurs textes chiffrés, son but
     est de retrouver les messages clairs, et idéalement (mais pas
     nécessairement) de retrouver la clé utilisée pour le chiffrement,
     afin de pouvoir déchiffrer d'autres messages ayant été chiffrés
-    avec cette clé.
+    avec cette clé~;
 
-  \item[L'attaque à texte clair connu] :
+  \item {\sffamily\textbf{l'attaque à texte clair connu}} :
     ici, l'attaquant possède en plus des messages chiffrés, les
     messages initiaux. Il doit alors retrouver la clé utilisée pour 
     chiffrer les messages ou un algorithme pour déchiffrer n'importe
-    quel autre message chiffré avec cette clé. 
+    quel autre message chiffré avec cette clé~;
 
-  \item[L'attaque à texte clair choisi] :
+  \item {\sffamily\textbf{l'attaque à texte clair choisi}} :
     cette attaque est presque identique à celle à texte clair connu,
     sauf que l'attaquant peut choisir quel texte sera chiffré. Cette
     attaque est donc plus facile, car il peut choisir des messages qui

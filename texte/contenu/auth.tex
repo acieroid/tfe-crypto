@@ -18,10 +18,10 @@ une signature.
 Avec ces données, il est alors possible d'avoir deux types
 d'authentification : 
 \begin{itemize}
-  \item l'authentification simple qui consiste simplement à
+  \item {\sffamily\textbf{l'authentification simple}} qui consiste simplement à
 utiliser un des quatre éléments cités ci-dessus pour authentifier
 l'utilisateur. L'élément le plus utilisé est le mot de passe~;
-  \item l'authentification forte, qui combine plus d'un élément
+  \item {\sffamily\textbf{l'authentification forte}} qui combine plus d'un élément
 des quatre cités ci-dessus.
 \\
 \end{itemize}
@@ -45,15 +45,18 @@ l'utilisateur connaît.
 Pour sécuriser l'authentification par mot de passe, il faut
 sécuriser le mécanisme à plusieurs niveaux :
 \begin{itemize}
-  \item au niveau de leur forme : les mots de pass doivent 
+  \item {\sffamily\textbf{au niveau de leur forme}} : les mots de
+passe doivent 
 être résistants à une attaque par force brute ou à une attaque 
 par dictionnaire
-  \item au niveau de la transmission des mots de passe : en effet,
+  \item {\sffamily\textbf{au niveau de la transmission des mots de
+passe}} : en effet,
 il est assez simple d'écouter (de \emph{sniffer}) une connexion
 réseau et si le mot de passe est transmis en clair, on peut
 facilement le retrouver. Le mot de passe doit alors être chiffré
 pour la transmission.
-  \item au niveau de l'endroit où est stocké le mot de passe car
+  \item {\sffamily\textbf{au niveau de l'endroit où est stocké le
+mot de passe}} car
 si un attaquant prend possession d'une machine où sont stockés
 des mots de passe, il aura accès à de nombreux mots
 de passe directement, alors que, s'ils sont
@@ -90,16 +93,16 @@ Grâce à ce secret, les deux parties peuvent alors générer
 un mot de passe unique, via diverses méthodes : 
 
 \begin{itemize}
-  \item l'utilisation d'un compteur : le client ainsi que le
+  \item {\sffamily\textbf{l'utilisation d'un compteur}} : le client ainsi que le
 serveur ont possession, en plus du secret, d'un compteur en
 commun. À chaque authentification, ce compteur est augmenté, et le
 mot de passe produit est donc tout le temps différent~;
-  \item l'utilisation du temps : plutôt que de produire le mot de
+  \item {\sffamily\textbf{l'utilisation du temps}} : plutôt que de produire le mot de
 passe à partir d'un compteur, on se base sur le temps actuel, le
 mot de passe sera alors valable pendant une certaine durée
 (habituellement courte, le temps de recopier le mot de passe, 
  entre 30 secondes et 1 minute)~;
-  \item l'utilisation de \emph{challenge} : le serveur crée un
+  \item {\sffamily\textbf{l'utilisation de \emph{challenge}}} : le serveur crée un
 \emph{challenge} (des données aléatoires), qu'il communique au
 client. Le client crée alors le OTP à partir de ce challenge et du
 secret connu du serveur et de lui même. Il faut alors éviter de

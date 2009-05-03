@@ -4,9 +4,9 @@ quotidiennes de la cryptographie.
  
 \subsection{Login système}
 Commençons par le commencement : lorsqu'on allume un ordinateur,
-et qu'on s'identifie (on se \emph{log}), il faut généralement 
-des cas entrer un mot de passe (bien que cette fonctionnalité
-n'est plus activée par défaut sur les systèmes d'exploitation
+et qu'on s'identifie (on se \emph{log}), il faut, dans la plupart 
+des cas, entrer un mot de passe (bien que cette fonctionnalité
+ne soit est plus activée par défaut sur les systèmes d'exploitation
 Windows, elle reste fortement conseillée).
 \\
  
@@ -23,7 +23,7 @@ Les algorithmes de chiffrements
 utilisés sont des algorithmes dérivés de DES ou de MD5.
  De plus, avant le chiffrement, le mot
 de passe est «~salé~» (ajout de caractères aléatoires en fin de
-mot de passe), ce qui empêche deux d'avoir
+mot de passe), ce qui empêche d'avoir
 deux fois la même empreinte.
 \\
  
@@ -43,12 +43,12 @@ simplifié le mot de passe (ajout de 0 pour avoir 14 caractères, et
 mise du mot de passe en majuscule).
 Le second algorithme utilisé est l'algorithme NTLM, qui produit
 une empreinte MD4 du mot de passe une fois transformé sous sa
-forme Unicode\footnote{norme qui permet de représenter
-numériquement n'importe quel caractère}.
+forme Unicode\footnote{Norme qui permet de représenter
+numériquement n'importe quel caractère.}.
  Aucune méthode de salage n'est utilisée dans aucun
 des deux algorithmes. Il est donc très facile de retrouver les
-mots de passes, tout d'abord sans la casse\footnote{différenciation
-entre les majuscules et les minuscules} grâce au chiffrement
+mots de passe, tout d'abord sans la casse\footnote{Différenciation
+entre les majuscules et les minuscules.} grâce au chiffrement
 Lanman, qui a un domaine de recherche restreint (car il garde 
 uniquement des
 majuscules, …), ensuite il suffit d'essayer les différentes
@@ -79,7 +79,7 @@ nom du chiffrement à utiliser, ainsi qu'un
 certificat contenant sa clé publique. Le client, après avoir
 vérifié la validité du certificat, génère une clé, qu'il
 chiffre avec la clé publique du serveur, et envoie au serveur.
-Le serveur peut alors la déchiffrer, est est
+Le serveur peut alors la déchiffrer et est
 en possession de la clé secrète.
 Cette clé secrète (clé de session) permet de chiffrer toutes les
 communications entre le client et le serveur.
@@ -88,7 +88,7 @@ communications entre le client et le serveur.
 La version 3 de SSL permet l'authentification mutuelle (le client
 s'identifie auprès du serveur, et le serveur s'identifie auprès du
 client). La différence entre SSLv3 et TLS réside dans la
-génération des clés, plus sécurisée dans TLS, mais TLS reste
+génération des clés, plus sécurisée dans TLS mais TLS reste
 compatible avec SSLv3.
 
 \subsection{SSH}
@@ -112,8 +112,8 @@ La mise en place du canal sécurisé est décrite dans la figure
 afin d'échanger la clé de session (générée aléatoirement par le
 client), qui servira pendant toute la
 durée de session pour chiffrer les communications (via un
-algorithme symétrique donc). Les algorithmes utilisés dépendent
-des algorithmes supportés par le client et par le serveur, en
+algorithme symétrique, donc). Les algorithmes utilisés dépendent
+des algorithmes supportés par le client et par le serveur~; en
 effet, SSH est compatible avec de nombreux algorithmes (à titre
 d'exemple, OpenSSH implémente quatre algorithmes de chiffrement non
 brevetés : le Triple DES, Blowfish, AES et Arcfour).
@@ -123,14 +123,14 @@ brevetés : le Triple DES, Blowfish, AES et Arcfour).
 \vspace{-10pt}
   \centering
     \subfloat[Mise en place d'un canal sécurisé via SSH (la clé
-bleue est la clé de session]{
+bleue est la clé de session).]{
       \label{fig:CanalSecuriseSSH}\includegraphics[width=0.4\textwidth]{images/SSH.png}}
     \hspace{1.2cm}
     \subfloat[Puffy, la mascotte du projet OpenBSD et de OpenSSH a
 été 
 choisie d'après l'algorithme \emph{blowfish} utilisé dans
-OpenSSH, qui lui même tire son nom du poisson globe, représentant
-la sécurité, la résistance aux attaques]{
+OpenSSH, qui lui-même tire son nom du poisson-globe, représentant
+la sécurité, la résistance aux attaques.]{
       \label{fig:Puffy}\includegraphics[width=0.4\textwidth]{images/Puffy.png}}
     \caption{SSH}
     %\vspace{-15pt}

@@ -8,17 +8,17 @@ disposition une méthode pour vérifier l'intégrité de son message.
 
 Pour vérifier l'intégrité d'un message, on envoie, en plus de ce
 message, son empreinte. Ainsi, à la réception du
-message, on recalcule cette empreinte, et si les deux empreintes
-correspondent le message est
-authentique. Par contre, si un attaquant peut modifier le message,
+message, on recalcule cette empreinte et si les deux empreintes
+correspondent, le message est
+authentique. En revanche, si un attaquant peut modifier le message,
 il peut aussi modifier l'empreinte. L'expéditeur chiffre
 alors cette empreinte avec sa clé privée, ainsi personne ne peut
 changer cette empreinte car personne n'est en possession de sa clé
 privée. Le destinataire déchiffrera alors l'empreinte à l'aide de
-la clé publique de l'expéditeur, et la comparera avec celle qu'il
-aura calculé lui même.
+la clé publique de l'expéditeur et la comparera avec celle qu'il
+aura calculée lui-même.
 
-Ainsi, on est à la fois sûr que le message n'a pas été modifiée,
+Ainsi, on est à la fois sûr que le message n'a pas été modifié,
 mais en plus on sait qui est l'expéditeur, car uniquement cette
 personne a connaissance de sa clé privée. C'est donc le mécanisme
 de signature numérique.
@@ -41,5 +41,5 @@ Il est alors important d'utiliser une fonction qui ne comporte pas
 de problème de sécurité, sinon un fichier avec du code malicieux
 pourrait avoir la même empreinte que le fichier que l'on souhaite
 télécharger. Néanmoins, l'algorithme MD5 reste fortement utilisé
-malgré ses faiblesse.
+malgré ses faiblesses.
 

@@ -5,17 +5,18 @@ l'identité de l'utilisateur.
 Cette authentification peut se faire sur plusieurs données : 
 \begin{itemize}
   \item une donnée connue par l'utilisateur. Exemple : un mot de
-passe ~;
+passe~;
   \item quelque chose que possède l'utilisateur, un \emph{token}.
-Exemple : une carte magnétique ~;
+Exemple : une carte magnétique~;
   \item quelque chose propre à l'utilisateur, une donnée physique.
-Exemple : une empreinte digitale ~;
+Exemple : une empreinte digitale~;
   \item quelque chose que seul l'utilisateur sait faire. Exemple :
 une signature.
+\\
 \end{itemize}
 
 Avec ces données, il est alors possible d'avoir deux types
-d'authentifications : 
+d'authentification : 
 \begin{itemize}
   \item l'authentification simple qui consiste simplement à
 utiliser un des quatre éléments cités ci-dessus pour authentifier
@@ -30,7 +31,7 @@ Pour l'authentification forte, on utilise souvent des
 uniquement pour l'authentification), 
 combinés à l'utilisation traditionnelle de mot de passe, souvent
 sous la forme de code PIN, qui permet d'activer le token.
-On peut aussi utiliser une carte à puce, ou des logiciels présents
+On peut aussi utiliser une carte à puce ou des logiciels présents
 sur un PDA, un ordinateur, un téléphone portable, …
 
 Dans le cas où on ne passe pas par un code PIN, ce n'est plus une
@@ -44,19 +45,19 @@ l'utilisateur connaît.
 Pour sécuriser l'authentification par mot de passe, il faut
 sécuriser le mécanisme à plusieurs niveaux :
 \begin{itemize}
-  \item Au niveau de leur forme, ils doivent
-être résistant à une attaque par force brute ou à une attaque 
+  \item au niveau de leur forme : les mots de pass doivent 
+être résistants à une attaque par force brute ou à une attaque 
 par dictionnaire
-  \item Au niveau de la transmission des mots de passe, en effet
+  \item au niveau de la transmission des mots de passe : en effet,
 il est assez simple d'écouter (de \emph{sniffer}) une connexion
-réseau, et si le mot de passe est transmis en clair, on peut
+réseau et si le mot de passe est transmis en clair, on peut
 facilement le retrouver. Le mot de passe doit alors être chiffré
 pour la transmission.
-  \item Au niveau de l'endroit où est stocké le mot de passe, car
+  \item au niveau de l'endroit où est stocké le mot de passe car
 si un attaquant prend possession d'une machine où sont stockés
-des mots de passe, il aura accès à des à de nombreux de mots
-de passes directement, alors que s'ils sont
-chiffrés il ne pourra pas connaître ces mots de passe.
+des mots de passe, il aura accès à de nombreux mots
+de passe directement, alors que, s'ils sont
+chiffrés, il ne pourra pas connaître ces mots de passe.
 \\
 \end{itemize}
 
@@ -69,21 +70,21 @@ passe uniquement, et non de la méthode de chiffrement utilisée.
 
 Il reste néanmoins beaucoup d'autres méthodes pour retrouver un mot de
 passe, non basées sur la cryptologie, notamment le hameçonnage
-(\emph{phishing}) ainsi que les logiciels malveillant (les
+(\emph{phishing}) ainsi que les logiciels malveillants (les
 \emph{keylogger} par exemple, qui enregistrent les touches
 frappées par l'utilisateur). Il est aussi assez fréquent de voir
 que les utilisateurs notent leurs mots de passe sur un papier à
 côté de l'ordinateur, utilisent le même mot de passe partout, …
 
 Les mots de passe n'offrent alors plus un niveau de sécurité assez
-élevé, et l'on privilégie donc l'authentification forte (surtout
+élevé et l'on privilégie donc l'authentification forte (surtout
 pour les services nécessitant une grande sécurité, comme les
 banques en ligne, …).
 
 \subsection{Les mots de passe à usage unique (OTP)}
 Les mot de passe à usage unique (OTP pour \emph{One Time
 Password}) utilisent un secret qui est connu du client et du
-serveur en plus d'un mot de passe, c'est donc un mécanisme
+serveur. En plus d'un mot de passe, c'est donc un mécanisme
 d'authentification forte.
 Grâce à ce secret, les deux parties peuvent alors générer
 un mot de passe unique, via diverses méthodes : 
@@ -112,9 +113,9 @@ challenge.
 
 L'utilisation de challenge (dite asynchrone, car ce n'est pas
 immédiat, l'utilisateur doit d'abord rentrer le challenge dans 
-son token) pose donc certains problèmes comparé aux autres 
+son token) pose donc certains problèmes comparée aux autres 
 utilisations (dites synchrones). Notons que 
-l'utilisation d'un compteur et du temps peuvent être utilisées de
+l'utilisation d'un compteur et du temps peut être utilisée de
 manière complémentaire.
 
 

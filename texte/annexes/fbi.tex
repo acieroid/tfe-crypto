@@ -1,19 +1,19 @@
 \chapter{Cryptanalyse d'un cryptogramme simple\label{Apx:FBI}}
 \thispagestyle{empty}
 Pour mettre en pratique l'analyse des fréquences et l'attaque par
-mot probable vues au chapitres \ref{sec:AnalyseFrequences} et
+mot probable vues aux chapitres \ref{sec:AnalyseFrequences} et
 \ref{sec:MotProbable}, nous allons
 casser un message chiffré\footnote{Disponible sur
 \url{http://www.fbi.gov/page2/nov07/code112107.html}}, 
 proposé par le FBI sur leur site fin
-octobre 2007 (conçus par leurs cryptanalystes « just for fun »)
+octobre 2007 (conçus par leurs cryptanalystes «~just for fun~»)
 \\
 Le cryptogramme est « PIKODENHFENJIKM! YIH QELB GDISBK NQB
 PICB. OI NI AGJ.OIL/PICB.QNT MI WB SKIW, EKC UFBEMB PIKMJCBD E
 PEDBBD WJNQ NQB AGJ. »
 \\
 
-À première vue, le cryptogramme à tout l'air d'une substitution
+À première vue, le cryptogramme a tout l'air d'une substitution
 monoalphabétique, du fait de la présence d'espaces et de
 ponctuation.
 Avant tout, essayons de trouver des éléments spéciaux dans le
@@ -29,7 +29,7 @@ Faisons ensuite une analyse des fréquences ; les lettres
 apparaissant le plus souvent dans le cryptogramme sont I et B (12
 fois), N et E (7 fois), et K (6 fois).
 Nous savons déjà que I correspond à O en clair, et E correspond à
-A. En regardant les fréquences moyenne d'apparition des lettres en
+A. En regardant les fréquences moyennes d'apparition des lettres en
 anglais (figure \ref{fig:Frequences}, page
 \pageref{fig:Frequences}), la lettre apparaissant le plus est le E, qui devrait
 correspondre à B ici, suivie de la lettre T, qui correspond alors
@@ -67,7 +67,7 @@ claires et lettres chiffrées : \\
 %\end{center}
 %
 On pourrait encore essayer de trouver plus de lettres via
-l'analyse des fréquence des lettres et des bigrammes présents dans
+l'analyse des fréquences des lettres et des digrammes présents dans
 le cryptogramme.
 \\
 

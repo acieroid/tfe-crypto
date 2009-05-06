@@ -18,6 +18,7 @@ pdf:
 #	makeindex main.nlo -s gglo.ist -o main.nls
 	pdflatex main.tex
 	pdflatex main.tex
+	mv main.pdf crypto.pdf
 
 clean:
 	rm -f *.aux *.log *.bbl *.toc *.glo *.gls *.ilg *.out *.nls *.nlo *.blg

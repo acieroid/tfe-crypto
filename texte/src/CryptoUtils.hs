@@ -26,7 +26,7 @@ count s = map (\x -> (length x,head x))
           $ group $ sort s
 
 -- Analyse des fréquences
-freqs :: String -> [(Int, Int)]
+freqs :: String -> [(Int, Char)]
 freqs s = reverse (sort (count s))
 
 -- Effectue un simple décalage de la lettre dans l'alphabet

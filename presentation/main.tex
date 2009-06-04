@@ -5,17 +5,13 @@
 \usepackage[francais]{babel}
 \usepackage{graphics}
 \usepackage{graphicx}
-\usetheme{Berkeley}
+\usetheme{MyStyle}
 
-\useinnertheme{rectangles}
-\usecolortheme{whale}
-\usecolortheme{orchid}
-\setbeamercolor*{frametitle}{parent=palette primary}
-
-\title{La cryptologie\\
-Peut-on réellement cacher des informations ?}
+\title{La cryptologie : \\
+peut-on réellement cacher des informations ?}
 \author{Quentin Stiévenart}
 \date{\today}
+\setbeamertemplate{navigation symbols}{}
 
 \begin{document}
 
@@ -52,7 +48,7 @@ militaires
 
   \begin{itemize}[<+->]
     \item Message à chiffrer : «~message~» avec $k=3$
-    \item Chiffrement : 
+    \item Chiffrement :  \\
       \begin{tabular}{cccccccl}
         M & E & S & S & A & G & E & $\rightarrow$ message clair \\
         \pause
@@ -72,7 +68,7 @@ militaires
   \frametitle{Déchiffrement}
   \begin {itemize}[<+->]
     \item Message à déchiffrer : «~PHVDJH~»
-    \item Déchiffrement
+    \item Déchiffrement : \\
       \begin{tabular}{cccccccl}
         P & H & V & V & D & J & H & $\rightarrow$ message chiffré \\
         \pause
